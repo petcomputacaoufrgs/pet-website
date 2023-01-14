@@ -5,6 +5,7 @@ export const Container = styled.footer`
   background-color: #4d4c52;
   display: flex;
   justify-content: space-between;
+  cursor: default;
 `
 
 export const ContactUs = styled.h3`

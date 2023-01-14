@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Create Next App</title>
+        <title>PET Computação - Homepage</title>
       </Head>
       <HomeView />
     </>

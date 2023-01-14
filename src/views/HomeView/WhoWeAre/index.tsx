@@ -1,6 +1,12 @@
 import ButtonLink from '@/components/ButtonLink'
 import Title from '@/components/Title'
-import { Text, ButtonWrapper, Container } from './styles'
+import {
+  Text,
+  ButtonWrapper,
+  Container,
+  VideoFrame,
+  VideoContainer,
+} from './styles'
 
 const WhoWeAre = () => {
   return (
@@ -20,7 +26,15 @@ const WhoWeAre = () => {
           <ButtonLink label={'Conheça nossos membros'} link={'/petianes'} />
         </ButtonWrapper>
       </div>
-      <div> Aqui tem um vídeo </div>
+      <VideoContainer>
+        <VideoFrame
+          src="https://www.youtube.com/embed/mbK682vVP7c?rel=0&cc_load_policy=1&iv_load_policy=3&color=white&disablekb=1"
+          width="632"
+          height="365"
+          title="PET Computação UFRGS - Vídeo Institucional"
+          allowFullScreen
+        ></VideoFrame>
+      </VideoContainer>
     </Container>
   )
 }

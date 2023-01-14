@@ -1,11 +1,12 @@
 import Icon from '../Icon'
+import { Container } from './styles'
 import { IIconLink } from './types'
 
 const IconLink = ({ iconType, href }: IIconLink) => {
   return (
-    <a target="_blank" href={href}>
+    <Container target="_blank" href={href}>
       <Icon type={iconType} />
-    </a>
+    </Container>
   )
 }
 export default IconLink

@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   position: relative;
+  cursor: default;
 `
 
 export const InfoContainer = styled.header`

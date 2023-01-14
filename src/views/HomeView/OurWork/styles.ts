@@ -5,6 +5,7 @@ export const Container = styled.div`
   padding: 4.5rem 4.75rem;
   width: 100vw;
   text-align: center;
+  cursor: default;
 `
 
 export const ProjectsContainer = styled.div`

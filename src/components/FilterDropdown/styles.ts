@@ -16,6 +16,7 @@ export const DropdownInput = styled.button`
   font-size: 1rem;
   display: flex;
   align-items: center;
+  cursor: pointer;
 `
 
 export const VerticalLine = styled.div`
@@ -54,6 +55,11 @@ export const InputContainer = styled.div`
   display: flex;
   align-items: center;
   margin: 0.3rem 0;
+  cursor: pointer;
+
+  & label {
+    cursor: pointer;
+  }
 `
 
 export const CheckboxInput = styled.input`
