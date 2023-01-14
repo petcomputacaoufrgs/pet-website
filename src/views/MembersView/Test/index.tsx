@@ -1,60 +1,44 @@
+import React from 'react'
+// Import Swiper React components
+import { Swiper, SwiperSlide, useSwiper } from 'swiper/react'
+
 // Import Swiper styles
 import 'swiper/css'
-import 'swiper/css/effect-coverflow'
+import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 
-import './styles.css'
-
 // import required modules
-import { EffectCoverflow, Pagination } from 'swiper'
+import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper'
+import { members } from '@/data/members'
+import MemberCard from '@/components/MemberCard'
+import Title from '@/components/Title'
+import { Container, FillAvailable } from './styles'
 
 export default function App() {
+  const swiper = useSwiper()
   return (
-    <>
+    <Container>
+      <FillAvailable>
+        <Title type={'h1'} text={'Nossos Petianos'} />
+      </FillAvailable>
       <Swiper
-        effect={'coverflow'}
-        grabCursor={true}
-        centeredSlides={true}
         slidesPerView={2}
-        coverflowEffect={{
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true,
-        }}
+        spaceBetween={10}
+        cssMode={true}
+        navigation={true}
         pagination={true}
-        modules={[EffectCoverflow, Pagination]}
+        mousewheel={true}
+        keyboard={true}
+        modules={[Navigation, Pagination, Mousewheel, Keyboard]}
         className="mySwiper"
+        style={{ width: '-webkit-fill-available' }}
       >
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-        </SwiperSlide>
+        {members.map((member, index) => (
+          <SwiperSlide>
+            <MemberCard member={member} index={index + 1} />
+          </SwiperSlide>
+        ))}
       </Swiper>
-    </>
+    </Container>
   )
 }

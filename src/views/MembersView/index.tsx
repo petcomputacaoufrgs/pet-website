@@ -1,4 +1,10 @@
+import Test from './Test'
+
 const MembersView = () => {
-  return <div></div>
+  return (
+    <>
+      <Test />
+    </>
+  )
 }
 export default MembersView
