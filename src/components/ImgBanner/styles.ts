@@ -12,7 +12,7 @@ export const Container = styled.div.attrs((props: PropTypeContainer) => ({
 `
 
 export const Image = styled.img`
-  width: 100vw;
+  width: 100%;
   object-fit: cover;
 `
 
