@@ -23,7 +23,7 @@ const FilterDropdown = ({
         Dropdown
         <VerticalLine />
         <IconContainer isOpen={showDropdown}>
-          <Icon type="chevron" />
+          <Icon type="chevron-down" />
         </IconContainer>
       </DropdownInput>
       {showDropdown && (

@@ -3,9 +3,10 @@ import styled from 'styled-components'
 export const Container = styled.div`
   background-color: #666564;
   color: white;
-  width: 21rem;
+  width: 20rem;
   height: 27rem;
   padding: 1rem;
+  margin-left: auto;
 `
 
 export const CardHeader = styled.div`

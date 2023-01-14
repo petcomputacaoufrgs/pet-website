@@ -32,6 +32,10 @@ const GlobalStyle = createGlobalStyle`
     color: inherit;
     text-decoration: none;
   }
+
+  .swiper-pagination-bullet-active {
+     background-color: #DD5B6C !important;
+}
 `
 
 interface ThemeInterface {

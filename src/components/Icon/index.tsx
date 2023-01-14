@@ -1,5 +1,7 @@
 import BackArrowIcon from './BackArrow'
-import ChevronIcon from './Chevron'
+import ChevronDownIcon from './ChevronDown'
+import ChevronLeftIcon from './ChevronLeft'
+import ChevronRightIcon from './ChevronRight'
 import FacebookIcon from './Facebook'
 import GithubIcon from './Github'
 import InstagramIcon from './Instagram'
@@ -23,8 +25,12 @@ const Icon = ({ type }: IIcon) => {
         return <YoutubeIcon />
       case 'fb':
         return <FacebookIcon />
-      case 'chevron':
-        return <ChevronIcon />
+      case 'chevron-down':
+        return <ChevronDownIcon />
+      case 'chevron-left':
+        return <ChevronLeftIcon />
+      case 'chevron-right':
+        return <ChevronRightIcon />
       case 'arrow-back':
         return <BackArrowIcon />
       default:

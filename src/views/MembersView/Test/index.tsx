@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 // Import Swiper React components
-import { Swiper, SwiperSlide, useSwiper } from 'swiper/react'
+import { Swiper, SwiperSlide } from 'swiper/react'
 
 // Import Swiper styles
 import 'swiper/css'
@@ -12,26 +12,32 @@ import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper'
 import { members } from '@/data/members'
 import MemberCard from '@/components/MemberCard'
 import Title from '@/components/Title'
-import { Container, FillAvailable } from './styles'
+import { Container, FillAvailable, NavigationButton } from './styles'
+import Icon from '@/components/Icon'
 
 export default function App() {
-  const swiper = useSwiper()
+  const swiperRef: any = useRef()
+
   return (
     <Container>
+      <NavigationButton onClick={() => swiperRef.current?.slidePrev()}>
+        <Icon type={'chevron-left'} />
+      </NavigationButton>
       <FillAvailable>
         <Title type={'h1'} text={'Nossos Petianos'} />
       </FillAvailable>
       <Swiper
-        slidesPerView={2}
-        spaceBetween={10}
+        breakpoints={{ 0: { slidesPerView: 2 }, 1440: { slidesPerView: 3 } }}
+        spaceBetween={30}
         cssMode={true}
-        navigation={true}
-        pagination={true}
+        onBeforeInit={(swiper) => {
+          swiperRef.current = swiper
+        }}
         mousewheel={true}
         keyboard={true}
         modules={[Navigation, Pagination, Mousewheel, Keyboard]}
         className="mySwiper"
-        style={{ width: '-webkit-fill-available' }}
+        style={{ width: '-webkit-fill-available', marginLeft: 'auto' }}
       >
         {members.map((member, index) => (
           <SwiperSlide>
@@ -39,6 +45,9 @@ export default function App() {
           </SwiperSlide>
         ))}
       </Swiper>
+      <NavigationButton onClick={() => swiperRef.current?.slideNext()}>
+        <Icon type={'chevron-right'} />
+      </NavigationButton>
     </Container>
   )
 }
