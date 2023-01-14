@@ -17,8 +17,8 @@ const FilterDropdown = ({
               type="checkbox"
               id="courses"
               name="courses"
-              checked={optionsSelected.includes('courses')}
-              onClick={() => handleOptionClick('courses')}
+              checked={optionsSelected.includes('curso')}
+              onChange={() => handleOptionClick('curso')}
             />
             <label htmlFor="courses">Cursos</label>
           </div>
@@ -27,8 +27,8 @@ const FilterDropdown = ({
               type="checkbox"
               id="projects"
               name="projects"
-              checked={optionsSelected.includes('projects')}
-              onClick={() => handleOptionClick('projects')}
+              checked={optionsSelected.includes('projeto')}
+              onChange={() => handleOptionClick('projeto')}
             />
             <label htmlFor="projects">Projetos</label>
           </div>
@@ -37,8 +37,8 @@ const FilterDropdown = ({
               type="checkbox"
               id="finished"
               name="finished"
-              checked={optionsSelected.includes('finished')}
-              onClick={() => handleOptionClick('finished')}
+              checked={optionsSelected.includes('concluído')}
+              onChange={() => handleOptionClick('concluído')}
             />
             <label htmlFor="finished">Concluído</label>
           </div>
@@ -47,8 +47,8 @@ const FilterDropdown = ({
               type="checkbox"
               id="active"
               name="active"
-              checked={optionsSelected.includes('active')}
-              onClick={() => handleOptionClick('active')}
+              checked={optionsSelected.includes('ativo')}
+              onChange={() => handleOptionClick('ativo')}
             />
             <label htmlFor="active">Ativo</label>
           </div>

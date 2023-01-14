@@ -1,7 +1,7 @@
-type ProjectType = {
+export type ProjectType = {
   type: 'projeto'
   href: string
-  status: 'concluído' | 'ativo' | 'permanente'
+  status: 'concluído' | 'ativo'
   card_banner: string
   page_icon: string
   name: string
@@ -13,7 +13,7 @@ type ProjectType = {
   cta?: { label: string; href: string }[]
 }
 
-type CourseType = {
+export type CourseType = {
   type: 'curso'
   card_banner: string
   name: string
@@ -104,7 +104,7 @@ export const projects: (ProjectType | CourseType)[] = [
   {
     type: 'projeto',
     href: '/projects/dragao',
-    status: 'permanente',
+    status: 'ativo',
     card_banner:
       'https://images.pexels.com/photos/3973557/pexels-photo-3973557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     page_icon: '',
