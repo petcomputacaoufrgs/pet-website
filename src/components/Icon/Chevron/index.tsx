@@ -6,7 +6,7 @@ const ChevronIcon = () => {
       height="16"
       fill="currentColor"
       className="bi bi-chevron-down"
-      viewBox="0 0 16 16"
+      viewBox="0 4 16 4"
     >
       <path
         fill-rule="evenodd"

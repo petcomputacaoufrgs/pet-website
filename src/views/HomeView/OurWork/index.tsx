@@ -47,7 +47,7 @@ const OurWork = () => {
   }, [optionsSelected])
 
   return (
-    <Container>
+    <Container id="our-work">
       <Title type={'h2'} text={'Nosso trabalho'} />
       <FilterDropdown
         optionsSelected={optionsSelected}

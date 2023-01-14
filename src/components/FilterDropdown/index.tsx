@@ -1,4 +1,14 @@
 import { useState } from 'react'
+import Icon from '../Icon'
+import {
+  Container,
+  CheckboxInput,
+  IconContainer,
+  DropdownInput,
+  InputContainer,
+  OptionsContainer,
+  VerticalLine,
+} from './styles'
 import { IFilterDropdown } from './type'
 
 const FilterDropdown = ({
@@ -8,12 +18,18 @@ const FilterDropdown = ({
   const [showDropdown, setShowDropdown] = useState(false)
 
   return (
-    <div>
-      <button onClick={() => setShowDropdown(!showDropdown)}>Dropdown</button>
+    <Container>
+      <DropdownInput onClick={() => setShowDropdown(!showDropdown)}>
+        Dropdown
+        <VerticalLine />
+        <IconContainer isOpen={showDropdown}>
+          <Icon type="chevron" />
+        </IconContainer>
+      </DropdownInput>
       {showDropdown && (
-        <div>
-          <div>
-            <input
+        <OptionsContainer>
+          <InputContainer>
+            <CheckboxInput
               type="checkbox"
               id="courses"
               name="courses"
@@ -21,9 +37,9 @@ const FilterDropdown = ({
               onChange={() => handleOptionClick('curso')}
             />
             <label htmlFor="courses">Cursos</label>
-          </div>
-          <div>
-            <input
+          </InputContainer>
+          <InputContainer>
+            <CheckboxInput
               type="checkbox"
               id="projects"
               name="projects"
@@ -31,9 +47,9 @@ const FilterDropdown = ({
               onChange={() => handleOptionClick('projeto')}
             />
             <label htmlFor="projects">Projetos</label>
-          </div>
-          <div>
-            <input
+          </InputContainer>
+          <InputContainer>
+            <CheckboxInput
               type="checkbox"
               id="finished"
               name="finished"
@@ -41,9 +57,9 @@ const FilterDropdown = ({
               onChange={() => handleOptionClick('concluído')}
             />
             <label htmlFor="finished">Concluído</label>
-          </div>
-          <div>
-            <input
+          </InputContainer>
+          <InputContainer>
+            <CheckboxInput
               type="checkbox"
               id="active"
               name="active"
@@ -51,10 +67,10 @@ const FilterDropdown = ({
               onChange={() => handleOptionClick('ativo')}
             />
             <label htmlFor="active">Ativo</label>
-          </div>
-        </div>
+          </InputContainer>
+        </OptionsContainer>
       )}
-    </div>
+    </Container>
   )
 }
 export default FilterDropdown

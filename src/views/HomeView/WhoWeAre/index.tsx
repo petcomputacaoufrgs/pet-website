@@ -4,7 +4,7 @@ import { Text, ButtonWrapper, Container } from './styles'
 
 const WhoWeAre = () => {
   return (
-    <Container>
+    <Container id="who-we-are">
       <div>
         <Title type={'h2'} text={'Quem somos?'} />
         <Text>

@@ -6,6 +6,7 @@ export const Container = styled.footer`
   display: flex;
   justify-content: space-between;
 `
+
 export const ContactUs = styled.h3`
   font-size: 2rem;
   font-weight: 500;

@@ -11,7 +11,7 @@ import {
 
 const Footer = () => {
   return (
-    <Container>
+    <Container id="contact-us">
       <div>
         <ContactUs>Entre em contato</ContactUs>
         <EmailContainer>
