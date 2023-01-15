@@ -1,9 +1,10 @@
-import BackHomeButton from '@/components/BackHomeButton'
+import ButtonLink from '@/components/ButtonLink'
 import Footer from '@/components/Footer'
 import ImgBanner from '@/components/ImgBanner'
 import Tag from '@/components/Tag'
 import Title from '@/components/Title'
-import { ProjectType, CourseType, projects } from '@/data/projects'
+import { ProjectType, projects } from '@/data/projects'
+import isMobile from '@/hooks/isMobile'
 import { useEffect, useState } from 'react'
 import {
   BackHomeContainer,
@@ -20,7 +21,9 @@ import {
 } from './styles'
 
 const ProjectTemplateView = () => {
+  const mobile = isMobile()
   const [content, setContent] = useState<ProjectType>()
+
   useEffect(() => {
     let currentPath = window.location.pathname
     let content = projects.find((project) => project.href === currentPath)
@@ -28,19 +31,28 @@ const ProjectTemplateView = () => {
   }, [])
 
   return (
-    <div>
+    <>
       {content && (
         <Container>
-          <ImgBanner src={content.card_banner} height={336} />
+          <ImgBanner src={content.card_banner} height={mobile ? 180 : 336} />
           <BackHomeContainer>
-            <BackHomeButton color="white" />
+            <ButtonLink
+              type={'arrow-left'}
+              label={'voltar a home'}
+              href={'/'}
+              color={'white'}
+            />
           </BackHomeContainer>
           <Header>
             <IconContainer>
               <Img src={content.page_icon} />
               <Circle />
             </IconContainer>
-            <Title type={'h1'} text={`Projeto ${content.name}`} />
+            <Title
+              type={'h1'}
+              variant={'secondary'}
+              text={`Projeto ${content.name}`}
+            />
           </Header>
           <Main>
             <TagContainer>
@@ -58,11 +70,15 @@ const ProjectTemplateView = () => {
               <Subtitle>Ferramentas:</Subtitle>
               <p>{content.tools}</p>
             </ExtraInfoContainer>
+            {content.cta &&
+              content.cta.map((cta) => (
+                <ButtonLink label={cta.label} href={cta.href} />
+              ))}
           </Main>
           <Footer />
         </Container>
       )}
-    </div>
+    </>
   )
 }
 export default ProjectTemplateView

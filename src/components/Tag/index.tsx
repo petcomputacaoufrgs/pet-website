@@ -10,7 +10,7 @@ const Tag = ({ label }: ITag) => {
         return '#F77A36'
       case 'ativo':
         return '#5C7A5C'
-      case 'concluido':
+      case 'concluído':
         return '#9897A9'
       case 'pesquisa':
         return '#7191E2'

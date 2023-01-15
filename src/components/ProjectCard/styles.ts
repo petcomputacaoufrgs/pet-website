@@ -4,6 +4,7 @@ export const Container = styled.a`
   display: flex;
   flex-direction: column;
   text-align: left;
+  margin: 1rem 0;
   cursor: pointer;
 `
 

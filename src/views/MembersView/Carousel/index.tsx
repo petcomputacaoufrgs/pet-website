@@ -14,20 +14,30 @@ import MemberCard from '@/components/MemberCard'
 import Title from '@/components/Title'
 import { Container, FillAvailable, NavigationButton } from './styles'
 import Icon from '@/components/Icon'
+import isMobile from '@/hooks/isMobile'
 
 const Carousel = () => {
   const swiperRef: any = useRef()
+  const mobile = isMobile()
 
   return (
     <Container>
       <NavigationButton onClick={() => swiperRef.current?.slidePrev()}>
         <Icon type={'chevron-left'} />
       </NavigationButton>
-      <FillAvailable>
-        <Title type={'h1'} text={'Nossos Petianos'} />
-      </FillAvailable>
+      {!mobile && (
+        <FillAvailable>
+          <Title type={'h1'} text={'Nossos Petianos'} />
+        </FillAvailable>
+      )}
       <Swiper
-        breakpoints={{ 0: { slidesPerView: 2 }, 1440: { slidesPerView: 3 } }}
+        breakpoints={{
+          0: { slidesPerView: 1 },
+          1024: { slidesPerView: 2 },
+          1440: { slidesPerView: 3 },
+          1920: { slidesPerView: 4 },
+          2560: { slidesPerView: 6 },
+        }}
         spaceBetween={30}
         cssMode={true}
         onBeforeInit={(swiper) => {

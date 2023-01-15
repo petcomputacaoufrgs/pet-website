@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { devices } from '@/styles/devices'
 
 export const Container = styled.div`
   position: relative;
@@ -21,15 +22,23 @@ export const TopBanner = styled.div`
 `
 
 export const MainTitle = styled.h1`
-  font-size: 4rem;
-  color: #fbf9fb;
+  color: ${(props) => props.theme.colors.white};
   text-transform: uppercase;
   text-align: center;
   margin: 6rem 0 1rem;
+  font-size: 2.1rem;
+
+  @media ${devices.desktopS} {
+    font-size: 4rem;
+  }
 `
 
 export const Description = styled.p`
-  font-size: 1.5rem;
-  color: #fbf9fb;
+  font-size: 1.3rem;
+  color: ${(props) => props.theme.colors.white};
   text-align: center;
+
+  @media ${devices.desktopS} {
+    font-size: 1.5rem;
+  }
 `

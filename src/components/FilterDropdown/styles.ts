@@ -3,7 +3,6 @@ import styled from 'styled-components'
 export const Container = styled.div`
   position: relative;
   width: fit-content;
-  margin: 1.5rem 0 2rem auto;
 `
 
 export const DropdownInput = styled.button`
@@ -43,10 +42,10 @@ export const OptionsContainer = styled.div`
   right: 2.5rem;
   top: 100%;
   z-index: 5;
-  padding: 0.4rem 0.8rem;
+  padding: 0.3rem 0.8rem;
   background-color: #fbf9fb;
   text-align: left;
-  font-size: 0.875rem;
+  font-size: 1rem;
   width: max-content;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 `
@@ -54,7 +53,7 @@ export const OptionsContainer = styled.div`
 export const InputContainer = styled.div`
   display: flex;
   align-items: center;
-  margin: 0.3rem 0;
+  margin: 0.6rem 0;
   cursor: pointer;
 
   & label {

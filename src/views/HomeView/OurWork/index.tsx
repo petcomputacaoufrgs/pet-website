@@ -3,7 +3,7 @@ import ProjectCard from '@/components/ProjectCard'
 import Title from '@/components/Title'
 import { projects } from '@/data/projects'
 import { useEffect, useState } from 'react'
-import { Container, ProjectsContainer } from './styles'
+import { Container, FilterDropdownContainer, ProjectsContainer } from './styles'
 import { ProjectType, CourseType } from '@/data/projects'
 
 const OurWork = () => {
@@ -49,10 +49,12 @@ const OurWork = () => {
   return (
     <Container id="our-work">
       <Title type={'h2'} text={'Nosso trabalho'} />
-      <FilterDropdown
-        optionsSelected={optionsSelected}
-        handleOptionClick={handleOptionClick}
-      />
+      <FilterDropdownContainer>
+        <FilterDropdown
+          optionsSelected={optionsSelected}
+          handleOptionClick={handleOptionClick}
+        />
+      </FilterDropdownContainer>
       <ProjectsContainer>
         {projectsDisplayed &&
           projectsDisplayed.map((item, index) => (

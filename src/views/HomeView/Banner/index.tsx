@@ -1,6 +1,7 @@
 import ImgBanner from '@/components/ImgBanner'
 import NavBar from '@/components/NavBar'
 import { navbar } from '@/data/navbar'
+import isMobile from '@/hooks/isMobile'
 import bgImg from '../../../images/banner.jpg'
 import logoPet from '../../../images/LogoPET.png'
 import {
@@ -12,13 +13,15 @@ import {
 } from './styles'
 
 const Banner = () => {
+  const mobile = isMobile()
+
   return (
     <Container>
-      <ImgBanner src={bgImg.src} height={628} />
+      <ImgBanner src={bgImg.src} height={mobile ? 450 : 628} />
       <InfoContainer>
         <TopBanner>
           <img src={logoPet.src} height={90} width={90} />
-          <NavBar navData={navbar} />
+          {!mobile && <NavBar navData={navbar} />}
         </TopBanner>
         <div>
           <MainTitle>PET COMPUTAÇÃO UFRGS</MainTitle>

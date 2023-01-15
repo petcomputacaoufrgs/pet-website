@@ -118,12 +118,13 @@ export const GlobalStyle = createGlobalStyle`
   body {
     line-height: 1;
     margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-      color: #000000;
-      background: #fbf9fb;
-      min-height: 100vh;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+    background: #fbf9fb;
+    min-height: 100vh;
+    position: relative;
   }
   ol,
   ul {

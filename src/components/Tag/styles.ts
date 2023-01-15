@@ -1,3 +1,4 @@
+import { devices } from '@/styles/devices'
 import styled from 'styled-components'
 
 type PropTypeTag = {
@@ -13,14 +14,17 @@ const BaseTag = styled.span.attrs((props: PropTypeTag) => ({
   width: fit-content;
   margin: 0.3rem 0;
   color: #e4dadf;
-  cursor: default;
 `
 
 export const SmallTag = styled(BaseTag)`
-  font-size: 0.688rem;
+  font-size: 0.875rem;
 `
 
 export const LargeTag = styled(BaseTag)`
   font-size: 0.875rem;
   margin-right: 0.5rem;
+
+  @media ${devices.desktopS} {
+    font-size: 1rem;
+  }
 `

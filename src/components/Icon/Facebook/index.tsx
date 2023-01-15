@@ -1,8 +1,10 @@
-const FacebookIcon = () => {
+import { ISizeableIcon } from '../types'
+
+const FacebookIcon = ({ size }: ISizeableIcon) => {
   return (
     <svg
-      width="55"
-      height="55"
+      width={size}
+      height={size}
       viewBox="0 0 62 62"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

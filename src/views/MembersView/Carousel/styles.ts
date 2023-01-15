@@ -11,10 +11,11 @@ export const NavigationButton = styled.button`
   height: 3rem;
   width: 3rem;
   min-width: 3rem;
-  opacity: ${(props) => (props.opaque ? '0.6' : '1')};
+  border-radius: 0.3rem;
 `
 
 export const FillAvailable = styled.div`
-  width: 58rem;
+  width: 57rem;
+  max-width: 518px;
   padding: 0 3rem;
 `

@@ -1,5 +1,6 @@
 import ButtonLink from '@/components/ButtonLink'
 import Title from '@/components/Title'
+import isMobile from '@/hooks/isMobile'
 import {
   Text,
   ButtonWrapper,
@@ -9,6 +10,8 @@ import {
 } from './styles'
 
 const WhoWeAre = () => {
+  const mobile = isMobile()
+
   return (
     <Container id="who-we-are">
       <div>
@@ -23,14 +26,14 @@ const WhoWeAre = () => {
           interesse além do currículo de seus cursos.
         </Text>
         <ButtonWrapper>
-          <ButtonLink label={'Conheça nossos membros'} link={'/petianes'} />
+          <ButtonLink label={'Conheça nossos membros'} href={'/petianes'} />
         </ButtonWrapper>
       </div>
       <VideoContainer>
         <VideoFrame
           src="https://www.youtube.com/embed/mbK682vVP7c?rel=0&cc_load_policy=1&iv_load_policy=3&color=white&disablekb=1"
-          width="632"
-          height="365"
+          width={mobile ? '100%' : '632'}
+          height={mobile ? 'auto' : '365'}
           title="PET Computação UFRGS - Vídeo Institucional"
           allowFullScreen
         ></VideoFrame>

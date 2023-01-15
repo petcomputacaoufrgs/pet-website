@@ -20,7 +20,7 @@ const Test = () => {
       <Title type={'h1'} text={'Teste'} />
       <Title type={'h2'} text={'Teste subtitulo'} />
 
-      <ButtonLink label={'Botão de link'} link={''} />
+      <ButtonLink label={'Botão de link'} href={''} />
 
       <ImgBanner src={bgImg.src} height={628} />
       <ImgBanner
