@@ -27,8 +27,8 @@ export const projects: (ProjectType | CourseType)[] = [
     href: '/projects/dino',
     status: 'concluído',
     card_banner:
-      'https://images.pexels.com/photos/3973557/pexels-photo-3973557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    page_icon: '',
+      'https://images.pexels.com/photos/3973557/pexels-photo-3973557.jpeg?auto=compress&cs=tinysrgb&w=3053&h=4733&dpr=1',
+    page_icon: 'https://cdn-icons-png.flaticon.com/512/2417/2417577.png',
     name: 'Dino App',
     description: '',
     axis: ['desenvolvimento'],
@@ -47,8 +47,8 @@ export const projects: (ProjectType | CourseType)[] = [
     href: '/projects/lobo',
     status: 'concluído',
     card_banner:
-      'https://images.pexels.com/photos/3973557/pexels-photo-3973557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    page_icon: '',
+      'https://images.pexels.com/photos/3973557/pexels-photo-3973557.jpeg?auto=compress&cs=tinysrgb&w=3053&h=4733&dpr=1',
+    page_icon: 'https://cdn-icons-png.flaticon.com/512/2417/2417577.png',
     name: 'LoBo Brain',
     description: '',
     axis: ['pesquisa'],
@@ -69,7 +69,7 @@ export const projects: (ProjectType | CourseType)[] = [
   {
     type: 'curso',
     card_banner:
-      'https://images.pexels.com/photos/3973557/pexels-photo-3973557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      'https://images.pexels.com/photos/3973557/pexels-photo-3973557.jpeg?auto=compress&cs=tinysrgb&w=3053&h=4733&dpr=1',
     name: 'Git',
     description: 'Uma introdução ao Git',
     href: 'https://petcomputacaoufrgs.github.io/intro-ao-git',
@@ -77,7 +77,7 @@ export const projects: (ProjectType | CourseType)[] = [
   {
     type: 'curso',
     card_banner:
-      'https://images.pexels.com/photos/3973557/pexels-photo-3973557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      'https://images.pexels.com/photos/3973557/pexels-photo-3973557.jpeg?auto=compress&cs=tinysrgb&w=3053&h=4733&dpr=1',
     name: 'LaTEX',
     description: 'Uma introdução ao Latex',
     href: 'https://petcomputacaoufrgs.github.io/intro-ao-latex',
@@ -87,8 +87,8 @@ export const projects: (ProjectType | CourseType)[] = [
     href: '/projects/cafe-com-pet',
     status: 'concluído',
     card_banner:
-      'https://images.pexels.com/photos/3973557/pexels-photo-3973557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    page_icon: '',
+      'https://images.pexels.com/photos/3973557/pexels-photo-3973557.jpeg?auto=compress&cs=tinysrgb&w=3053&h=4733&dpr=1',
+    page_icon: 'https://cdn-icons-png.flaticon.com/512/2417/2417577.png',
     name: 'Café com PET',
     description: '',
     axis: ['interação'],
@@ -106,8 +106,8 @@ export const projects: (ProjectType | CourseType)[] = [
     href: '/projects/dragao',
     status: 'ativo',
     card_banner:
-      'https://images.pexels.com/photos/3973557/pexels-photo-3973557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    page_icon: '',
+      'https://images.pexels.com/photos/3973557/pexels-photo-3973557.jpeg?auto=compress&cs=tinysrgb&w=3053&h=4733&dpr=1',
+    page_icon: 'https://cdn-icons-png.flaticon.com/512/2417/2417577.png',
     name: 'Dragão',
     description: '',
     axis: ['interação'],
@@ -124,7 +124,7 @@ export const projects: (ProjectType | CourseType)[] = [
   {
     type: 'curso',
     card_banner:
-      'https://images.pexels.com/photos/3973557/pexels-photo-3973557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      'https://images.pexels.com/photos/3973557/pexels-photo-3973557.jpeg?auto=compress&cs=tinysrgb&w=3053&h=4733&dpr=1',
     name: 'Currículo',
     description: 'Um passo a passo para construir seu primeiro currículo',
     href: 'https://petcomputacaoufrgs.github.io/cv-guide',
@@ -134,8 +134,8 @@ export const projects: (ProjectType | CourseType)[] = [
     href: '/projects/papagaio',
     status: 'concluído',
     card_banner:
-      'https://images.pexels.com/photos/3973557/pexels-photo-3973557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    page_icon: '',
+      'https://images.pexels.com/photos/3973557/pexels-photo-3973557.jpeg?auto=compress&cs=tinysrgb&w=3053&h=4733&dpr=1',
+    page_icon: 'https://cdn-icons-png.flaticon.com/512/2417/2417577.png',
     name: 'Papagaio',
     description: '',
     axis: ['pesquisa'],
@@ -162,8 +162,8 @@ export const projects: (ProjectType | CourseType)[] = [
     href: '/projects/pinguim',
     status: 'concluído',
     card_banner:
-      'https://images.pexels.com/photos/3973557/pexels-photo-3973557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    page_icon: '',
+      'https://images.pexels.com/photos/3973557/pexels-photo-3973557.jpeg?auto=compress&cs=tinysrgb&w=3053&h=4733&dpr=1',
+    page_icon: 'https://cdn-icons-png.flaticon.com/512/2417/2417577.png',
     name: 'Pinguim',
     description: '',
     axis: ['desenvolvimento', 'ensino'],
@@ -195,7 +195,7 @@ export const projects: (ProjectType | CourseType)[] = [
   {
     type: 'curso',
     card_banner:
-      'https://images.pexels.com/photos/3973557/pexels-photo-3973557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      'https://images.pexels.com/photos/3973557/pexels-photo-3973557.jpeg?auto=compress&cs=tinysrgb&w=3053&h=4733&dpr=1',
     name: 'Arduino',
     description: 'Uma introdução ao arduíno',
     href: 'https://petcomputacaoufrgs.github.io/intro-ao-arduino',
@@ -203,7 +203,7 @@ export const projects: (ProjectType | CourseType)[] = [
   {
     type: 'curso',
     card_banner:
-      'https://images.pexels.com/photos/3973557/pexels-photo-3973557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      'https://images.pexels.com/photos/3973557/pexels-photo-3973557.jpeg?auto=compress&cs=tinysrgb&w=3053&h=4733&dpr=1',
     name: 'Desenvolvimento Web',
     description: 'Uma introdução ao desenvolvimento Web',
     href: 'https://breezy-moonflower-d72.notion.site/O-mini-guia-de-web-para-iniciantes-668009c833624c0c83a782ac9d13216d',
@@ -211,7 +211,7 @@ export const projects: (ProjectType | CourseType)[] = [
   {
     type: 'curso',
     card_banner:
-      'https://images.pexels.com/photos/3973557/pexels-photo-3973557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      'https://images.pexels.com/photos/3973557/pexels-photo-3973557.jpeg?auto=compress&cs=tinysrgb&w=3053&h=4733&dpr=1',
     name: 'Machine Learning',
     description: 'Uma introdução ao aprendizado de máquina',
     href: 'https://petcomputacaoufrgs.github.io/ml-course',
@@ -221,8 +221,8 @@ export const projects: (ProjectType | CourseType)[] = [
     href: '/projects/raposa',
     status: 'ativo',
     card_banner:
-      'https://images.pexels.com/photos/3973557/pexels-photo-3973557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    page_icon: '',
+      'https://images.pexels.com/photos/3973557/pexels-photo-3973557.jpeg?auto=compress&cs=tinysrgb&w=3053&h=4733&dpr=1',
+    page_icon: 'https://cdn-icons-png.flaticon.com/512/2417/2417577.png',
     name: 'Raposa',
     description: '',
     axis: ['desenvolvimento', 'ensino'],
@@ -240,7 +240,7 @@ export const projects: (ProjectType | CourseType)[] = [
   {
     type: 'curso',
     card_banner:
-      'https://images.pexels.com/photos/3973557/pexels-photo-3973557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      'https://images.pexels.com/photos/3973557/pexels-photo-3973557.jpeg?auto=compress&cs=tinysrgb&w=3053&h=4733&dpr=1',
     name: 'PyTorch',
     description: 'Uma introdução ao PyTorch',
     href: 'https://petcomputacaoufrgs.github.io/ml-guide',
@@ -248,7 +248,7 @@ export const projects: (ProjectType | CourseType)[] = [
   {
     type: 'curso',
     card_banner:
-      'https://images.pexels.com/photos/3973557/pexels-photo-3973557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      'https://images.pexels.com/photos/3973557/pexels-photo-3973557.jpeg?auto=compress&cs=tinysrgb&w=3053&h=4733&dpr=1',
     name: 'SDR',
     description: 'Uma introdução a Software Defined Radio',
     href: 'https://petcomputacaoufrgs.github.io/minic_sdr',
@@ -258,8 +258,8 @@ export const projects: (ProjectType | CourseType)[] = [
     href: '/projects/castor',
     status: 'ativo',
     card_banner:
-      'https://images.pexels.com/photos/3973557/pexels-photo-3973557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    page_icon: '',
+      'https://images.pexels.com/photos/3973557/pexels-photo-3973557.jpeg?auto=compress&cs=tinysrgb&w=3053&h=4733&dpr=1',
+    page_icon: 'https://cdn-icons-png.flaticon.com/512/2417/2417577.png',
     name: 'Castor',
     description: '',
     axis: ['desenvolvimento', 'ensino'],
@@ -283,8 +283,8 @@ export const projects: (ProjectType | CourseType)[] = [
     href: '/projects/mico-leao',
     status: 'ativo',
     card_banner:
-      'https://images.pexels.com/photos/3973557/pexels-photo-3973557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    page_icon: '',
+      'https://images.pexels.com/photos/3973557/pexels-photo-3973557.jpeg?auto=compress&cs=tinysrgb&w=3053&h=4733&dpr=1',
+    page_icon: 'https://cdn-icons-png.flaticon.com/512/2417/2417577.png',
     name: 'Mico Leão',
     description: '',
     axis: ['pesquisa'],

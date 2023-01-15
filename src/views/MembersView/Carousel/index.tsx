@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useRef } from 'react'
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react'
 
@@ -15,7 +15,7 @@ import Title from '@/components/Title'
 import { Container, FillAvailable, NavigationButton } from './styles'
 import Icon from '@/components/Icon'
 
-export default function App() {
+const Carousel = () => {
   const swiperRef: any = useRef()
 
   return (
@@ -51,3 +51,4 @@ export default function App() {
     </Container>
   )
 }
+export default Carousel

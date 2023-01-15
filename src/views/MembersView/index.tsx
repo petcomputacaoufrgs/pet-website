@@ -1,12 +1,12 @@
-import BackButton from '@/components/BackButton'
+import BackHomeButton from '@/components/BackHomeButton'
 import Footer from '@/components/Footer'
 import { CarouselContainer, Container } from './styles'
-import Test from './Test'
+import Test from './Carousel'
 
 const MembersView = () => {
   return (
     <Container>
-      <BackButton />
+      <BackHomeButton color="gray" />
       <CarouselContainer>
         <Test />
       </CarouselContainer>

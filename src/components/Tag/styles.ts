@@ -12,9 +12,15 @@ const BaseTag = styled.span.attrs((props: PropTypeTag) => ({
   border-radius: 1rem;
   width: fit-content;
   margin: 0.3rem 0;
+  color: #e4dadf;
+  cursor: default;
 `
 
 export const SmallTag = styled(BaseTag)`
-  color: #e4dadf;
   font-size: 0.688rem;
+`
+
+export const LargeTag = styled(BaseTag)`
+  font-size: 0.875rem;
+  margin-right: 0.5rem;
 `
