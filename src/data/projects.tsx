@@ -16,7 +16,8 @@ const hidraProject: ProjectType = {
     'https://images.pexels.com/photos/612964/pexels-photo-612964.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1280&dpr=1',
   page_icon: 'https://cdn-icons-png.flaticon.com/512/477/477167.png',
   name: 'Hidra',
-  description: '',
+  description:
+    'Simulador para as máquinas teóricas utilizadas nas cadeiras de Arquitetura de Computadores',
   axis: ['desenvolvimento', 'ensino'],
   text: [
     'O projeto Hidra foi desenvolvido pelo PET Computação há alguns anos e retomado em 2020 para manutenção. Seu objetivo é auxiliar os alunos no aprendizado de máquinas hipotéticas que são estudadas nas disciplinas de Arquitetura de Computadores.',
@@ -42,7 +43,8 @@ const dinoProject: ProjectType = {
     'https://images.pexels.com/photos/1319591/pexels-photo-1319591.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1280&dpr=1',
   page_icon: 'https://cdn-icons-png.flaticon.com/512/2206/2206593.png',
   name: 'Dino App',
-  description: '',
+  description:
+    'Uma PWA para auxiliar no acompanhamento tratamento de pacientes com câncer',
   axis: ['desenvolvimento'],
   text: [
     'Dino, como é carinhosamente chamado, é um aplicativo feito em parceria com o Hospital de Clínicas de Porto Alegre e tem como principal objetivo incentivar crianças em tratamento de câncer infantil a seguirem sua rotina médica.',
@@ -63,7 +65,8 @@ const loboProject: ProjectType = {
     'https://images.pexels.com/photos/1573134/pexels-photo-1573134.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1280&dpr=1',
   page_icon: 'https://cdn-icons-png.flaticon.com/512/616/616457.png',
   name: 'LoBo Brain',
-  description: '',
+  description:
+    'Uma IA que utiliza Reinforcement Learning para jogar jogos de tabuleiro',
   axis: ['pesquisa'],
   text: [
     'O Projeto LoBo Brain nasceu em 2019 através de uma sugestão do professor Renato Ribas: ampliar seu projeto Lobo Games para o meio digital.',
@@ -88,7 +91,8 @@ const cafeComPetProject: ProjectType = {
     'https://images.pexels.com/photos/9968610/pexels-photo-9968610.jpeg?auto=compress&cs=tinysrgb&w=1280&h=1920&dpr=1',
   page_icon: 'https://cdn-icons-png.flaticon.com/512/763/763695.png',
   name: 'Café com PET',
-  description: '',
+  description:
+    'Foco em aproximar o PET da comunidade, trazendo assuntos de relevância',
   axis: ['interação'],
   text: [
     'Criado em 2020 pelos petianos Jordi e Ricardo, o projeto tem o desejo de trazer discussões mais próximas à comunidade acadêmica sobre assuntos que vão além da faculdade.',
@@ -108,7 +112,8 @@ const dragaoProject: ProjectType = {
     'https://images.pexels.com/photos/7715003/pexels-photo-7715003.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1280&dpr=1',
   page_icon: 'https://cdn-icons-png.flaticon.com/512/477/477161.png',
   name: 'Dragão',
-  description: '',
+  description:
+    'Gerência das redes sociais, promovendo interação e divulgação das atividades do PET',
   axis: ['interação'],
   text: [
     'Com a pandemia, as redes sociais tornaram-se veículos de divulgação e comunicação ainda mais importantes para as organizações.',
@@ -129,7 +134,7 @@ const papagaioCourse: ProjectType = {
     'https://images.pexels.com/photos/11932512/pexels-photo-11932512.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1280&dpr=1',
   page_icon: 'https://cdn-icons-png.flaticon.com/512/697/697064.png',
   name: 'Papagaio',
-  description: '',
+  description: 'Uma IA que utiliza PLN para explorar o universo da música',
   axis: ['pesquisa'],
   text: [
     'A música reconstitui a linguagem como uma sequência temporal de sons articulados. Elas dizem algo, geralmente algo humano.',
@@ -158,7 +163,8 @@ const pinguimProject: ProjectType = {
     'https://images.pexels.com/photos/1299391/pexels-photo-1299391.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1280&dpr=1',
   page_icon: 'https://cdn-icons-png.flaticon.com/512/1864/1864694.png',
   name: 'Pinguim',
-  description: '',
+  description:
+    'Uma reformulação das máquinas teóricas utilizadas na cadeira de Teoria da Computação',
   axis: ['desenvolvimento', 'ensino'],
   text: [
     'O projeto Pinguim foi criado em 2021 e tem como propósito reformular os simuladores de máquinas teóricas utilizadas na disciplina de Teoria da Computação.',
@@ -194,7 +200,8 @@ const raposaProject: ProjectType = {
     'https://images.pexels.com/photos/271905/pexels-photo-271905.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1280&dpr=1',
   page_icon: 'https://cdn-icons-png.flaticon.com/512/2612/2612051.png',
   name: 'Raposa',
-  description: '',
+  description:
+    'Criação de um jogo para incentivar a entrada de pessoas na área de computação',
   axis: ['desenvolvimento', 'ensino'],
   text: [
     'O projeto Raposa foi idealizado no final de 2021 e desde então está em intenso desenvolvimento, com uma grande e talentosa equipe!',
@@ -216,7 +223,8 @@ const castorProject: ProjectType = {
     'https://images.pexels.com/photos/12899887/pexels-photo-12899887.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1280&dpr=1',
   page_icon: 'https://cdn-icons-png.flaticon.com/512/2611/2611984.png',
   name: 'Castor',
-  description: '',
+  description:
+    'Ferramentas que possam auxiliar alunos com tarefas de desenvolvimento ao longo do curso',
   axis: ['desenvolvimento', 'ensino'],
   text: [
     'O Projeto Castor tem como objetivo disponibilizar aos alunos da UFRGS diversas ferramentas que auxiliem os alunos com tarefas de desenvolvimento, em principal tarefas de build.',
@@ -242,10 +250,11 @@ const micoLeaoProject: ProjectType = {
     'https://images.pexels.com/photos/3973557/pexels-photo-3973557.jpeg?auto=compress&cs=tinysrgb&w=3053&h=4733&dpr=1',
   page_icon: 'https://cdn-icons-png.flaticon.com/512/2417/2417577.png',
   name: 'Mico Leão',
-  description: '',
+  description:
+    'Materiais de introdução ao tema de IA, tópico muito em alta nos últimos anos',
   axis: ['pesquisa'],
   text: [
-    'Os tópicos de Inteligência Artificial e, em especial, Machine Learning (ML) têm atualmente crescido em popularidade tanto no ambiente acadêmico quanto do mercado, com uma gama de novas tecnologias surgindo nos últimos anos.',
+    'Os tópicos de Inteligência Artificial e, em especial, Machine Learning (ML), têm atualmente crescido em popularidade tanto no ambiente acadêmico quanto do mercado, com uma gama de novas tecnologias surgindo nos últimos anos.',
     'O PET Computação tem tido interesse nessas áreas e criado projetos relacionados nos últimos anos, com o mais recente tendo sido o projeto Papagaio.',
     'Atualmente, o grupo novamente demonstra interesse na criação de materiais e programas que exploram o tópico de Machine Learning.',
     'Como resultado de projetos anteriores o grupo possui um material introdutório sobre o assunto, porém sente que há ainda bastante espaço para evolução deste material para permitir um aprendizado mais autônomo e interessante.',
