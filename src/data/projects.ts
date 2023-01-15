@@ -1,9 +1,4 @@
-import Test from '@/customComponents/Test'
 import { ProjectType, CourseType } from '@/types/projectsType'
-import { ConvertReactComponentToString } from '@/utils/convertToString'
-
-// Componentes customizados
-const CustomMicoLeao = ConvertReactComponentToString(<Test />)
 
 //
 //
@@ -42,7 +37,7 @@ const dinoProject: ProjectType = {
   card_banner:
     'https://images.pexels.com/photos/1319591/pexels-photo-1319591.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1280&dpr=1',
   page_icon: 'https://cdn-icons-png.flaticon.com/512/2206/2206593.png',
-  name: 'Dino App',
+  name: 'Dino',
   description:
     'Uma PWA para auxiliar no acompanhamento tratamento de pacientes com câncer',
   axis: ['desenvolvimento'],
@@ -55,6 +50,13 @@ const dinoProject: ProjectType = {
     'Bernardo Borba, Eduarda Waechter, Heric Rodrigues, João Pedro Silva, Léo de Vasconcelos, Mayra Cademartori e Vic Duarte',
   tools:
     'Figma, Canva, Photoshop, Typescript, HTML, CSS, ReactJS, Java, Spring e PostgreSQL',
+  cta: [
+    {
+      label: 'veja o github do nosso projeto',
+      href: 'https://github.com/petcomputacaoufrgs/DinoApp',
+    },
+  ],
+  customContent: 'LittleDino',
 }
 
 const loboProject: ProjectType = {
@@ -102,6 +104,12 @@ const cafeComPetProject: ProjectType = {
   members:
     'Bernardo Beneduzi, Eduarda Waechter, Heloísa de Carvalho, Heric Rodrigues, Jordi Pujol, Léo de Vasconcelos, Matheus Almeida, Nathan Alonso, Nicolle Favero e Vic Duarte',
   tools: 'StreamYard, YouTube',
+  cta: [
+    {
+      label: 'acesse nossa playlist no YouTube',
+      href: 'https://youtube.com/playlist?list=PL4GEvoptYkwnwL9yurnI2oxhKHyBbEInY',
+    },
+  ],
 }
 
 const dragaoProject: ProjectType = {
@@ -213,6 +221,16 @@ const raposaProject: ProjectType = {
   members:
     'Henrique Carniel, Ian Kersz, Léo Vasconcelos, Luccas Lima, Matheus Almeida, Sofia Maciel, Vitor Caruso e Vic Duarte',
   tools: 'C#, Unity, Aseprite',
+  cta: [
+    {
+      label: 'veja o github desse projeto',
+      href: 'https://github.com/petcomputacaoufrgs/raposa',
+    },
+    {
+      label: 'confira a demo do projeto',
+      href: 'https://www.inf.ufrgs.br/pet/raposa-demo/',
+    },
+  ],
 }
 
 const castorProject: ProjectType = {
@@ -262,7 +280,6 @@ const micoLeaoProject: ProjectType = {
   members:
     'Galeano Domingues, Henrique Carniel, Ian Kersz, João Vítor Schimuneck de Souza, José Henrique Lima, Marcos Reckers e Pedro Poli Miola',
   tools: 'Python e Jupyter',
-  customContent: CustomMicoLeao,
 }
 
 //

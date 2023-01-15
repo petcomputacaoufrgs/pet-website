@@ -38,6 +38,7 @@ const Carousel = () => {
           1920: { slidesPerView: 4 },
           2560: { slidesPerView: 6 },
         }}
+        loop={true}
         spaceBetween={30}
         cssMode={true}
         onBeforeInit={(swiper) => {

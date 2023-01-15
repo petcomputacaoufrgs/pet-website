@@ -61,8 +61,12 @@ export const ArrowLeft = styled(ArrowBase).attrs((props: ArrowColorType) => ({
   }
 `
 
-export const ArrowRight = styled.a`
+export const ArrowRight = styled(ArrowBase)`
   & svg {
     margin-left: 0.6rem;
+  }
+
+  @media ${devices.desktopS} {
+    margin-right: 4rem;
   }
 `

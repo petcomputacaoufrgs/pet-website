@@ -1,5 +1,5 @@
 import { devices } from '@/styles/devices'
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 
 export const Container = styled.div`
   position: relative;
@@ -133,10 +133,6 @@ export const ExtraInfoContainer = styled.div`
     align-items: center;
   }
 
-  @media ${devices.desktopM} {
-    grid-template-columns: 10rem auto;
-  }
-
   @media ${devices.desktopL} {
     grid-template-columns: 9rem auto;
     font-size: 1.25rem;
@@ -156,5 +152,9 @@ export const Subtitle = styled.h3`
 export const CtaContainer = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+
+  @media ${devices.desktopS} {
+    flex-direction: row;
+  }
 `

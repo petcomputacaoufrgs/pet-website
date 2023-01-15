@@ -11,7 +11,7 @@ export type ProjectType = {
   members: string
   tools: string
   cta?: { label: string; href: string }[]
-  customContent?: React.ReactNode
+  customContent?: string
 }
 
 export type CourseType = {

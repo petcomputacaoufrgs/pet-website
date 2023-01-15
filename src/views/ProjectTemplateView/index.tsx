@@ -1,4 +1,3 @@
-import { Parser } from 'html-to-react'
 import isMobile from '@/hooks/isMobile'
 import ButtonLink from '@/components/ButtonLink'
 import Footer from '@/components/Footer'
@@ -22,6 +21,7 @@ import {
   Text,
 } from './styles'
 import { ProjectType } from '@/types/projectsType'
+import React from 'react'
 
 const ProjectTemplateView = () => {
   const mobile = isMobile()
@@ -32,6 +32,12 @@ const ProjectTemplateView = () => {
     let content = projects.find((project) => project.href === currentPath)
     setContent(content as ProjectType)
   }, [])
+
+  const getCustomComponent = (customComponent: string) => {
+    const importedComponentModule = require('@/customComponents/' +
+      customComponent).default
+    return React.createElement(importedComponentModule)
+  }
 
   return (
     <>
@@ -76,14 +82,11 @@ const ProjectTemplateView = () => {
                     type={'arrow-right'}
                     label={cta.label}
                     href={cta.href}
+                    target={'_blank'}
                   />
                 ))}
             </CtaContainer>
-            {content.customContent ? (
-              Parser().parse(content.customContent)
-            ) : (
-              <></>
-            )}
+            {content.customContent && getCustomComponent(content.customContent)}
           </Main>
           <Footer />
         </Container>
