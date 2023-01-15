@@ -24,6 +24,7 @@ const MemberCard = ({ member, index }: IMemberCard) => {
         return 'Orientadore'
     }
   }
+
   return (
     <Container>
       <CardHeader>

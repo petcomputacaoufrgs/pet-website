@@ -5,7 +5,7 @@ import Footer from '@/components/Footer'
 import ImgBanner from '@/components/ImgBanner'
 import Tag from '@/components/Tag'
 import Title from '@/components/Title'
-import { ProjectType, projects } from '@/data/projects'
+import { projects } from '@/data/projects'
 import { useEffect, useState } from 'react'
 import {
   BackHomeContainer,
@@ -21,6 +21,7 @@ import {
   TagContainer,
   Text,
 } from './styles'
+import { ProjectType } from '@/types/projectsType'
 
 const ProjectTemplateView = () => {
   const mobile = isMobile()

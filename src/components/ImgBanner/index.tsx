@@ -1,5 +1,6 @@
 import { Container, Image, ImgFilter } from './styles'
-const ImgBanner = ({ src, height }: { src: string; height: number }) => {
+import { IImgBanner } from './types'
+const ImgBanner = ({ src, height }: IImgBanner) => {
   return (
     <Container height={height}>
       <Image src={src} height={height} />

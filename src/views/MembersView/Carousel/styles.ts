@@ -6,7 +6,7 @@ export const Container = styled.div`
 `
 
 export const NavigationButton = styled.button`
-  background-color: #950020;
+  background-color: ${(props) => props.theme.colors.details};
   border: none;
   height: 3rem;
   width: 3rem;

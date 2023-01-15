@@ -2,7 +2,7 @@ import { devices } from '@/styles/devices'
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  background-color: #e4dadf;
+  background-color: ${(props) => props.theme.colors.secondary};
   padding: 2.5rem 2rem;
   width: 100vw;
   text-align: center;

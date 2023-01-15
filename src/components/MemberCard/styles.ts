@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  background-color: #666564;
+  background-color: ${(props) => props.theme.colors.details2};
   color: white;
   width: 100%;
   max-width: 20rem;
@@ -21,7 +21,7 @@ export const CardHeader = styled.div`
 export const CardNumber = styled.span`
   font-size: 8rem;
   line-height: 8rem;
-  color: #e4dadf;
+  color: ${(props) => props.theme.colors.secondary};
   position: absolute;
   top: 1rem;
   left: 1rem;

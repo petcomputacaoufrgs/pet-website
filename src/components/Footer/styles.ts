@@ -6,7 +6,7 @@ export const Container = styled.footer`
   bottom: 0;
   width: 100vw;
   padding: 2rem;
-  background-color: #4d4c52;
+  background-color: ${(props) => props.theme.colors.primary};
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -29,7 +29,7 @@ export const Container = styled.footer`
 export const ContactUs = styled.h3`
   font-size: 2rem;
   font-weight: 500;
-  color: #e87180;
+  color: ${(props) => props.theme.colors.accentLighter};
 `
 
 export const EmailContainer = styled.div`
@@ -40,14 +40,14 @@ export const EmailContainer = styled.div`
 
 export const Email = styled.p`
   font-size: 1.25rem;
-  color: #fbf9fb;
+  color: ${(props) => props.theme.colors.white};
   margin-left: 0.5rem;
 `
 
 export const SocialMedia = styled.h4`
   font-size: 1.25rem;
   font-weight: 500;
-  color: #e87180;
+  color: ${(props) => props.theme.colors.accentLighter};
   margin-top: 1.5rem;
 
   @media ${devices.desktopS} {

@@ -3,8 +3,8 @@ import styled from 'styled-components'
 import { ArrowColorType } from './types'
 
 export const Link = styled.a`
-  background-color: #dd5b6c;
-  color: #fbf9fb;
+  background-color: ${(props) => props.theme.colors.accent};
+  color: ${(props) => props.theme.colors.white};
   border-radius: 3rem;
   padding: 0.75rem 2.5rem;
   margin: 1rem 0;
@@ -12,7 +12,7 @@ export const Link = styled.a`
   font-size: 1rem;
 
   &:hover {
-    background-color: #950020;
+    background-color: ${(props) => props.theme.colors.details};
   }
 
   @media ${devices.desktopS} {
@@ -20,32 +20,8 @@ export const Link = styled.a`
   }
 `
 
-export const ArrowLeft = styled.a.attrs((props: ArrowColorType) => ({
-  color: props.color,
-}))<ArrowColorType>`
-  padding: 1.5rem 0 0 1.5rem;
-  font-size: 1.25rem;
-  font-weight: 500;
-  display: flex;
-  align-items: center;
-  color: ${(props) => (props.color === 'default' ? '#4d4c52' : '#FBF9FB')};
-
-  & svg {
-    margin-right: 0.6rem;
-    fill: ${(props) => (props.color === 'default' ? '#4d4c52' : '#FBF9FB')};
-  }
-
-  &:hover {
-    color: ${(props) => (props.color === 'default' ? '#950020' : '#e87180')};
-
-    svg {
-      fill: ${(props) => (props.color === 'default' ? '#950020' : '#e87180')};
-    }
-  }
-`
-
-export const ArrowRight = styled.a`
-  color: #4d4c52;
+const ArrowBase = styled.a`
+  color: ${(props) => props.theme.colors.primary};
   font-size: 1.25rem;
   font-weight: 500;
   display: flex;
@@ -53,15 +29,40 @@ export const ArrowRight = styled.a`
   margin: 0.5rem 0;
 
   & svg {
-    margin-left: 0.6rem;
-    fill: #4d4c52;
+    fill: ${(props) => props.theme.colors.primary};
   }
 
   &:hover {
-    color: #e87180;
+    color: ${(props) => props.theme.colors.accentLighter};
 
     svg {
-      fill: #e87180;
+      fill: ${(props) => props.theme.colors.accentLighter};
     }
+  }
+`
+
+export const ArrowLeft = styled(ArrowBase).attrs((props: ArrowColorType) => ({
+  color: props.color,
+}))<ArrowColorType>`
+  padding: 1.5rem 0 0 1.5rem;
+  color: ${(props) => props.color === 'white' && props.theme.colors.white};
+  & svg {
+    margin-right: 0.6rem;
+    fill: ${(props) => props.color === 'white' && props.theme.colors.white};
+  }
+
+  &:hover {
+    color: ${(props) =>
+      props.color === 'default' && props.theme.colors.details};
+    svg {
+      fill: ${(props) =>
+        props.color === 'default' && props.theme.colors.details};
+    }
+  }
+`
+
+export const ArrowRight = styled.a`
+  & svg {
+    margin-left: 0.6rem;
   }
 `

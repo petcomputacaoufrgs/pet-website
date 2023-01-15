@@ -8,7 +8,7 @@ type PropTypeTitle = {
 export const TitleStyle = styled.h1.attrs((props: PropTypeTitle) => ({
   variant: props.variant,
 }))<PropTypeTitle>`
-  color: #343239;
+  color: ${(props) => props.theme.colors.black};
   font-size: ${(props) =>
     props.variant === 'secondary' ? '2.4rem' : '3.2rem'};
   font-weight: 500;
@@ -23,7 +23,7 @@ export const TitleStyle = styled.h1.attrs((props: PropTypeTitle) => ({
 `
 
 export const SubtitleStyle = styled.h2`
-  color: #343239;
+  color: ${(props) => props.theme.colors.black};
   font-size: 2.125rem;
   font-weight: 500;
 
@@ -31,11 +31,3 @@ export const SubtitleStyle = styled.h2`
     font-size: 2.6rem;
   }
 `
-
-/*
-${(props) =>
-    props.variant === 'secondary' &&
-    `@media ${devices.desktopS} {
-    font-size: 2.4rem;
-  }`}
-*/

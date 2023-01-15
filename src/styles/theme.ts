@@ -5,6 +5,7 @@ interface ThemeInterface {
     accent: string
     accentLighter: string
     details: string
+    details2: string
     white: string
     black: string
   }
@@ -17,6 +18,7 @@ export const theme: ThemeInterface = {
     accent: '#DD5B6C',
     accentLighter: '#e87180',
     details: '#950020',
+    details2: '#666564',
     white: '#FBF9FB',
     black: '#343239',
   },

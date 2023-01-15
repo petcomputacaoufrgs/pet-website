@@ -1,10 +1,4 @@
-export type MemberType = {
-  name: string
-  imgUrl: string
-  course: 'cic' | 'ecp' | 'orientador'
-  semester: string
-  interest: string
-}
+import { MemberType } from '@/types/memberType'
 
 export const members: MemberType[] = [
   {
@@ -69,15 +63,6 @@ export const members: MemberType[] = [
     interest: 'Desenvolvimento de Software',
   },
   {
-    name: 'Luccas',
-    imgUrl:
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdyLCjkiQJy69HsdW6m_19HttsegclGQOFBQ&usqp=CAU',
-
-    course: 'ecp',
-    semester: '2020/1',
-    interest: 'Desenvolvimento de Jogos',
-  },
-  {
     name: 'Marcos',
     imgUrl:
       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdyLCjkiQJy69HsdW6m_19HttsegclGQOFBQ&usqp=CAU',
@@ -85,14 +70,6 @@ export const members: MemberType[] = [
     course: 'cic',
     semester: '2022/2',
     interest: 'Engenharia de Software e IA',
-  },
-  {
-    name: 'Nathan',
-    imgUrl:
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdyLCjkiQJy69HsdW6m_19HttsegclGQOFBQ&usqp=CAU',
-    course: 'ecp',
-    semester: '2021/1',
-    interest: 'IA',
   },
   {
     name: 'Pedro',
@@ -111,14 +88,5 @@ export const members: MemberType[] = [
     course: 'cic',
     semester: '2020/1',
     interest: 'Desenvolvimento de Jogos',
-  },
-  {
-    name: 'Vítor',
-    imgUrl:
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdyLCjkiQJy69HsdW6m_19HttsegclGQOFBQ&usqp=CAU',
-
-    course: 'cic',
-    semester: '2020/1',
-    interest: 'Ciência de Dados',
   },
 ]

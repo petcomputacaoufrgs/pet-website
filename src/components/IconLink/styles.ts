@@ -2,10 +2,10 @@ import styled from 'styled-components'
 
 export const Container = styled.a`
   & svg {
-    fill: #fbf9fb;
+    fill: ${(props) => props.theme.colors.white};
   }
 
   &:hover svg {
-    fill: #ea989c;
+    fill: ${(props) => props.theme.colors.accentLighter};
   }
 `

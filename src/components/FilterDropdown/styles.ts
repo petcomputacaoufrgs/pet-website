@@ -6,7 +6,7 @@ export const Container = styled.div`
 `
 
 export const DropdownInput = styled.button`
-  background-color: #dd5b6cb3;
+  background-color: ${(props) => props.theme.colors.accent + 'b3'};
   border: none;
   border-radius: 1rem;
   color: white;
@@ -21,7 +21,7 @@ export const DropdownInput = styled.button`
 export const VerticalLine = styled.div`
   width: 1px;
   height: 1rem;
-  background-color: #fbf9fb66;
+  background-color: ${(props) => props.theme.colors.white + '66'};
   margin: 0 0.4rem;
 `
 
@@ -43,11 +43,13 @@ export const OptionsContainer = styled.div`
   top: 100%;
   z-index: 5;
   padding: 0.3rem 0.8rem;
-  background-color: #fbf9fb;
+  background-color: ${(props) => props.theme.colors.white};
   text-align: left;
   font-size: 1rem;
   width: max-content;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(
+    0px 4px 4px ${(props) => props.theme.colors.black + '40'}
+  );
 `
 
 export const InputContainer = styled.div`

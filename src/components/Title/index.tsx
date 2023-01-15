@@ -1,14 +1,7 @@
 import { SubtitleStyle, TitleStyle } from './styles'
+import { ITitle } from './types'
 
-const Title = ({
-  type,
-  variant = 'primary',
-  text,
-}: {
-  type: 'h1' | 'h2'
-  variant?: 'primary' | 'secondary'
-  text: string
-}) => {
+const Title = ({ type, variant = 'primary', text }: ITitle) => {
   const getTitle = () => {
     switch (type) {
       case 'h1':

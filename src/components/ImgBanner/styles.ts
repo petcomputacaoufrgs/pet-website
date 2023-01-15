@@ -17,7 +17,7 @@ export const Image = styled.img`
 `
 
 export const ImgFilter = styled.div`
-  background-color: #343239bf;
+  background-color: ${(props) => props.theme.colors.primary + 'bf'};
   position: absolute;
   top: 0;
   left: 0;

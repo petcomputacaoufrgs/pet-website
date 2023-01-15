@@ -5,7 +5,7 @@ export const Container = styled.div`
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: #e4dadf;
+  background-color: ${(props) => props.theme.colors.secondary};
   padding-bottom: 14.375rem;
   @media ${devices.desktopS} {
     padding-bottom: 8.5rem;

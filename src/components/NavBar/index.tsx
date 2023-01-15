@@ -1,10 +1,7 @@
 import { Link, Navbar } from './styles'
+import { INavBar } from './types'
 
-const NavBar = ({
-  navData,
-}: {
-  navData: { label: string; href: string }[]
-}) => {
+const NavBar = ({ navData }: INavBar) => {
   return (
     <Navbar size={navData.length}>
       {navData.map((navItem, index) => (

@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   position: relative;
-  background-color: #e4dadf;
+  background-color: ${(props) => props.theme.colors.secondary};
   min-height: 100vh;
   padding-bottom: 14.375rem;
   @media ${devices.desktopS} {
@@ -63,7 +63,7 @@ export const IconContainer = styled.div`
 `
 
 export const Circle = styled.div`
-  background-color: #950020;
+  background-color: ${(props) => props.theme.colors.details};
   border-radius: 50%;
   margin: 1.5rem 0 0 1.5rem;
   width: 4.6rem;
@@ -144,7 +144,7 @@ export const ExtraInfoContainer = styled.div`
 `
 
 export const Subtitle = styled.h3`
-  color: #950020;
+  color: ${(props) => props.theme.colors.details};
   font-weight: 600;
   margin: 1.25rem 0 0.5rem;
 
