@@ -15,7 +15,7 @@ const WhoWeAre = () => {
   return (
     <Container id="who-we-are">
       <div>
-        <Title type={'h2'} text={'Quem somos?'} />
+        <Title type={'section'} text={'Quem somos?'} />
         <Text>
           O PET Computação é um grupo composto por estudantes de graduação dos
           cursos de Ciência da Computação e Engenharia da Computação.

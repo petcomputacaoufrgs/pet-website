@@ -1,13 +1,17 @@
-import { SubtitleStyle, TitleStyle } from './styles'
+import { PageTitle, SectionTitle, ProjectTitle, DefaultTitle } from './styles'
 import { ITitle } from './types'
 
-const Title = ({ type, variant = 'primary', text }: ITitle) => {
+const Title = ({ type, text }: ITitle) => {
   const getTitle = () => {
     switch (type) {
-      case 'h1':
-        return <TitleStyle variant={variant}>{text}</TitleStyle>
-      case 'h2':
-        return <SubtitleStyle>{text}</SubtitleStyle>
+      case 'page':
+        return <PageTitle>{text}</PageTitle>
+      case 'project':
+        return <ProjectTitle>{text}</ProjectTitle>
+      case 'section':
+        return <SectionTitle>{text}</SectionTitle>
+      default:
+        return <DefaultTitle>{text}</DefaultTitle>
     }
   }
   return getTitle()

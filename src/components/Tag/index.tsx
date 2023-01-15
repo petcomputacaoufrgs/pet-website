@@ -1,4 +1,4 @@
-import { LargeTag, SmallTag } from './styles'
+import { BaseTag, LargeTag } from './styles'
 import { ITag } from './types'
 
 const Tag = ({ label }: ITag) => {
@@ -25,7 +25,7 @@ const Tag = ({ label }: ITag) => {
   return (
     <>
       {label === 'projeto' || label === 'curso' ? (
-        <SmallTag color={getTagColor()}>{label}</SmallTag>
+        <BaseTag color={getTagColor()}>{label}</BaseTag>
       ) : (
         <LargeTag color={getTagColor()}>{label}</LargeTag>
       )}

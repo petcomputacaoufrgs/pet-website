@@ -51,11 +51,7 @@ const ProjectTemplateView = () => {
               <Img src={content.page_icon} />
               <Circle />
             </IconContainer>
-            <Title
-              type={'h1'}
-              variant={'secondary'}
-              text={`Projeto ${content.name}`}
-            />
+            <Title type={'project'} text={`Projeto ${content.name}`} />
           </Header>
           <Main>
             <TagContainer>

@@ -1,16 +1,11 @@
 import ImgBanner from '@/components/ImgBanner'
 import NavBar from '@/components/NavBar'
+import Title from '@/components/Title'
 import { navbar } from '@/data/navbar'
 import isMobile from '@/hooks/isMobile'
 import bgImg from '../../../images/banner.jpg'
 import logoPet from '../../../images/LogoPET.png'
-import {
-  Container,
-  Description,
-  InfoContainer,
-  MainTitle,
-  TopBanner,
-} from './styles'
+import { Container, Description, InfoContainer, TopBanner } from './styles'
 
 const Banner = () => {
   const mobile = isMobile()
@@ -24,7 +19,7 @@ const Banner = () => {
           {!mobile && <NavBar navData={navbar} />}
         </TopBanner>
         <div>
-          <MainTitle>PET COMPUTAÇÃO UFRGS</MainTitle>
+          <Title type={'page'} text={'PET COMPUTAÇÃO UFRGS'} />
           <Description>
             Programa de Educação Tutorial Computação UFRGS
           </Description>

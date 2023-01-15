@@ -13,7 +13,7 @@ const MembersView = () => {
       <ButtonLink type={'arrow-left'} label={'voltar a home'} href={'/'} />
       {mobile && (
         <TitleContainer>
-          <Title type={'h1'} text={'Nossos Petianos'} />
+          <Title text={'Nossos Petianos'} />
         </TitleContainer>
       )}
       <CarouselContainer>

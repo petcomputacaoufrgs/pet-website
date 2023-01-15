@@ -27,7 +27,7 @@ const Carousel = () => {
       </NavigationButton>
       {!mobile && (
         <FillAvailable>
-          <Title type={'h1'} text={'Nossos Petianos'} />
+          <Title text={'Nossos Petianos'} />
         </FillAvailable>
       )}
       <Swiper
