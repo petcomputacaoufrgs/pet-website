@@ -1,3 +1,7 @@
+import { Convert } from '@/utils/test'
+
+const Nha = Convert()
+
 export type ProjectType = {
   type: 'projeto'
   href: string
@@ -11,6 +15,7 @@ export type ProjectType = {
   members: string
   tools: string
   cta?: { label: string; href: string }[]
+  customContent?: React.ReactNode
 }
 
 export type CourseType = {
@@ -22,6 +27,31 @@ export type CourseType = {
 }
 
 export const projects: (ProjectType | CourseType)[] = [
+  {
+    type: 'projeto',
+    href: '/projects/hidra',
+    status: 'ativo',
+    card_banner:
+      'https://images.pexels.com/photos/612964/pexels-photo-612964.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1280&dpr=1',
+    page_icon: 'https://cdn-icons-png.flaticon.com/512/477/477167.png',
+    name: 'Hidra',
+    description: '',
+    axis: ['desenvolvimento', 'ensino'],
+    text: [
+      'O projeto Hidra foi desenvolvido pelo PET Computação há alguns anos e retomado em 2020 para manutenção. Seu objetivo é auxiliar os alunos no aprendizado de máquinas hipotéticas que são estudadas nas disciplinas de Arquitetura de Computadores.',
+      'Nessa disciplina, os alunos partem de processadores fictícios simples como o Neander e chegam em até o processador Intel. Sendo uma alternativa para diversas dessas máquinas teóricas estudadas pelas disciplinas, o Hidra é um editor de assembly integrado à interface de execução das máquinas.',
+      'A última manutenção do PET incluiu algumas funcionalidades novas, como: conversor de bases (entre 2 e 36) e representação de inteiro (positivo, sinal magnitude, complemento de B e complemento de B-1); conversor de ponto (notação humana, ponto fixo e ponto flutuante) de diferentes tamanhos; e menu de localizar e substituir.',
+    ],
+    members:
+      'Alice Carra, Bruno Zimmermann, Galeano Domingues, José Henrique Lima, Marcos Reckers e João Vítor Schimuneck de Souza',
+    tools: 'C++ e Qt',
+    cta: [
+      {
+        label: 'acesse o release mais recente',
+        href: 'https://github.com/petcomputacaoufrgs/hidracpp/releases/tag/v1.2.0',
+      },
+    ],
+  },
   {
     type: 'projeto',
     href: '/projects/dino',
@@ -179,15 +209,15 @@ export const projects: (ProjectType | CourseType)[] = [
     tools: 'Javascript, HTML, CSS, WebAssembly e Rust',
     cta: [
       {
-        label: 'Teste nossa máquina Norma',
+        label: 'teste nossa máquina Norma',
         href: 'https://www.inf.ufrgs.br/pet/pinguim/norma',
       },
       {
-        label: 'Wiki da Máquina Norma',
+        label: 'wiki da máquina Norma',
         href: 'https://github.com/petcomputacaoufrgs/pinguim-norma/wiki',
       },
       {
-        label: 'Wiki da Máquina de Turing',
+        label: 'wiki da máquina de Turing',
         href: 'https://github.com/petcomputacaoufrgs/pinguim-turing/wiki',
       },
     ],
@@ -297,5 +327,6 @@ export const projects: (ProjectType | CourseType)[] = [
     members:
       'Galeano Domingues, Henrique Carniel, Ian Kersz, João Vítor Schimuneck de Souza, José Henrique Lima, Marcos Reckers e Pedro Poli Miola',
     tools: 'Python e Jupyter',
+    customContent: Nha,
   },
 ]

@@ -4,7 +4,6 @@ import Title from '@/components/Title'
 import { projects } from '@/data/projects'
 import { useEffect, useState } from 'react'
 import { Container, FilterDropdownContainer, ProjectsContainer } from './styles'
-import { ProjectType, CourseType } from '@/data/projects'
 
 const OurWork = () => {
   const [optionsSelected, setOptionsSelected] = useState<string[]>([])

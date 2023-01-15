@@ -130,6 +130,9 @@ export const GlobalStyle = createGlobalStyle`
   ul {
     list-style: none;
   }
+  p {
+    line-height: initial;
+  }
   blockquote,
   q {
     quotes: none;

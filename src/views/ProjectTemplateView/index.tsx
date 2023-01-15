@@ -1,15 +1,17 @@
+import { Parser } from 'html-to-react'
+import isMobile from '@/hooks/isMobile'
 import ButtonLink from '@/components/ButtonLink'
 import Footer from '@/components/Footer'
 import ImgBanner from '@/components/ImgBanner'
 import Tag from '@/components/Tag'
 import Title from '@/components/Title'
 import { ProjectType, projects } from '@/data/projects'
-import isMobile from '@/hooks/isMobile'
 import { useEffect, useState } from 'react'
 import {
   BackHomeContainer,
   Circle,
   Container,
+  CtaContainer,
   ExtraInfoContainer,
   Header,
   IconContainer,
@@ -70,10 +72,21 @@ const ProjectTemplateView = () => {
               <Subtitle>Ferramentas:</Subtitle>
               <p>{content.tools}</p>
             </ExtraInfoContainer>
-            {content.cta &&
-              content.cta.map((cta) => (
-                <ButtonLink label={cta.label} href={cta.href} />
-              ))}
+            <CtaContainer>
+              {content.cta &&
+                content.cta.map((cta) => (
+                  <ButtonLink
+                    type={'arrow-right'}
+                    label={cta.label}
+                    href={cta.href}
+                  />
+                ))}
+            </CtaContainer>
+            {content.customContent ? (
+              Parser().parse(content.customContent)
+            ) : (
+              <></>
+            )}
           </Main>
           <Footer />
         </Container>

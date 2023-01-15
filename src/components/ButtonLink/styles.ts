@@ -43,3 +43,25 @@ export const ArrowLeft = styled.a.attrs((props: ArrowColorType) => ({
     }
   }
 `
+
+export const ArrowRight = styled.a`
+  color: #4d4c52;
+  font-size: 1.25rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+
+  & svg {
+    margin-left: 0.6rem;
+    fill: #4d4c52;
+  }
+
+  &:hover {
+    color: #e87180;
+
+    svg {
+      fill: #e87180;
+    }
+  }
+`

@@ -130,6 +130,7 @@ export const ExtraInfoContainer = styled.div`
     display: grid;
     grid-template-columns: 8rem auto;
     gap: 1rem 0.5rem;
+    align-items: center;
   }
 
   @media ${devices.desktopM} {
@@ -150,4 +151,10 @@ export const Subtitle = styled.h3`
   @media ${devices.desktopS} {
     margin: 0;
   }
+`
+
+export const CtaContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 `

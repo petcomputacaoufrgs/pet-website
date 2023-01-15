@@ -9,18 +9,22 @@ export const Container = styled.div`
   padding: 1rem;
   margin-left: auto;
   border-radius: 0.7rem;
+  position: relative;
 `
 
 export const CardHeader = styled.div`
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: right;
 `
 
 export const CardNumber = styled.span`
   font-size: 8rem;
   line-height: 8rem;
   color: #e4dadf;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
 `
 
 export const MemberImg = styled.img`
@@ -32,6 +36,7 @@ export const MemberImg = styled.img`
 
 export const MainInfoContainer = styled.div`
   text-align: right;
+  margin: 1rem 0;
 `
 
 export const Name = styled.h3`

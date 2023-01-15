@@ -27,6 +27,7 @@ export const MainTitle = styled.h1`
   text-align: center;
   margin: 6rem 0 1rem;
   font-size: 2.1rem;
+  font-weight: 600;
 
   @media ${devices.desktopS} {
     font-size: 4rem;

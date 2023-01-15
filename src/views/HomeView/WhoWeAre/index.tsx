@@ -31,10 +31,11 @@ const WhoWeAre = () => {
       </div>
       <VideoContainer>
         <VideoFrame
-          src="https://www.youtube.com/embed/mbK682vVP7c?rel=0&cc_load_policy=1&iv_load_policy=3&color=white&disablekb=1"
           width={mobile ? '100%' : '632'}
           height={mobile ? 'auto' : '365'}
-          title="PET Computação UFRGS - Vídeo Institucional"
+          src="https://www.youtube.com/embed/CDoDrSizhCg"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
         ></VideoFrame>
       </VideoContainer>

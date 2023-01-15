@@ -1,5 +1,5 @@
 import Icon from '../Icon'
-import { ArrowLeft, Link } from './styles'
+import { ArrowLeft, ArrowRight, Link } from './styles'
 import { IButtonLink } from './types'
 
 const ButtonLink = ({ type, label, href, color = 'default' }: IButtonLink) => {
@@ -14,10 +14,10 @@ const ButtonLink = ({ type, label, href, color = 'default' }: IButtonLink) => {
         )
       case 'arrow-right':
         return (
-          <ArrowLeft href={href} color={color}>
+          <ArrowRight href={href}>
             {label}
             <Icon type="arrow-right" />
-          </ArrowLeft>
+          </ArrowRight>
         )
       default:
         return <Link href={href}>{label}</Link>

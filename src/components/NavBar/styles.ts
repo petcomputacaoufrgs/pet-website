@@ -22,7 +22,7 @@ export const Link = styled.a`
 
   &:hover {
     background-color: #dd5b6c;
-    padding: 0.2rem 1rem;
+    padding: 0.5rem 1rem;
     border-radius: 1rem;
   }
 `
