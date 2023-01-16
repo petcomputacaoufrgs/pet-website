@@ -35,6 +35,7 @@ export const IconContainer = styled.div.attrs(
   })
 )<PropTypeIconContainer>`
   transform: rotate(${(props) => (props.isOpen ? '180' : '0')}deg);
+  transition: all 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
 `
 
 export const OptionsContainer = styled.div`

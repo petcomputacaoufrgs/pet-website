@@ -10,6 +10,7 @@ export const Link = styled.a`
   margin: 1rem 0;
   text-align: center;
   font-size: 1rem;
+  transition: all 0.2s cubic-bezier(0.47, 0, 0.75, 0.72);
 
   &:hover {
     background-color: ${(props) => props.theme.colors.details};
@@ -27,9 +28,11 @@ const ArrowBase = styled.a`
   display: flex;
   align-items: center;
   margin: 0.5rem 0;
+  transition: all 0.2s cubic-bezier(0.47, 0, 0.75, 0.72);
 
   & svg {
     fill: ${(props) => props.theme.colors.primary};
+    transition: all 0.2s cubic-bezier(0.47, 0, 0.75, 0.72);
   }
 
   &:hover {

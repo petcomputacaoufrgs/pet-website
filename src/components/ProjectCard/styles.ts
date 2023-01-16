@@ -6,6 +6,11 @@ export const Container = styled.a`
   text-align: left;
   margin: 1rem 0;
   cursor: pointer;
+
+  & > *,
+  > * > * {
+    cursor: pointer;
+  }
 `
 
 export const Name = styled.h4`
