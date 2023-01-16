@@ -1,4 +1,42 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle, keyframes } from 'styled-components'
+
+const topDownAnimation = keyframes`
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: scaleX(-1) translate(45vmin, -30vmin);
+    opacity: 0;
+  }
+  75% {
+    transform: translate(80vw, 70vh) scaleX(-1) rotate(30deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(55vw, 60vh) scaleX(-1) rotate(30deg);
+    opacity: 1;
+  }
+`
+
+const downTopAnimation = keyframes`
+  0% {
+    transform: translate(55vw, 60vh) scaleX(-1) rotate(30deg);
+  }
+  50% {
+    transform: translate(70vw, 67vh) scaleX(-1);
+  }
+  80% {
+    transform: translate(45vmin, -30vmin) scaleX(-1);
+  }
+
+  95% {
+    transform: translate(0, 0) scaleX(-1);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+`
 
 export const GlobalStyle = createGlobalStyle`
   /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -167,5 +205,18 @@ export const GlobalStyle = createGlobalStyle`
 
   .swiper-pagination-bullet-active {
      background-color: #DD5B6C !important;
-}
+  }
+
+  .top-down-animation {
+    animation-name: ${topDownAnimation};
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+
+  .down-top-animation {
+    animation-name: ${downTopAnimation};
+    animation-duration: 2.2s;
+    animation-fill-mode: forwards;
+  }
+
 `

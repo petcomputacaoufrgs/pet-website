@@ -1,11 +1,13 @@
 import { devices } from '@/styles/devices'
-import styled, { keyframes } from 'styled-components'
+import styled from 'styled-components'
 
 export const Container = styled.div`
   position: relative;
   background-color: ${(props) => props.theme.colors.secondary};
   min-height: 100vh;
   padding-bottom: 14.375rem;
+  overflow: hidden;
+
   @media ${devices.desktopS} {
     padding-bottom: 8.5rem;
   }
@@ -44,6 +46,7 @@ export const Img = styled.img`
   right: 0;
   height: 6rem;
   width: 6rem;
+  z-index: 5;
 
   @media ${devices.desktopS} {
     height: 11.25rem;
@@ -130,7 +133,7 @@ export const ExtraInfoContainer = styled.div`
     display: grid;
     grid-template-columns: 8rem auto;
     gap: 1rem 0.5rem;
-    align-items: center;
+    align-items: baseline;
   }
 
   @media ${devices.desktopL} {

@@ -26,18 +26,33 @@ import React from 'react'
 const ProjectTemplateView = () => {
   const mobile = isMobile()
   const [content, setContent] = useState<ProjectType>()
+  const [className, setClassName] = useState('')
 
-  useEffect(() => {
-    let currentPath = window.location.pathname
-    let content = projects.find((project) => project.href === currentPath)
-    setContent(content as ProjectType)
-  }, [])
+  const handleClassName = () => {
+    let newClass
+    switch (className) {
+      case 'top-down-animation':
+        newClass = 'down-top-animation'
+        break
+      case 'down-top-animation':
+      default:
+        newClass = 'top-down-animation'
+        break
+    }
+    setClassName(newClass)
+  }
 
   const getCustomComponent = (customComponent: string) => {
     const importedComponentModule = require('@/customComponents/' +
       customComponent).default
     return React.createElement(importedComponentModule)
   }
+
+  useEffect(() => {
+    let currentPath = window.location.pathname
+    let content = projects.find((project) => project.href === currentPath)
+    setContent(content as ProjectType)
+  }, [])
 
   return (
     <>
@@ -54,7 +69,15 @@ const ProjectTemplateView = () => {
           </BackHomeContainer>
           <Header>
             <IconContainer>
-              <Img src={content.page_icon} />
+              {content.name === 'Dragão' ? (
+                <Img
+                  src={content.page_icon}
+                  className={className}
+                  onClick={handleClassName}
+                />
+              ) : (
+                <Img src={content.page_icon} />
+              )}
               <Circle />
             </IconContainer>
             <Title type={'project'} text={`Projeto ${content.name}`} />
