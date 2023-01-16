@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 
 export const Container = styled.div`
   position: relative;
@@ -38,6 +38,16 @@ export const IconContainer = styled.div.attrs(
   transition: all 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
 `
 
+const openAnimation = keyframes`
+  0% {
+    opacity: 0;
+    transform: scaleY(0.001);
+  }
+  100% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+`
 export const OptionsContainer = styled.div`
   position: absolute;
   right: 2.5rem;
@@ -51,6 +61,8 @@ export const OptionsContainer = styled.div`
   filter: drop-shadow(
     0px 4px 4px ${(props) => props.theme.colors.black + '40'}
   );
+  transform-origin: top;
+  animation: ${openAnimation} 0.3s cubic-bezier(0.4, 0, 1, 1);
 `
 
 export const InputContainer = styled.div`
