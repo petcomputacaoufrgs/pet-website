@@ -17,7 +17,7 @@ import Icon from '@/components/Icon'
 import isMobile from '@/hooks/isMobile'
 
 const Carousel = () => {
-  const swiperRef: any = useRef()
+  const swiperRef: any = useRef(null)
   const mobile = isMobile()
 
   return (

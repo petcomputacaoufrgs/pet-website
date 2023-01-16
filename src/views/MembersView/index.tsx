@@ -4,9 +4,13 @@ import Carousel from './Carousel'
 import isMobile from '@/hooks/isMobile'
 import Title from '@/components/Title'
 import ButtonLink from '@/components/ButtonLink'
+import { useEffect, useState } from 'react'
 
 const MembersView = () => {
+  const [showCarousel, setShowCarousel] = useState(false)
   const mobile = isMobile()
+
+  useEffect(() => setShowCarousel(true), [])
 
   return (
     <Container>
@@ -16,9 +20,7 @@ const MembersView = () => {
           <Title text={'Nossos Petianos'} />
         </TitleContainer>
       )}
-      <CarouselContainer>
-        <Carousel />
-      </CarouselContainer>
+      <CarouselContainer>{showCarousel && <Carousel />}</CarouselContainer>
       <Footer />
     </Container>
   )
