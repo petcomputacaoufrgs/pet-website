@@ -1,27 +1,33 @@
-import SleepingDino from '../../images/dino_dormindo.png'
-import AwakeDino from '../../images/dino_acordado.png'
 import { useState } from 'react'
-import { Container } from './styles'
+import SleepDino from './SleepDino'
+import AwakeDino from './AwakeDino'
+import { Container, TransparentButton } from './styles'
 
 const LittleDino = () => {
   const [isDinoAwake, setIsDinoAwake] = useState(false)
+  const [className, setClassName] = useState('')
+
+  const handleAwakeDino = () => {
+    if (isDinoAwake) {
+      setIsDinoAwake(false)
+    } else if (className === '') {
+      setClassName('awakening-dino')
+    } else if (className === 'awakening-dino') {
+      setIsDinoAwake(true)
+      setClassName('')
+    }
+  }
 
   return (
     <Container>
       {isDinoAwake ? (
-        <img
-          src={AwakeDino.src}
-          width={300}
-          onClick={() => setIsDinoAwake(false)}
-          style={{ pointerEvents: 'all' }}
-        />
+        <TransparentButton onClick={handleAwakeDino}>
+          <AwakeDino />
+        </TransparentButton>
       ) : (
-        <img
-          src={SleepingDino.src}
-          width={300}
-          onClick={() => setIsDinoAwake(true)}
-          style={{ pointerEvents: 'all' }}
-        />
+        <TransparentButton onClick={handleAwakeDino} className={className}>
+          <SleepDino />
+        </TransparentButton>
       )}
     </Container>
   )

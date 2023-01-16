@@ -1,5 +1,43 @@
 import { devices } from '@/styles/devices'
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
+
+const flyToBottom = keyframes`
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: scaleX(-1) translate(45vmin, -30vmin);
+    opacity: 0;
+  }
+  75% {
+    transform: translate(80vw, 70vh) scaleX(-1) rotate(30deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(55vw, 60vh) scaleX(-1) rotate(30deg);
+    opacity: 1;
+  }
+`
+
+const flyToTop = keyframes`
+  0% {
+    transform: translate(55vw, 60vh) scaleX(-1) rotate(30deg);
+  }
+  50% {
+    transform: translate(70vw, 67vh) scaleX(-1);
+  }
+  80% {
+    transform: translate(45vmin, -30vmin) scaleX(-1);
+  }
+
+  95% {
+    transform: translate(0, 0) scaleX(-1);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+`
 
 export const Container = styled.div`
   position: relative;
@@ -51,6 +89,18 @@ export const Img = styled.img`
   @media ${devices.desktopS} {
     height: 11.25rem;
     width: 11.25rem;
+  }
+
+  &.top-down-animation {
+    animation-name: ${flyToBottom};
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+
+  &.down-top-animation {
+    animation-name: ${flyToTop};
+    animation-duration: 2.2s;
+    animation-fill-mode: forwards;
   }
 `
 

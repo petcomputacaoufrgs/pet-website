@@ -49,7 +49,7 @@ const dinoProject: ProjectType = {
   members:
     'Bernardo Borba, Eduarda Waechter, Heric Rodrigues, João Pedro Silva, Léo de Vasconcelos, Mayra Cademartori e Vic Duarte',
   tools:
-    'Figma, Canva, Photoshop, Typescript, HTML, CSS, ReactJS, Java, Spring e PostgreSQL',
+    'Figma, Canva, Typescript, HTML, CSS, ReactJS, Java, Spring e PostgreSQL',
   cta: [
     {
       label: 'veja o github do nosso projeto',
