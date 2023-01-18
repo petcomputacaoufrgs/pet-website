@@ -1,4 +1,4 @@
-import { MemberType } from './../../data/members'
+import { MemberType } from '../../data/membersPage'
 
 export interface IMemberCard {
   member: MemberType

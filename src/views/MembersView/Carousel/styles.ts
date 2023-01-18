@@ -17,5 +17,5 @@ export const NavigationButton = styled.button`
 export const FillAvailable = styled.div`
   width: 57rem;
   max-width: 518px;
-  padding: 0 3rem;
+  padding-left: 3rem;
 `

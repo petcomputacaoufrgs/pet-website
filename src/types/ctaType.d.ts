@@ -1,4 +1,4 @@
-export interface INavItem {
+export type CtaType = {
   label: string
   href: string
 }

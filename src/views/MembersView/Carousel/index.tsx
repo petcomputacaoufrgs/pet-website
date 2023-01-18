@@ -9,14 +9,14 @@ import 'swiper/css/pagination'
 
 // import required modules
 import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper'
-import { members } from '@/data/members'
 import MemberCard from '@/components/MemberCard'
 import Title from '@/components/Title'
 import { Container, FillAvailable, NavigationButton } from './styles'
 import Icon from '@/components/Icon'
 import isMobile from '@/hooks/isMobile'
+import { ICarousel } from './types'
 
-const Carousel = () => {
+const Carousel = ({ title, members }: ICarousel) => {
   const swiperRef: any = useRef(null)
   const mobile = isMobile()
 
@@ -27,7 +27,7 @@ const Carousel = () => {
       </NavigationButton>
       {!mobile && (
         <FillAvailable>
-          <Title text={'Nossos Petianos'} />
+          <Title text={title} />
         </FillAvailable>
       )}
       <Swiper

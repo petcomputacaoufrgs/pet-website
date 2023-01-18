@@ -1,6 +1,7 @@
 import ButtonLink from '@/components/ButtonLink'
 import Title from '@/components/Title'
 import isMobile from '@/hooks/isMobile'
+import { ISection } from '@/types/sectionType'
 import {
   Text,
   ButtonWrapper,
@@ -9,32 +10,25 @@ import {
   VideoContainer,
 } from './styles'
 
-const WhoWeAre = () => {
+const WhoWeAre = ({ id, title, description, cta, video }: ISection) => {
   const mobile = isMobile()
 
   return (
-    <Container id="who-we-are">
+    <Container id={id}>
       <div>
-        <Title type={'section'} text={'Quem somos?'} />
-        <Text>
-          O PET Computação é um grupo composto por estudantes de graduação dos
-          cursos de Ciência da Computação e Engenharia da Computação.
-        </Text>
-        <Text>
-          Baseado na Tríade Acadêmica de Ensino, Pesquisa e Extensão, tem como
-          objetivo providenciar a oportunidade dos membros explorarem áreas de
-          interesse além do currículo de seus cursos.
-        </Text>
+        <Title type={'section'} text={title} />
+        {description &&
+          description.map((paragraph) => <Text>{paragraph}</Text>)}
         <ButtonWrapper>
-          <ButtonLink label={'Conheça nossos membros'} href={'/petianes'} />
+          <ButtonLink label={cta.label} href={cta.href} />
         </ButtonWrapper>
       </div>
       <VideoContainer>
         <VideoFrame
           width={mobile ? '100%' : '632'}
           height={mobile ? 'auto' : '365'}
-          src="https://www.youtube.com/embed/CDoDrSizhCg"
-          title="YouTube video player"
+          src={video.href}
+          title={`${video.label} | PET - YouTube`}
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
         ></VideoFrame>

@@ -1,7 +1,9 @@
+import { CtaType } from './ctaType'
+
 export type ProjectType = {
   type: 'projeto'
   href: string
-  status: 'concluído' | 'ativo'
+  status: ProjectStatus
   card_banner: string
   page_icon: string
   name: string
@@ -10,7 +12,7 @@ export type ProjectType = {
   text: string[]
   members: string
   tools: string
-  cta?: { label: string; href: string }[]
+  cta?: CtaType[]
   customContent?: string
 }
 

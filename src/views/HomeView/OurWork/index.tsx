@@ -2,10 +2,11 @@ import FilterDropdown from '@/components/FilterDropdown'
 import ProjectCard from '@/components/ProjectCard'
 import Title from '@/components/Title'
 import { projects } from '@/data/projects'
+import { ISection } from '@/types/sectionType'
 import { useEffect, useState } from 'react'
 import { Container, FilterDropdownContainer, ProjectsContainer } from './styles'
 
-const OurWork = () => {
+const OurWork = ({ id, title }: ISection) => {
   const [optionsSelected, setOptionsSelected] = useState<string[]>([])
   const [projectsDisplayed, setProjectsDisplayed] = useState(projects)
 
@@ -46,8 +47,8 @@ const OurWork = () => {
   }, [optionsSelected])
 
   return (
-    <Container id="our-work">
-      <Title type={'section'} text={'Nosso trabalho'} />
+    <Container id={id}>
+      <Title type={'section'} text={title} />
       <FilterDropdownContainer>
         <FilterDropdown
           optionsSelected={optionsSelected}

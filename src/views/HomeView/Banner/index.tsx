@@ -1,13 +1,13 @@
 import ImgBanner from '@/components/ImgBanner'
 import NavBar from '@/components/NavBar'
 import Title from '@/components/Title'
-import { navbar } from '@/data/navbar'
 import isMobile from '@/hooks/isMobile'
 import bgImg from '../../../images/banner.jpg'
 import logoPet from '../../../images/LogoPET.png'
 import { Container, Description, InfoContainer, TopBanner } from './styles'
+import { IBanner } from './types'
 
-const Banner = () => {
+const Banner = ({ title, description, navbar }: IBanner) => {
   const mobile = isMobile()
 
   return (
@@ -19,10 +19,11 @@ const Banner = () => {
           {!mobile && <NavBar navData={navbar} />}
         </TopBanner>
         <div>
-          <Title type={'page'} text={'PET COMPUTAÇÃO UFRGS'} />
-          <Description>
-            Programa de Educação Tutorial Computação UFRGS
-          </Description>
+          <Title type={'page'} text={title} />
+          {description &&
+            description.map((paragraph) => (
+              <Description>{paragraph}</Description>
+            ))}
         </div>
       </InfoContainer>
     </Container>
