@@ -181,13 +181,13 @@ export const ExtraInfoContainer = styled.div`
   @media ${devices.desktopS} {
     margin-top: 2rem;
     display: grid;
-    grid-template-columns: 8rem auto;
+    grid-template-columns: 13rem auto;
     gap: 1rem 0.5rem;
     align-items: baseline;
   }
 
   @media ${devices.desktopL} {
-    grid-template-columns: 9rem auto;
+    grid-template-columns: 14rem auto;
     font-size: 1.25rem;
   }
 `
@@ -196,6 +196,7 @@ export const Subtitle = styled.h3`
   color: ${(props) => props.theme.colors.details};
   font-weight: 600;
   margin: 1.25rem 0 0.5rem;
+  text-align: right;
 
   @media ${devices.desktopS} {
     margin: 0;

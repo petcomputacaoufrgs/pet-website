@@ -202,6 +202,10 @@ So, to add a new project or course, create an object with the correct type (`Pro
 
 To edit a project or course, just find the item you need and update the info. To remove a project or course, find the item, delete it and remove it from the array.
 
+#### Add custom components to projects
+
+Each project can have one custom component added to them. To do that, first, you have to create your custom component in the folder `customComponents`. Then add the name of the component in the project object (`data/projects.ts`) in the prop `customContent`.
+
 ---
 
 <a name="screenshots"></a>

@@ -129,8 +129,9 @@ const dragaoProject: ProjectType = {
     'O Projeto Dração foi criado no final de 2020 pelas petianas Graciela e Victória com o objetivo de reviver as redes sociais do PET Computação.',
     'Hoje o projeto mantém-se ativo e seus participantes atuam na manutenção das redes sociais e na criação de novas séries de postagem.',
   ],
+  active_members: 'Heloísa de Carvalho e Henrique Carniel',
   members:
-    'Bernardo Beneduzi, Heloísa de Carvalho, Heric Rodrigues, Ian Kersz, Léo de Vasconcelos, Matheus Almeida, Pedro Miola e Vic Duarte',
+    'Ian Kersz, Matheus Almeida, Heric Rodrigues, Léo de Vasconcelos, Bernardo Beneduzi, Vic Duarte e Pedro Miola',
   tools: 'Canva, Photoshop',
 }
 
@@ -218,8 +219,9 @@ const raposaProject: ProjectType = {
     'Além disso, no setor de interção e ensino, busca-se converter os conhecimentos adquiridos no projeto em cursos, oficinas e palestras tanto para a comunidade interna da UFRGS quanto para a comunidade externa.',
     'Nesse contexto, um dos objetivos centrais do projeto consiste na interação com alunos do ensino fundamental e médio levando a temática da computação e suas possibilidades de maneira lúdica, estimulando o interesse pela área.',
   ],
+  active_members: 'Henrique Carniel e Sofia Maciel',
   members:
-    'Henrique Carniel, Ian Kersz, Léo Vasconcelos, Luccas Lima, Matheus Almeida, Sofia Maciel, Vitor Caruso e Vic Duarte',
+    'Ian Kersz, Matheus Almeida, Vitor Caruso, Léo Vasconcelos, Luccas Lima, e Vic Duarte',
   tools: 'C#, Unity, Aseprite',
   cta: [
     {
@@ -250,7 +252,7 @@ const castorProject: ProjectType = {
     'Por fim, o projeto foca também na melhoria da qualidade de vida dos estudantes, oferecendo maiores facilidades para o desenvolvimento de código, e no aprendizado, com tutoriais de utilização e/ou criação das ferramentas disponibilizadas.',
     'O projeto tem o objetivo de possibilitar aos alunos usarem diferentes ambientes de desenvolvimento com diferentes linguagens utilizadas nas disciplinas, aumentando a produtividade, reduzindo o tempo gasto com configurações mais avançadas e promovendo o aprendizado de tais ferramentas.',
   ],
-  members: 'Ian Kersz, José Henrique Lima e Marcos Reckers',
+  active_members: 'Ian Kersz, José Henrique Lima e Marcos Reckers',
   tools: 'Makefile, CMake',
   cta: [
     {
@@ -277,7 +279,7 @@ const micoLeaoProject: ProjectType = {
     'Atualmente, o grupo novamente demonstra interesse na criação de materiais e programas que exploram o tópico de Machine Learning.',
     'Como resultado de projetos anteriores o grupo possui um material introdutório sobre o assunto, porém sente que há ainda bastante espaço para evolução deste material para permitir um aprendizado mais autônomo e interessante.',
   ],
-  members:
+  active_members:
     'Galeano Domingues, Henrique Carniel, Ian Kersz, João Vítor Schimuneck de Souza, José Henrique Lima, Marcos Reckers e Pedro Poli Miola',
   tools: 'Python e Jupyter',
 }

@@ -93,8 +93,22 @@ const ProjectTemplateView = () => {
               <Text key={`text-p-${index}`}>{paragraph}</Text>
             ))}
             <ExtraInfoContainer>
-              <Subtitle>Participantes:</Subtitle>
-              <p>{content.members}</p>
+              {content.active_members && content.status === 'ativo' && (
+                <>
+                  <Subtitle>Participantes Ativos:</Subtitle>
+                  <p>{content.active_members}</p>
+                </>
+              )}
+              {content.members && (
+                <>
+                  {content.status === 'ativo' ? (
+                    <Subtitle>Outros Participantes:</Subtitle>
+                  ) : (
+                    <Subtitle>Participantes:</Subtitle>
+                  )}
+                  <p>{content.members}</p>
+                </>
+              )}
               <Subtitle>Ferramentas:</Subtitle>
               <p>{content.tools}</p>
             </ExtraInfoContainer>
