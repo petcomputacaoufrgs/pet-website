@@ -33,23 +33,3 @@ const LittleDino = () => {
   )
 }
 export default LittleDino
-
-/*
-<>
-      {isDinoAwake ? (
-        <div>
-          <img src={AwakeDino.src} width={300} />
-          <button onClick={() => setIsDinoAwake(false)} id="test">
-            Clica em mim porra
-          </button>
-        </div>
-      ) : (
-        <div>
-          <img src={SleepingDino.src} width={300} />
-          <button onClick={() => setIsDinoAwake(true)} id="test2">
-            Clica em mim caralho
-          </button>
-        </div>
-      )}
-    </>
-*/
