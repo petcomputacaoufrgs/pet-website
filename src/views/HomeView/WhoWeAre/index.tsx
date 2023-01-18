@@ -1,6 +1,6 @@
 import ButtonLink from '@/components/ButtonLink'
 import Title from '@/components/Title'
-import isMobile from '@/hooks/isMobile'
+import useIsMobile from '@/hooks/isMobile'
 import { ISection } from '@/types/sectionType'
 import {
   Text,
@@ -11,7 +11,7 @@ import {
 } from './styles'
 
 const WhoWeAre = ({ id, title, description, cta, video }: ISection) => {
-  const mobile = isMobile()
+  const mobile = useIsMobile()
 
   return (
     <Container id={id}>

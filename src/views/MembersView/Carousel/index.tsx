@@ -13,12 +13,12 @@ import MemberCard from '@/components/MemberCard'
 import Title from '@/components/Title'
 import { Container, FillAvailable, NavigationButton } from './styles'
 import Icon from '@/components/Icon'
-import isMobile from '@/hooks/isMobile'
+import useIsMobile from '@/hooks/isMobile'
 import { ICarousel } from './types'
 
 const Carousel = ({ title, members }: ICarousel) => {
   const swiperRef: any = useRef(null)
-  const mobile = isMobile()
+  const mobile = useIsMobile()
 
   return (
     <Container>
@@ -51,12 +51,8 @@ const Carousel = ({ title, members }: ICarousel) => {
         style={{ width: '-webkit-fill-available', marginLeft: 'auto' }}
       >
         {members.map((member, index) => (
-          <SwiperSlide>
-            <MemberCard
-              member={member}
-              index={index + 1}
-              key={`member-card-${index}`}
-            />
+          <SwiperSlide key={`member-card-${index}`}>
+            <MemberCard member={member} index={index + 1} />
           </SwiperSlide>
         ))}
       </Swiper>

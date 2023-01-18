@@ -1,5 +1,5 @@
 import { footer } from '@/data/footer'
-import isMobile from '@/hooks/isMobile'
+import useIsMobile from '@/hooks/isMobile'
 import Icon from '../Icon'
 import IconLink from '../IconLink'
 import {
@@ -12,7 +12,7 @@ import {
 } from './styles'
 
 const Footer = () => {
-  const mobile = isMobile()
+  const mobile = useIsMobile()
 
   return (
     <Container id="contact-us">

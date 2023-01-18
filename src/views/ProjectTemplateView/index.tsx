@@ -1,4 +1,4 @@
-import isMobile from '@/hooks/isMobile'
+import useIsMobile from '@/hooks/isMobile'
 import ButtonLink from '@/components/ButtonLink'
 import Footer from '@/components/Footer'
 import ImgBanner from '@/components/ImgBanner'
@@ -24,7 +24,7 @@ import { ProjectType } from '@/types/projectsType'
 import React from 'react'
 
 const ProjectTemplateView = () => {
-  const mobile = isMobile()
+  const mobile = useIsMobile()
   const [content, setContent] = useState<ProjectType>()
   const [className, setClassName] = useState('')
 
@@ -58,7 +58,11 @@ const ProjectTemplateView = () => {
     <>
       {content && (
         <Container>
-          <ImgBanner src={content.card_banner} height={mobile ? 180 : 336} />
+          <ImgBanner
+            src={content.card_banner}
+            alt="project background banner"
+            height={mobile ? 180 : 336}
+          />
           <BackHomeContainer>
             <ButtonLink
               type={'arrow-left'}

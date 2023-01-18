@@ -1,7 +1,7 @@
 import Footer from '@/components/Footer'
 import { CarouselContainer, Container, TitleContainer } from './styles'
 import Carousel from './Carousel'
-import isMobile from '@/hooks/isMobile'
+import useIsMobile from '@/hooks/isMobile'
 import Title from '@/components/Title'
 import ButtonLink from '@/components/ButtonLink'
 import { useEffect, useState } from 'react'
@@ -9,7 +9,7 @@ import { membersPage } from '@/data/membersPage'
 
 const MembersView = () => {
   const [showCarousel, setShowCarousel] = useState(false)
-  const mobile = isMobile()
+  const mobile = useIsMobile()
 
   useEffect(() => setShowCarousel(true), [])
 

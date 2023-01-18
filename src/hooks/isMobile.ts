@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-const isMobile = () => {
+const useIsMobile = () => {
   const [match, setMatch] = useState(false)
 
   useEffect(() => {
@@ -13,4 +13,4 @@ const isMobile = () => {
   return match
 }
 
-export default isMobile
+export default useIsMobile
