@@ -52,7 +52,11 @@ const Carousel = ({ title, members }: ICarousel) => {
       >
         {members.map((member, index) => (
           <SwiperSlide>
-            <MemberCard member={member} index={index + 1} />
+            <MemberCard
+              member={member}
+              index={index + 1}
+              key={`member-card-${index}`}
+            />
           </SwiperSlide>
         ))}
       </Swiper>

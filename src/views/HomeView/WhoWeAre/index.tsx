@@ -18,7 +18,9 @@ const WhoWeAre = ({ id, title, description, cta, video }: ISection) => {
       <div>
         <Title type={'section'} text={title} />
         {description &&
-          description.map((paragraph) => <Text>{paragraph}</Text>)}
+          description.map((paragraph, index) => (
+            <Text key={`whoWeAre-paragraph-${index}`}>{paragraph}</Text>
+          ))}
         <ButtonWrapper>
           <ButtonLink label={cta.label} href={cta.href} />
         </ButtonWrapper>

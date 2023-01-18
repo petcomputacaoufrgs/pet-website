@@ -114,12 +114,13 @@ const ProjectTemplateView = () => {
             </ExtraInfoContainer>
             <CtaContainer>
               {content.cta &&
-                content.cta.map((cta) => (
+                content.cta.map((cta, index) => (
                   <ButtonLink
                     type={'arrow-right'}
                     label={cta.label}
                     href={cta.href}
                     target={'_blank'}
+                    key={`cta-${index}`}
                   />
                 ))}
             </CtaContainer>
