@@ -40,7 +40,7 @@ If you want to know more about the PET Computação, have a look at their social
 
 </div>
 
-### or <a href="https://www.inf.ufrgs.br/site/pet/">check our website →</a>
+### or <a href="https://www.inf.ufrgs.br/site/pet/" target="_blank">check our website →</a>
 
 ---
 
@@ -209,13 +209,13 @@ To edit a project or course, just find the item you need and update the info. To
 ## Screenshots
 
 ![home page screenshot](https://user-images.githubusercontent.com/44807606/213203766-f3a14672-ea75-4970-8665-c5b26adec2f5.png)
-*Home page*
+_Home page_
 
 ![dino project page screenshot](https://user-images.githubusercontent.com/44807606/213206149-8cc88b8a-6730-4bb2-a4c9-bc44fb201965.png)
-*Project page*
+_Project page_
 
 ![members page screenshot](https://user-images.githubusercontent.com/44807606/213204171-cb3d03c5-ed87-4e44-8c02-3d694e154da5.png)
-*Members page*
+_Members page_
 
 ---
 
