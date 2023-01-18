@@ -12,7 +12,9 @@
 
 ##### 5. [Maintenance](#maintenance)
 
-##### 6. [Learn More](#learn-more)
+##### 6. [Screenshots](#screenshots)
+
+##### 7. [Learn More](#learn-more)
 
 ---
 
@@ -199,6 +201,21 @@ Each of these items is an object of a project or course, that is defined above t
 So, to add a new project or course, create an object with the correct type (`ProjectType` or `CourseType`) and add the necessary info. After that, you can add this new object at the end of the array.
 
 To edit a project or course, just find the item you need and update the info. To remove a project or course, find the item, delete it and remove it from the array.
+
+---
+
+<a name="screenshots"></a>
+
+## Screenshots
+
+![home page screenshot](https://user-images.githubusercontent.com/44807606/213203766-f3a14672-ea75-4970-8665-c5b26adec2f5.png)
+*Home page*
+
+![dino project page screenshot](https://user-images.githubusercontent.com/44807606/213206149-8cc88b8a-6730-4bb2-a4c9-bc44fb201965.png)
+*Project page*
+
+![members page screenshot](https://user-images.githubusercontent.com/44807606/213204171-cb3d03c5-ed87-4e44-8c02-3d694e154da5.png)
+*Members page*
 
 ---
 
