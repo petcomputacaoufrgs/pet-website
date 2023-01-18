@@ -24,7 +24,7 @@
 
 PET is a scholarship available in a lot of universities in Brazil. Their main goal is to provide an opportunity for students to develop themselves by studying topics of their interests and share their learnings with the community. The group PET Computação UFRGS is a group composed by graduate students of Computer Science and Engineering.
 
-The group is constantly changing and adapating. This means that web development is not always a topic of interest of the group. So, for this reason, is important to make the website maintenance as easy as possible. But is crutial to keep it easily customizable, because, after all, the group is formed by tech students and they must have a space to exercise their knowledge and creativity if they desire.
+The group is constantly changing and adapating. This means that web development is not always a topic of interest of the group. So, for this reason, is important to make the website maintenance as easy as possible. However, it is crutial to keep it easily customizable, because, after all, the group is formed by tech students and they must have a space to exercise their knowledge and creativity if they desire.
 
 With this in mind, this project was made. The intention is to make a website that can be updated only by editing a javascript object but, at the same time, has the possibility to customizations without the need to change all the structure of the project.
 
@@ -115,7 +115,7 @@ Contains all the components used to build the webpage main structure.
 
 #### `customComponents`
 
-Contains all the custom components used on the projects page.
+Contains all the custom components used on the project's page.
 
 #### `data`
 
@@ -145,7 +145,7 @@ Contains some types for general use.
 
 #### `views`
 
-Contains the three main views of the project. A view is a whole page, builded with the components from components page.
+Contains the three main views of the project. A view is a whole page, built with the components from components page.
 
 ---
 
@@ -176,7 +176,7 @@ export const membersPage: IMemberPage = {
 }
 ```
 
-If you want to add a new member, just add another member object and add the necessary info. To edit or remove a member, find they and do the changes or delete the object.
+If you want to add a new member, just add another member object and add the necessary info. To edit or remove a member, find them and make the changes or delete the object.
 
 In this object you can edit the page title too!
 
@@ -241,7 +241,7 @@ To learn more about React, you can check out the React Documentation:
 
 ### Typescript
 
-If you want to learn more about Typescript, you can take a look at this resources:
+If you want to learn more about Typescript, you can take a look at these resources:
 
 - [Typescript documentation](https://www.typescriptlang.org/docs/)
 - [Typescript handbook](https://www.typescriptlang.org/docs/handbook/intro.html)
