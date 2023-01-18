@@ -117,7 +117,7 @@ Contains all the custom components used on the projects page.
 
 #### `data`
 
-Contains all the info displayed on screen of the website. The data are divided in three files: `homePage.ts` (data of the home page), `membersPage.ts` (data of the members page) and `projects.ts` (data about all the projects and guides/courses - this data is partially used on homepage and used to build the project page).
+Contains all the info displayed on screen of the website. The data are divided in three files: `footer.ts` (links to mail and all social media that appear on the footer); `homePage.ts` (data of the home page); `membersPage.ts` (data of the members page); and `projects.ts` (data about all the projects and guides/courses - this data is partially used on homepage and used to build the project page).
 
 #### `hooks`
 

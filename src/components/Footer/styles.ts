@@ -38,7 +38,7 @@ export const EmailContainer = styled.div`
   margin-top: 0.7rem;
 `
 
-export const Email = styled.p`
+export const Email = styled.a`
   font-size: 1.25rem;
   color: ${(props) => props.theme.colors.white};
   margin-left: 0.5rem;

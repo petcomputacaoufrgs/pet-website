@@ -1,3 +1,4 @@
+import { footer } from '@/data/footer'
 import isMobile from '@/hooks/isMobile'
 import Icon from '../Icon'
 import IconLink from '../IconLink'
@@ -19,37 +20,19 @@ const Footer = () => {
         <ContactUs>Entre em contato</ContactUs>
         <EmailContainer>
           <Icon type="mail" />
-          <Email>pet@inf.ufrgs.br</Email>
+          <Email href={`mailto:${footer.mail}`}>pet@inf.ufrgs.br</Email>
         </EmailContainer>
       </div>
       <div>
         <SocialMedia>Nossas redes sociais</SocialMedia>
         <SocialMediaContainer>
-          <IconLink
-            iconType={'ig'}
-            href={'https://www.instagram.com/petcompufrgs'}
-            size={mobile ? '36' : '55'}
-          />
-          <IconLink
-            iconType={'github'}
-            href={'https://github.com/petcomputacaoufrgs'}
-            size={mobile ? '36' : '55'}
-          />
-          <IconLink
-            iconType={'linkedin'}
-            href={'https://www.linkedin.com/company/petcompufrgs'}
-            size={mobile ? '36' : '55'}
-          />
-          <IconLink
-            iconType={'yt'}
-            href={'https://www.youtube.com/@PetCompUfrgs'}
-            size={mobile ? '36' : '55'}
-          />
-          <IconLink
-            iconType={'fb'}
-            href={'https://www.facebook.com/PETCompUFRGS'}
-            size={mobile ? '36' : '55'}
-          />
+          {footer.socialMedia.map((footerItem) => (
+            <IconLink
+              iconType={footerItem.iconType}
+              href={footerItem.href}
+              size={mobile ? '36' : '55'}
+            />
+          ))}
         </SocialMediaContainer>
       </div>
     </Container>
