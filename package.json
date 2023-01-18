@@ -2,7 +2,7 @@
   "name": "pet-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://{github-username}.github.io/{repo-name}",
+  "homepage": "http://vickyad.github.io/pet-website",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
