@@ -3,8 +3,8 @@
 ### Table of Contents
 ##### 1. [About this project](#about)
 ##### 2. [Technologies used](#stack)
-##### 3. [Install and Run the Project](#installation)
-##### 4. [How this project works](#maintenance)
+##### 3. [Install and run the project](#installation)
+##### 4. [How this project is organized](#maintenance)
 ##### 5. [Learn More](#learn-more)
 
 
@@ -28,7 +28,7 @@ With this in mind, this project was made. The intention is make a website that c
 
 
 <a name="installation"></a>
-## Install and Run the Project
+## Install and run the project
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
@@ -51,9 +51,50 @@ The server will run on [http://localhost:3000](http://localhost:3000), so you ca
 
 
 <a name="maintenance"></a>
-## How this project works
+## How this project is organized
+This projects has a pretty basic folder structure
+```bash
+public
+src
+ |_ components
+ |_ customComponents
+ |_ data
+ |_ hooks
+ |_ images
+ |_ pages
+ |_ styles
+ |_ types
+ |_ views
+```
 
-[this ReadME is still in progress...]
+
+### `public`
+
+Contains the `favicon.ico`
+
+
+### `src`
+
+This folder is the core of the project and contains all the info to build the website
+
+#### `components`
+
+#### `customComponents`
+
+#### `data`
+
+#### `hooks`
+
+#### `images`
+
+#### `pages`
+
+#### `styles`
+
+#### `types`
+
+#### `views`
+
 
 
 <a name="learn-more"></a>
