@@ -29,7 +29,7 @@ const MemberCard = ({ member, index }: IMemberCard) => {
     <Container>
       <CardHeader>
         <CardNumber>{index}</CardNumber>
-        <MemberImg src={imgUrl} />
+        <MemberImg src={imgUrl} alt={`${name} profile image`} />
       </CardHeader>
       <MainInfoContainer>
         <Name>{name}</Name>

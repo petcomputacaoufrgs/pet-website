@@ -12,7 +12,7 @@ const ProjectCard = ({
 }: IProjectCard) => {
   return (
     <Container href={href} target={type === 'curso' ? '_blank' : '_self'}>
-      <ImgBanner src={card_banner} height={195} />
+      <ImgBanner src={card_banner} height={195} alt={`${name} banner image`} />
       <Tag label={type} />
       <Name>{name}</Name>
       <Description>{description}</Description>

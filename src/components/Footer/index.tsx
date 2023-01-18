@@ -26,11 +26,12 @@ const Footer = () => {
       <div>
         <SocialMedia>Nossas redes sociais</SocialMedia>
         <SocialMediaContainer>
-          {footer.socialMedia.map((footerItem) => (
+          {footer.socialMedia.map((footerItem, index) => (
             <IconLink
               iconType={footerItem.iconType}
               href={footerItem.href}
               size={mobile ? '36' : '55'}
+              key={`${footerItem.iconType}-icon`}
             />
           ))}
         </SocialMediaContainer>

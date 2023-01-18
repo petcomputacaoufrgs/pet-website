@@ -78,9 +78,10 @@ const ProjectTemplateView = () => {
                   src={content.page_icon}
                   className={className}
                   onClick={handleClassName}
+                  alt={`${content.name} icon`}
                 />
               ) : (
-                <Img src={content.page_icon} />
+                <Img src={content.page_icon} alt={`${content.name} icon`} />
               )}
               <Circle />
             </IconContainer>
