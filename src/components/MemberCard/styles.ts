@@ -32,6 +32,7 @@ export const MemberImg = styled.img`
   height: 10.313rem;
   width: 10.313rem;
   object-fit: cover;
+  z-index: 3;
 `
 
 export const MainInfoContainer = styled.div`

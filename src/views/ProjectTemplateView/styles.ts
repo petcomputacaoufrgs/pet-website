@@ -196,10 +196,10 @@ export const Subtitle = styled.h3`
   color: ${(props) => props.theme.colors.details};
   font-weight: 600;
   margin: 1.25rem 0 0.5rem;
-  text-align: right;
 
   @media ${devices.desktopS} {
     margin: 0;
+    text-align: right;
   }
 `
 

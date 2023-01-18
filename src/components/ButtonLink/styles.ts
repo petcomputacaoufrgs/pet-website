@@ -6,7 +6,7 @@ export const Link = styled.a`
   background-color: ${(props) => props.theme.colors.accent};
   color: ${(props) => props.theme.colors.white};
   border-radius: 3rem;
-  padding: 0.75rem 2.5rem;
+  padding: 0.75rem 1.5rem;
   margin: 1rem 0;
   text-align: center;
   font-size: 1rem;
@@ -16,6 +16,10 @@ export const Link = styled.a`
     background-color: ${(props) => props.theme.colors.details};
   }
 
+  @media ${devices.mobileM} {
+    padding: 0.75rem 2.5rem;
+  }
+
   @media ${devices.desktopS} {
     font-size: 1.125rem;
   }
@@ -23,7 +27,7 @@ export const Link = styled.a`
 
 const ArrowBase = styled.a`
   color: ${(props) => props.theme.colors.primary};
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 500;
   display: flex;
   align-items: center;
@@ -41,6 +45,10 @@ const ArrowBase = styled.a`
     svg {
       fill: ${(props) => props.theme.colors.accentLighter};
     }
+  }
+
+  @media ${devices.mobileL} {
+    font-size: 1.25rem;
   }
 `
 
