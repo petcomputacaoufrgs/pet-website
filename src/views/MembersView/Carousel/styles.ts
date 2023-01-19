@@ -12,6 +12,7 @@ export const NavigationButton = styled.button`
   width: 3rem;
   min-width: 3rem;
   border-radius: 0.3rem;
+  cursor: pointer;
 `
 
 export const FillAvailable = styled.div`
