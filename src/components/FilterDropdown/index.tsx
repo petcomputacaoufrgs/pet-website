@@ -20,7 +20,7 @@ const FilterDropdown = ({
   return (
     <Container>
       <DropdownInput onClick={() => setShowDropdown(!showDropdown)}>
-        Dropdown
+        Filtros
         <VerticalLine />
         <IconContainer isOpen={showDropdown}>
           <Icon type="chevron-down" />
