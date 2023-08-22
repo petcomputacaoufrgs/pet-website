@@ -2,7 +2,7 @@ import { ProjectType, CourseType } from '@/types/projectsType'
 
 
 namespace Projetos {
-  export const hidraProject: ProjectType = {
+  export const Hidra: ProjectType = {
     type: 'projeto',
     href: '/projects/hidra',
     status: 'ativo',
@@ -29,7 +29,7 @@ namespace Projetos {
     ],
   }
 
-  export const dinoProject: ProjectType = {
+  export const Dino: ProjectType = {
     type: 'projeto',
     href: '/projects/dino',
     status: 'concluído',
@@ -58,7 +58,7 @@ namespace Projetos {
     customContent: 'LittleDino',
   }
 
-  export const loboProject: ProjectType = {
+  export const Lobo: ProjectType = {
     type: 'projeto',
     href: '/projects/lobo',
     status: 'concluído',
@@ -84,7 +84,7 @@ namespace Projetos {
     ],
   }
 
-  export const cafeComPetProject: ProjectType = {
+  export const CafeComPet: ProjectType = {
     type: 'projeto',
     href: '/projects/cafe-com-pet',
     status: 'concluído',
@@ -111,7 +111,7 @@ namespace Projetos {
     ],
   }
 
-  export const dragaoProject: ProjectType = {
+  export const Dragao: ProjectType = {
     type: 'projeto',
     href: '/projects/dragao',
     status: 'ativo',
@@ -134,7 +134,7 @@ namespace Projetos {
     tools: 'Canva, Photoshop',
   }
 
-  export const papagaioCourse: ProjectType = {
+  export const Papagaio: ProjectType = {
     type: 'projeto',
     href: '/projects/papagaio',
     status: 'concluído',
@@ -167,7 +167,7 @@ namespace Projetos {
     ],
   }
 
-  export const pinguimProject: ProjectType = {
+  export const Pinguim: ProjectType = {
     type: 'projeto',
     href: '/projects/pinguim',
     status: 'concluído',
@@ -204,7 +204,7 @@ namespace Projetos {
     ],
   }
 
-  export const raposaProject: ProjectType = {
+  export const Raposa: ProjectType = {
     type: 'projeto',
     href: '/projects/raposa',
     status: 'ativo',
@@ -238,7 +238,7 @@ namespace Projetos {
     ],
   }
 
-  export const castorProject: ProjectType = {
+  export const Castor: ProjectType = {
     type: 'projeto',
     href: '/projects/castor',
     status: 'ativo',
@@ -265,7 +265,7 @@ namespace Projetos {
     ],
   }
 
-  export const micoLeaoProject: ProjectType = {
+  export const MicoLeao: ProjectType = {
     type: 'projeto',
     href: '/projects/mico-leao',
     status: 'ativo',
@@ -290,7 +290,7 @@ namespace Projetos {
 
 
 namespace Cursos {
-  export const gitCourse: CourseType = {
+  export const Git: CourseType = {
     type: 'curso',
     card_banner:
       'https://images.pexels.com/photos/11035539/pexels-photo-11035539.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
@@ -299,7 +299,7 @@ namespace Cursos {
     href: 'https://petcomputacaoufrgs.github.io/intro-ao-git',
   }
 
-  export const latexCourse: CourseType = {
+  export const Latex: CourseType = {
     type: 'curso',
     card_banner:
       'https://images.pexels.com/photos/8085937/pexels-photo-8085937.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
@@ -308,7 +308,7 @@ namespace Cursos {
     href: 'https://petcomputacaoufrgs.github.io/intro-ao-latex',
   }
 
-  export const cvCourse: CourseType = {
+  export const CV: CourseType = {
     type: 'curso',
     card_banner:
       'https://images.pexels.com/photos/5989926/pexels-photo-5989926.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
@@ -317,7 +317,7 @@ namespace Cursos {
     href: 'https://petcomputacaoufrgs.github.io/cv-guide',
   }
 
-  export const arduinoCourse: CourseType = {
+  export const Arduino: CourseType = {
     type: 'curso',
     card_banner:
       'https://images.pexels.com/photos/2588757/pexels-photo-2588757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
@@ -326,7 +326,7 @@ namespace Cursos {
     href: 'https://petcomputacaoufrgs.github.io/intro-ao-arduino',
   }
 
-  export const webDevCourse: CourseType = {
+  export const WebDev: CourseType = {
     type: 'curso',
     card_banner:
       'https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
@@ -335,7 +335,7 @@ namespace Cursos {
     href: 'https://breezy-moonflower-d72.notion.site/O-mini-guia-de-web-para-iniciantes-668009c833624c0c83a782ac9d13216d',
   }
 
-  export const mlCourse: CourseType = {
+  export const ML: CourseType = {
     type: 'curso',
     card_banner:
       'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
@@ -344,7 +344,7 @@ namespace Cursos {
     href: 'https://petcomputacaoufrgs.github.io/ml-course',
   }
 
-  export const pyTorchCourse: CourseType = {
+  export const PyTorch: CourseType = {
     type: 'curso',
     card_banner:
       'https://images.pexels.com/photos/1181359/pexels-photo-1181359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
@@ -353,7 +353,7 @@ namespace Cursos {
     href: 'https://petcomputacaoufrgs.github.io/ml-guide',
   }
 
-  export const sdrCourse: CourseType = {
+  export const SDR: CourseType = {
     type: 'curso',
     card_banner:
       'https://images.pexels.com/photos/7388500/pexels-photo-7388500.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
