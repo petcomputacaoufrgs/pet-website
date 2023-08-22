@@ -1,7 +1,7 @@
 import { ProjectType, CourseType } from '@/types/projectsType'
 
 
-export namespace Projetos {
+namespace Projetos {
   export const hidraProject: ProjectType = {
     type: 'projeto',
     href: '/projects/hidra',
@@ -289,7 +289,7 @@ export namespace Projetos {
 }
 
 
-export namespace Cursos {
+namespace Cursos {
   export const gitCourse: CourseType = {
     type: 'curso',
     card_banner:
