@@ -34,15 +34,6 @@ export const membersPage: IMemberPage = {
       interest: 'Sistemas Embarcados e Transmissão de Dados',
     },
     {
-      name: 'Henrique',
-      imgUrl:
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdyLCjkiQJy69HsdW6m_19HttsegclGQOFBQ&usqp=CAU',
-
-      course: 'cic',
-      semester: '2021/1',
-      interest: 'Desenvolvimento de Jogos',
-    },
-    {
       name: 'Ian',
       imgUrl:
         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdyLCjkiQJy69HsdW6m_19HttsegclGQOFBQ&usqp=CAU',
