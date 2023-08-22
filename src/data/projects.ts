@@ -1,5 +1,4 @@
 import { ProjectType, CourseType } from '@/types/projectsType'
-import exp from 'constants'
 // Ao final de cada namespace é providenciado um modelo para a criação de novos projetos e cursos.
 // Para criar um novo projeto ou curso, basta copiar o modelo e preencher os campos com as informações necessárias.
 // Para organização, por favor, mantenha os projetos e cursos em seus respectivos namespaces.
