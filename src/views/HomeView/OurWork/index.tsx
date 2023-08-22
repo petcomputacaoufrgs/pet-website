@@ -7,11 +7,11 @@ import { useEffect, useState } from 'react'
 import { Container, FilterDropdownContainer, ProjectsContainer } from './styles'
 
 type axis = ('interação' | 'ensino' | 'pesquisa' | 'desenvolvimento')[]
-const projectTypes = ['projeto', 'curso']
-const projectStatus = ['concluído', 'ativo']
-const projectAxis = ['interação', 'ensino', 'pesquisa', 'desenvolvimento']
-const projectSubtypes = [...projectStatus, ...projectAxis]
-const startOptions = [...projectTypes, ...projectSubtypes]
+const projectTypes: string[] = ['projeto', 'curso']
+const projectStatus: string[] = ['concluído', 'ativo']
+const projectAxis: string[] = ['interação', 'ensino', 'pesquisa', 'desenvolvimento']
+const projectSubtypes: string[] = [...projectStatus, ...projectAxis]
+const startOptions: string[] = [...projectTypes, ...projectSubtypes]
 
 const OurWork = ({ id, title }: ISection) => {
   const [optionsSelected, setOptionsSelected] = useState(startOptions)
@@ -71,27 +71,19 @@ const OurWork = ({ id, title }: ISection) => {
 
   useEffect(() => {
     let newProjectsList = [...projects]
-    let hasStatus = optionsSelected.some((element) => projectStatus.includes(element))
-    let hasType = optionsSelected.some((element) => projectTypes.includes(element))
-    let hasAxis = optionsSelected.some((element) => projectAxis.includes(element))
-
     newProjectsList = newProjectsList.filter((project) => {
-      let result = true
-      if (hasType) {
-        result = optionsSelected.includes(project.type)
+      const projectHasType = optionsSelected.includes(project.type)
+
+      if (project.type === 'curso') {
+        return projectHasType
       }
-      if (
-        hasStatus &&
-        optionsSelected.includes('projeto') &&
-        project.type === 'projeto'
-      ) {
-        if (hasAxis) {
-          let onlyAxis: ('interação' | 'ensino' | 'pesquisa' | 'desenvolvimento')[] = optionsSelected.filter((element) => projectAxis.includes(element)) as axis
-          let projectHasAxis = project.axis.some((element) => onlyAxis.includes(element))
-          result = optionsSelected.includes(project.status) && projectHasAxis
-        }
-      }
-      return result
+
+      const projectHasStatus = optionsSelected.includes(project.status)
+
+      const onlyAxis: axis = optionsSelected.filter((element) => projectAxis.includes(element)) as axis
+      const projectHasAxis: boolean = project.axis.some((element) => onlyAxis.includes(element))
+
+      return projectHasType && projectHasStatus && projectHasAxis
     })
     setProjectsDisplayed(newProjectsList)
   }, [optionsSelected])
