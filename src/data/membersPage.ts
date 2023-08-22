@@ -28,7 +28,7 @@ const orientador: MemberType = {
 }
 
 // Os petianes podem ser adicionados em qualquer ordem, pois serão ordenados alfabeticamente
-// imgUrl aceita o link de uma imagem ou o caminho para a imagem dentro da pasta public
+// imgUrl aceita o link de uma imagem, o caminho para a imagem dentro da pasta public, ou o import da imagem com .src
 const petianes: MemberType[] = [
   {
     name: 'Galeano',
