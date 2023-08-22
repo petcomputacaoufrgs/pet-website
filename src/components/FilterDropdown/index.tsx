@@ -68,6 +68,46 @@ const FilterDropdown = ({
             />
             <label htmlFor="active">Ativo</label>
           </InputContainer>
+          <InputContainer>
+            <CheckboxInput
+              type="checkbox"
+              id="teaching"
+              name="teaching"
+              checked={optionsSelected.includes('ensino')}
+              onChange={() => handleOptionClick('ensino')}
+            />
+            <label htmlFor="teaching">Ensino</label>
+          </InputContainer>
+          <InputContainer>
+            <CheckboxInput
+              type="checkbox"
+              id="research"
+              name="research"
+              checked={optionsSelected.includes('pesquisa')}
+              onChange={() => handleOptionClick('pesquisa')}
+            />
+            <label htmlFor="research">Pesquisa</label>
+          </InputContainer>
+          <InputContainer>
+            <CheckboxInput
+              type="checkbox"
+              id="development"
+              name="development"
+              checked={optionsSelected.includes('desenvolvimento')}
+              onChange={() => handleOptionClick('desenvolvimento')}
+            />
+            <label htmlFor="development">Desenvolvimento</label>
+          </InputContainer>
+          <InputContainer>
+            <CheckboxInput
+              type="checkbox"
+              id="interaction"
+              name="interaction"
+              checked={optionsSelected.includes('interação')}
+              onChange={() => handleOptionClick('interação')}
+            />
+            <label htmlFor="interaction">Interação</label>
+          </InputContainer>
         </OptionsContainer>
       )}
     </Container>
