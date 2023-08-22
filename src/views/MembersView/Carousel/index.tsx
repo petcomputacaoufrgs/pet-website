@@ -52,9 +52,8 @@ const Carousel = ({ title, members }: ICarousel) => {
       >
         {members.map((member, index) => (
           <SwiperSlide key={`member-card-${index}`}>
-            <MemberCard member={member} index={index + 1} />
+            <MemberCard member={member} index={index} />
           </SwiperSlide>
-          // TODO: maybe change index to start from 0
         ))}
       </Swiper>
       <NavigationButton onClick={() => swiperRef.current?.slideNext()}>
