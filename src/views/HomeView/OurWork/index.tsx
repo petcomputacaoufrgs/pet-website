@@ -19,6 +19,31 @@ const OurWork = ({ id, title }: ISection) => {
     } else {
       newOptions.splice(index, 1)
     }
+
+    if (!(option === 'concluído' || option === 'ativo')) {
+      if (newOptions.includes('projeto')) {
+        newOptions.push('concluído', 'ativo')
+      } else {
+        if (newOptions.includes('concluído')) {
+          newOptions.splice(newOptions.indexOf('concluído'), 1)
+        }
+        if (newOptions.includes('ativo')) {
+          newOptions.splice(newOptions.indexOf('ativo'), 1)
+        }
+      }
+    }
+
+    if (newOptions.includes('concluído') || newOptions.includes('ativo')) {
+      if (!newOptions.includes('projeto'))
+        newOptions.push('projeto')
+    }
+
+    if (option === 'concluído' || option === 'ativo') {
+      if (!newOptions.includes('concluído') && !newOptions.includes('ativo'))
+        if (newOptions.includes('projeto'))
+          newOptions.splice(newOptions.indexOf('projeto'), 1)
+    }
+
     setOptionsSelected(newOptions)
   }
 
