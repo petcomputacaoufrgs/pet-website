@@ -1,5 +1,7 @@
 import { ProjectType, CourseType } from '@/types/projectsType'
-
+// Ao final de cada namespace é providenciado um modelo para a criação de novos projetos e cursos.
+// Para criar um novo projeto ou curso, basta copiar o modelo e preencher os campos com as informações necessárias.
+// Para organização, por favor, mantenha os projetos e cursos em seus respectivos namespaces.
 
 namespace Projetos {
   export const Hidra: ProjectType = {
@@ -286,7 +288,116 @@ namespace Projetos {
       'Galeano Domingues, Henrique Carniel, Ian Kersz, João Vítor Schimuneck de Souza, José Henrique Lima, Marcos Reckers e Pedro Poli Miola',
     tools: 'Python e Jupyter',
   }
+
+  export const Baleia: ProjectType = {
+    type: 'projeto',
+    href: '/projects/baleia',
+    status: 'ativo',
+    card_banner:
+      'https://images.pexels.com/photos/4666750/pexels-photo-4666750.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    page_icon: 'https://cdn-icons-png.flaticon.com/512/1222/4971976.png', //TODO Fix link
+    name: 'Baleia',
+    description:
+      'Ferramenta para auxiliar no dia-a-dia do PET Computação, através da criação de um Servidor',
+    axis: ['desenvolvimento'],
+    text: [
+      'O projeto Baleia foi criado em 2022 com o objetivo de criar um servidor para o PET Computação.',
+    ],
+    active_members:
+      'Ian Kersz e Marcos Reckers',
+    tools: 'Proxmox e Docker',
+  }
+
+  export const Hardware: ProjectType = {
+    type: 'projeto',
+    href: '/projects/hardware',
+    status: 'ativo',
+    card_banner:
+      '', //TODO Add link
+    page_icon: '', //TODO Add link
+    name: 'Hardware',
+    description:
+      '',
+    axis: ['ensino'],
+    text: [
+      '',
+    ],
+    active_members:
+      '',
+    tools: '',
+  }
+
+  export const BemTeVi: ProjectType = {
+    type: 'projeto',
+    href: '/projects/bem-te-vi',
+    status: 'ativo',
+    card_banner:
+      '', //TODO Add link
+    page_icon: '', //TODO Add link
+    name: 'Bem-Te-Vi',
+    description:
+      '',
+    axis: ['interação'],
+    text: [
+      '',
+    ],
+    active_members:
+      '',
+    tools: '',
+  }
+
+  export const CafeComPesquisa: ProjectType = {
+    type: 'projeto',
+    href: '/projects/cafe-com-pesquisa',
+    status: 'ativo',
+    card_banner:
+      '', //TODO Add link
+    page_icon: '', //TODO Add link
+    name: 'Café com Pesquisa',
+    description:
+      '',
+    axis: ['interação'],
+    text: [
+      '',
+    ],
+    active_members:
+      '',
+    tools: '',
+  }
 }
+
+/* Modelo de Projeto 
+
+export const NomeDoProjeto: ProjectType = {
+  type: 'projeto',
+  href: '/projects/nome-do-projeto',
+  status: 'ativo',
+  card_banner:
+    '', // Link retirado do site https://www.pexels.com/pt-br/ clicando com o botão direito na imagem e copiando o link da imagem
+  page_icon: '', // Link retirado do site https://www.flaticon.com/ clicando com o botão direito na imagem e copiando o link da imagem
+  name: 'Nome do Projeto',
+  description:
+    'Descrição do projeto',
+  axis: ['desenvolvimento', 'ensino', 'pesquisa', 'interação'],
+  text: [
+    'Texto do projeto',
+    'Segundo parágrafo',
+  ],
+  active_members: 'Nome dos petianes ativos no projeto',
+  tools: 'Ferramentas utilizadas no projeto',
+  cta: [ // Não obrigatório
+    {
+      label: 'Texto do botão 1',
+      href: 'Link do botão 1',
+    },
+    {
+      label: 'Texto do botão 2',
+      href: 'Link do botão 2',
+    },
+  ],
+}
+
+*/
 
 
 namespace Cursos {
@@ -363,6 +474,21 @@ namespace Cursos {
   }
 }
 
+/*Modelo de Curso
+
+export const NomeDoCurso: CourseType = {
+  type: 'curso',
+  card_banner:
+    '', // Link retirado do site https://www.pexels.com/pt-br/ clicando com o botão direito na imagem e copiando o link da imagem
+  name: 'Nome do Curso',
+  description: 'Descrição do Curso',
+  href: 'Link para o curso',
+}
+
+*/
+
+
+// Se um erro aparecer aqui, voce provavelmente esqueceu de adicionar chaves em algum lugar na criação de um novo item.
 const projectNotSorted: (ProjectType | CourseType)[] = [
   ...Object.values(Projetos),
   ...Object.values(Cursos),
