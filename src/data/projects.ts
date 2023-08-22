@@ -22,7 +22,7 @@ namespace Projetos {
       'A última manutenção do PET incluiu algumas funcionalidades novas, como: conversor de bases (entre 2 e 36) e representação de inteiro (positivo, sinal magnitude, complemento de B e complemento de B-1); conversor de ponto (notação humana, ponto fixo e ponto flutuante) de diferentes tamanhos; e menu de localizar e substituir.',
     ],
     members:
-      'Alice Carra, Bruno Zimmermann, Galeano Domingues, José Henrique Lima, Marcos Reckers e João Vítor Schimuneck de Souza',
+      'Alice Carra, Bruno Zimmermann, Galeano Domingues, José Henrique Lima, Marcos Reckers, Pedro Poli Miola e João Vítor Schimuneck de Souza',
     tools: 'C++ e Qt',
     cta: [
       {
@@ -503,7 +503,7 @@ namespace Cursos {
       'https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     name: 'Self-Hosting',
     description: 'Uma introdução ao Self Hosting',
-    href: 'https://petcomputacaoufrgs.com.br/',
+    href: 'https://drive.google.com/file/d/1tXDUKwYaJeOA9flx2ob1LWsBtafwIFLH/view',
   }
 }
 
