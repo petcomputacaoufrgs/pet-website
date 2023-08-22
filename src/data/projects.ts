@@ -1,4 +1,5 @@
 import { ProjectType, CourseType } from '@/types/projectsType'
+import exp from 'constants'
 // Ao final de cada namespace é providenciado um modelo para a criação de novos projetos e cursos.
 // Para criar um novo projeto ou curso, basta copiar o modelo e preencher os campos com as informações necessárias.
 // Para organização, por favor, mantenha os projetos e cursos em seus respectivos namespaces.
@@ -289,19 +290,22 @@ namespace Projetos {
     tools: 'Python e Jupyter',
   }
 
+  //TODO Update the projects above
+
   export const Baleia: ProjectType = {
     type: 'projeto',
     href: '/projects/baleia',
     status: 'ativo',
     card_banner:
       'https://images.pexels.com/photos/4666750/pexels-photo-4666750.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    page_icon: 'https://cdn-icons-png.flaticon.com/512/1222/4971976.png', //TODO Fix link
+    page_icon: 'https://cdn-icons-png.flaticon.com/128/4971/4971976.png',
     name: 'Baleia',
     description:
       'Ferramenta para auxiliar no dia-a-dia do PET Computação, através da criação de um Servidor',
     axis: ['desenvolvimento'],
     text: [
       'O projeto Baleia foi criado em 2022 com o objetivo de criar um servidor para o PET Computação.',
+      'A ideia é que o servidor seja utilizado para armazenar arquivos e informações do grupo, além de ser um meio de hospedar os serviços e sites necessários pelo grupo.',
     ],
     active_members:
       'Ian Kersz e Marcos Reckers',
@@ -313,18 +317,19 @@ namespace Projetos {
     href: '/projects/hardware',
     status: 'ativo',
     card_banner:
-      '', //TODO Add link
-    page_icon: '', //TODO Add link
+      'https://images.pexels.com/photos/163100/circuit-circuit-board-resistor-computer-163100.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    page_icon: 'https://cdn-icons-png.flaticon.com/128/3868/3868033.png',
     name: 'Hardware',
     description:
-      '',
+      'Desbravando o mundo do Hardware de forma interativa',
     axis: ['ensino'],
     text: [
-      '',
+      'O projeto do que busca tornar a experiência com Hardware mais amigável para iniciantes.',
+      'No Portas Abertas, compartilhamos nossa matriz de LED, onde os participantes puderam mergulhar em jogos como a cobrinha e cabo de guerra!',
     ],
     active_members:
-      '',
-    tools: '',
+      'Galeano Domingues, Pedro Miola e Marcos Reckers',
+    tools: 'Arduino',
   }
 
   export const BemTeVi: ProjectType = {
@@ -332,17 +337,17 @@ namespace Projetos {
     href: '/projects/bem-te-vi',
     status: 'ativo',
     card_banner:
-      '', //TODO Add link
-    page_icon: '', //TODO Add link
+      'https://images.pexels.com/photos/6135762/pexels-photo-6135762.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    page_icon: 'https://cdn-icons-png.flaticon.com/128/11274/11274351.png',
     name: 'Bem-Te-Vi',
     description:
-      '',
-    axis: ['interação'],
+      'Tentando melhorar a saúde dos estudantes do INF',
+    axis: ['interação', 'pesquisa'],
     text: [
       '',
     ],
     active_members:
-      '',
+      'Beatriz Arend, Duda Tessari, Heloísa de Carvalho, João Vítor Schimuneck de Souza e Pedro Miola',
     tools: '',
   }
 
@@ -351,17 +356,36 @@ namespace Projetos {
     href: '/projects/cafe-com-pesquisa',
     status: 'ativo',
     card_banner:
-      '', //TODO Add link
-    page_icon: '', //TODO Add link
+      'https://images.pexels.com/photos/3184317/pexels-photo-3184317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    page_icon: 'https://cdn-icons-png.flaticon.com/128/3019/3019891.png',
     name: 'Café com Pesquisa',
     description:
-      '',
+      'Apresentação das linhas de pesquisa do PPGC para a comunidade',
     axis: ['interação'],
     text: [
-      '',
+      'Você já teve interesse de adentrar no mundo da pesquisa do INF? Pois “O Café com Pesquisa” vai te apresentar as linhas de pesquisa do PPGC (Programa de Pós-Graduação em Computação)',
     ],
     active_members:
-      '',
+      'Galeano Domingues, Pedro Miola e Beatriz Arend',
+    tools: 'Canva',
+  }
+
+  export const Acervo: ProjectType = {
+    type: 'projeto',
+    href: '/projects/acervo',
+    status: 'ativo',
+    card_banner:
+      'https://images.pexels.com/photos/7598913/pexels-photo-7598913.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    page_icon: 'https://cdn-icons-png.flaticon.com/128/977/977246.png',
+    name: 'Acervo',
+    description:
+      'Acervo histórico do Instituto de Informática',
+    axis: ['interação'],
+    text: [
+      'Tem a missão de separar e catalogar os itens presentes no Acervo do Instituto de Informática, com o intuito de facilitar o acesso a eles.',
+    ],
+    active_members:
+      'Heloísa de Carvalho, Vic Duarte, Sofia Maciel e Marcos Reckers',
     tools: '',
   }
 }
@@ -374,7 +398,7 @@ export const NomeDoProjeto: ProjectType = {
   status: 'ativo',
   card_banner:
     '', // Link retirado do site https://www.pexels.com/pt-br/ clicando com o botão direito na imagem e copiando o link da imagem
-  page_icon: '', // Link retirado do site https://www.flaticon.com/ clicando com o botão direito na imagem e copiando o link da imagem
+  page_icon: '', // Link retirado do site https://www.flaticon.com/ clicando com o botão direito na imagem pequena na lista de imagens e copiando o link da imagem
   name: 'Nome do Projeto',
   description:
     'Descrição do projeto',
@@ -471,6 +495,15 @@ namespace Cursos {
     name: 'SDR',
     description: 'Uma introdução a Software Defined Radio',
     href: 'https://petcomputacaoufrgs.github.io/minic_sdr',
+  }
+
+  export const SelfHosting: CourseType = {
+    type: 'curso',
+    card_banner:
+      'https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    name: 'Self-Hosting',
+    description: 'Uma introdução ao Self Hosting',
+    href: 'https://petcomputacaoufrgs.com.br/',
   }
 }
 
