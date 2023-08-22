@@ -6,12 +6,11 @@ import { ISection } from '@/types/sectionType'
 import { useEffect, useState } from 'react'
 import { Container, FilterDropdownContainer, ProjectsContainer } from './styles'
 
-type axis = ('interação' | 'ensino' | 'pesquisa' | 'desenvolvimento')[]
-const projectTypes: string[] = ['projeto', 'curso']
-const projectStatus: string[] = ['concluído', 'ativo']
-const projectAxis: string[] = ['interação', 'ensino', 'pesquisa', 'desenvolvimento']
-const projectSubtypes: string[] = [...projectStatus, ...projectAxis]
-const startOptions: string[] = [...projectTypes, ...projectSubtypes]
+const projectTypes = ['projeto', 'curso']
+const projectStatus = ['concluído', 'ativo']
+const projectAxis = ['interação', 'ensino', 'pesquisa', 'desenvolvimento']
+const projectSubtypes = [...projectStatus, ...projectAxis]
+const startOptions = [...projectTypes, ...projectSubtypes]
 
 const OurWork = ({ id, title }: ISection) => {
   const [optionsSelected, setOptionsSelected] = useState(startOptions)
@@ -80,8 +79,8 @@ const OurWork = ({ id, title }: ISection) => {
 
       const projectHasStatus = optionsSelected.includes(project.status)
 
-      const onlyAxis: axis = optionsSelected.filter((element) => projectAxis.includes(element)) as axis
-      const projectHasAxis: boolean = project.axis.some((element) => onlyAxis.includes(element))
+      const onlyAxis = optionsSelected.filter((element) => projectAxis.includes(element)) as ('interação' | 'ensino' | 'pesquisa' | 'desenvolvimento')[]
+      const projectHasAxis = project.axis.some((element) => onlyAxis.includes(element))
 
       return projectHasType && projectHasStatus && projectHasAxis
     })

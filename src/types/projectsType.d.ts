@@ -3,7 +3,7 @@ import { CtaType } from './ctaType'
 export type ProjectType = {
   type: 'projeto'
   href: string
-  status: ProjectStatus
+  status: 'ativo' | 'concluído'
   card_banner: string
   page_icon: string
   name: string
