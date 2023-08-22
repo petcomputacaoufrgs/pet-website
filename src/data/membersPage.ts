@@ -1,18 +1,4 @@
 import { MemberType } from '@/types/memberType'
-import Erika from '@/images/members/Erika.png'
-import Gale from '@/images/members/Galeano.jpeg'
-import Helo from '@/images/members/Helo.png'
-import Ian from '@/images/members/Ian.png'
-import Jose from '@/images/members/Jose.jpg'
-import JV from '@/images/members/JV.jpg'
-import Laura from '@/images/members/Laura.jpg'
-import Marcos from '@/images/members/Marcos.jpg'
-import Pedro from '@/images/members/Pedro.jpg'
-import Sofia from '@/images/members/Sofia.jpeg'
-import Tomas from '@/images/members/Tomas.png'
-import Duda from '@/images/members/Duda.jpeg'
-import Beatriz from '@/images/members/Beatriz.png'
-
 
 interface IMemberPage {
   title: string
@@ -21,7 +7,8 @@ interface IMemberPage {
 
 const orientador: MemberType = {
   name: 'Erika',
-  imgUrl: Erika.src,
+  imgUrl:
+    '/members/Erika.png',
   course: 'orientador',
   semester: '2005/1',
   interest: 'Teste de Software',
@@ -32,84 +19,84 @@ const orientador: MemberType = {
 const petianes: MemberType[] = [
   {
     name: 'Galeano',
-    imgUrl: Gale.src,
+    imgUrl: '/members/Galeano.jpeg',
     course: 'ecp',
     semester: '2021/2',
     interest: 'Desenvolvimento de Software',
   },
   {
     name: 'Helo',
-    imgUrl: Helo.src,
+    imgUrl: '/members/Helo.png',
     course: 'ecp',
     semester: '2021/1',
     interest: 'Sistemas Embarcados e Transmissão de Dados',
   },
   {
     name: 'Ian',
-    imgUrl: Ian.src,
+    imgUrl: '/members/Ian.png',
     course: 'ecp',
     semester: '2021/2',
     interest: 'Otimização de Programas',
   },
   {
     name: 'JV',
-    imgUrl: JV.src,
+    imgUrl: '/members/JV.jpg',
     course: 'cic',
     semester: '2021/2',
     interest: 'Desenvolvimento de Software',
   },
   {
     name: 'José',
-    imgUrl: Jose.src,
+    imgUrl: '/members/Jose.jpg',
     course: 'cic',
     semester: '2020/2',
     interest: 'Desenvolvimento de Software',
   },
   {
     name: 'Marcos',
-    imgUrl: Marcos.src,
+    imgUrl: "/members/Marcos.jpg",
     course: 'cic',
     semester: '2022/2',
     interest: 'Engenharia de Software e IA',
   },
   {
     name: 'Pedro',
-    imgUrl: Pedro.src,
+    imgUrl: '/members/Pedro.jpg',
     course: 'ecp',
     semester: '2021/1',
     interest: 'Machine Learning',
   },
   {
     name: 'Sofia',
-    imgUrl: Sofia.src,
+    imgUrl: '/members/Sofia.jpeg',
     course: 'cic',
     semester: '2020/1',
     interest: 'Desenvolvimento de Jogos',
   },
   {
     name: 'Tomás',
-    imgUrl: Tomas.src,
+    imgUrl: '/members/Tomas.png',
     course: 'cic',
     semester: '2022/1',
     interest: 'Inteligência Artificial',
   },
   {
     name: 'Laura',
-    imgUrl: Laura.src,
+    imgUrl: '/members/Laura.jpg',
     course: 'cic',
     semester: '2022/1',
     interest: 'Inteligência Artificial',
   },
   {
     name: 'Beatriz',
-    imgUrl: Beatriz.src,
+    imgUrl: '/members/Beatriz.png',
     course: 'cic',
     semester: '2022/1',
     interest: 'Engenharia de Software',
   },
   {
     name: 'Duda',
-    imgUrl: Duda.src,
+    imgUrl: '/members/Duda.jpeg',
     course: 'cic',
     semester: '2022/1',
     interest: 'Teoria e Desenvolvimento',
