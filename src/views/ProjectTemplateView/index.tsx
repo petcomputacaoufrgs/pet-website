@@ -54,31 +54,31 @@ const ProjectTemplateView = () => {
     setContent(content as ProjectType)
   }, [])
 
-  const strFromItemList = (members?: string[]) => {
-    if (!members || members.length === 0) {
+  const strFromItemList = (items?: string[]) => {
+    if (!items || items.length === 0) {
       return ''
     }
 
-    if (members.length === 1) {
-      return members[0]
+    if (items.length === 1) {
+      return items[0]
     }
 
-    let membersList = ''
-    members = members.sort()
+    let outputStr = ''
+    items = items.sort()
 
     // 'A, B, C e D'
-    for (let i = 0; i < members.length; i++) {
-      if (i === members.length - 1) {
-        membersList += ` e ${members[i]}`
-      } else if (i === members.length - 2) {
-        membersList += `${members[i]} ` // make sure there is a space with no comma after penultimate member
+    for (let i = 0; i < items.length; i++) {
+      if (i === items.length - 1) {
+        outputStr += ` e ${items[i]}`
+      } else if (i === items.length - 2) {
+        outputStr += `${items[i]} ` // make sure there is a space with no comma after penultimate member
       }
       else {
-        membersList += `${members[i]}, `
+        outputStr += `${items[i]}, `
       }
     }
 
-    return membersList
+    return outputStr
   }
 
   return (
