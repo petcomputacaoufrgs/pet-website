@@ -337,13 +337,15 @@ namespace Projetos {
     status: 'ativo',
     card_banner:
       'https://images.pexels.com/photos/6135762/pexels-photo-6135762.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    page_icon: 'https://cdn-icons-png.flaticon.com/128/11274/11274351.png',
+    page_icon: 'https://cdn.discordapp.com/attachments/1108909326271266870/1143706029574602812/3338380.png',
     name: 'Bem-Te-Vi',
     description:
       'Tentando melhorar a saúde dos estudantes do INF',
     axis: ['interação', 'pesquisa'],
     text: [
-      '',
+      'O projeto Bem-Te-Vi tem como objetivo fundamental oferecer apoio e espaço para questões relacionadas à saúde mental dos estudantes do INF, buscando não apenas promover a integração entre eles, mas também mapear e trazer à tona discussões importantes sobre o bem-estar psicológico.',
+      'No decorrer do primeiro semestre de 2023, o Bem-Te-Vi já realizou pesquisas colaborativas com estudantes de psicologia da UFCSPA, com o intuito de compreender as demandas específicas dos alunos durante o desenvolvimento de seus projetos. Além disso, levamos os resultados da pesquisa aos setores administrativos, ampliando a voz dos estudantes e abordando esse tópico tão relevante.',
+      'Assim, o Bem-Te-Vi se empenha em ampliar o diálogo sobre saúde mental dentro da comunidade, impulsionando o bem-estar de todos. Acreditamos que esse enfoque é fundamental para possibilitar que os alunos possam se dedicar aos estudos de forma proveitosa ao longo do curso.',
     ],
     active_members:
       'Beatriz Arend, Duda Tessari, Heloísa de Carvalho, João Vítor Schimuneck de Souza e Pedro Miola',
