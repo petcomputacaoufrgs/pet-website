@@ -493,8 +493,24 @@ export const NomeDoProjeto: ProjectType = {
     'Texto do projeto',
     'Segundo parágrafo',
   ],
-  active_members: 'Nome dos petianes ativos no projeto',
-  members: 'Nome dos petianes que já participaram do projeto',
+  active_members: [
+    'Nome', 
+    'dos',
+    'petianes',
+    'ativos',
+    'no',
+    'projeto',
+  ],
+  members: [
+    'Nome', 
+    'dos',
+    'petianes',
+    'que',
+    'já',
+    'participaram',
+    'do',
+    'projeto',
+  ], 
   tools: 'Ferramentas utilizadas no projeto',
   cta: [ // Não obrigatório
     {
