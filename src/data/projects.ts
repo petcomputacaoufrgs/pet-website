@@ -20,8 +20,15 @@ namespace Projetos {
       'Nessa disciplina, os alunos partem de processadores fictícios simples como o Neander e chegam em até o processador Intel. Sendo uma alternativa para diversas dessas máquinas teóricas estudadas pelas disciplinas, o Hidra é um editor de assembly integrado à interface de execução das máquinas.',
       'A última manutenção do PET incluiu algumas funcionalidades novas, como: conversor de bases (entre 2 e 36) e representação de inteiro (positivo, sinal magnitude, complemento de B e complemento de B-1); conversor de ponto (notação humana, ponto fixo e ponto flutuante) de diferentes tamanhos; e menu de localizar e substituir.',
     ],
-    members:
-      'Alice Carra, Bruno Zimmermann, Galeano Domingues, José Henrique Lima, Marcos Reckers, Pedro Poli Miola e João Vítor Schimuneck de Souza',
+    members: [
+      'Alice Carra',
+      'Bruno Zimmermann',
+      'Galeano Domingues',
+      'José Henrique Lima',
+      'Marcos Reckers',
+      'Pedro Poli Miola',
+      'João Vítor Schimuneck de Souza',
+    ],
     tools: 'C++ e Qt',
     cta: [
       {
@@ -47,8 +54,15 @@ namespace Projetos {
       'O aplicativo possui ferramentas e informações úteis para a organização dos pais e diversos jogos educativos voltados às crianças.',
       'O DinoApp é uma PWA, um aplicativo web que se comporta como um aplicativo nativo quando pode ser instalado e como uma página web quando não pode.',
     ],
-    members:
-      'Bernardo Borba, Eduarda Waechter, Heric Rodrigues, João Pedro Silva, Léo de Vasconcelos, Mayra Cademartori e Vic Duarte',
+    members: [
+      'Bernardo Borba',
+      'Eduarda Waechter',
+      'Heric Rodrigues',
+      'João Pedro Silva',
+      'Léo de Vasconcelos',
+      'Mayra Cademartori',
+      'Vic Duarte',
+    ],
     tools:
       'Figma, Canva, Typescript, HTML, CSS, ReactJS, Java, Spring e PostgreSQL',
     cta: [
@@ -76,7 +90,7 @@ namespace Projetos {
       'O produto desenvolvido implementa um centro de tomada de decisões para os jogos de tabuleiros já presentes no Lobo Games, permitindo que um jogador pudesse jogar mesmo sem outro jogador disponível.',
       'O Lobo utiliza métodos de Inteligência Artificial voltados para a teoria dos jogos, como Reinforcement Learning e o algoritmo Minimax.',
     ],
-    members: 'Eduardo Fantini e Thiago Lermen',
+    members: ['Eduardo Fantini', 'Thiago Lermen'],
     tools: 'C++ e Python',
     cta: [
       {
@@ -102,8 +116,18 @@ namespace Projetos {
       'Originalmente, o Café com PET foi pensado como uma roda de conversa, onde seria possível beber café e debater. No entanto, com a chegada da pandemia, foi necessário adaptá-lo para o meio digital.',
       'Durante o período de ERE (Ensino Remoto Emergencial), foram organizadas lives no YouTube, trazendo convidados que com conhecimento nos assuntos debatidos para, assim, enriquecer as discussões.',
     ],
-    members:
-      'Bernardo Beneduzi, Eduarda Waechter, Heloísa de Carvalho, Heric Rodrigues, Jordi Pujol, Léo de Vasconcelos, Matheus Almeida, Nathan Alonso, Nicolle Favero e Vic Duarte',
+    members: [
+      'Bernardo Beneduzi',
+      'Eduarda Waechter',
+      'Heloísa de Carvalho',
+      'Heric Rodrigues',
+      'Jordi Pujol',
+      'Léo de Vasconcelos',
+      'Matheus Almeida',
+      'Nathan Alonso',
+      'Nicolle Favero',
+      'Vic Duarte',
+    ],
     tools: 'StreamYard, YouTube',
     cta: [
       {
@@ -130,9 +154,19 @@ namespace Projetos {
       'O Projeto Dragão foi criado no final de 2020 pelas petianas Graciela e Victória com o objetivo de reviver as redes sociais do PET Computação.',
       'Hoje o projeto mantém-se ativo e seus participantes atuam na manutenção das redes sociais e na criação de novas séries de postagem.',
     ],
-    active_members: 'Heloísa de Carvalho e Henrique Carniel',
-    members:
-      'Ian Kersz, Matheus Almeida, Heric Rodrigues, Léo de Vasconcelos, Bernardo Beneduzi, Vic Duarte e Pedro Miola',
+    active_members: [
+      'Heloísa de Carvalho',
+      'Henrique Carniel',
+    ],
+    members: [
+      'Ian Kersz',
+      'Matheus Almeida',
+      'Heric Rodrigues',
+      'Léo de Vasconcelos',
+      'Bernardo Beneduzi',
+      'Vic Duarte',
+      'Pedro Miola',
+    ],
     tools: 'Canva, Photoshop',
   }
 
@@ -154,8 +188,14 @@ namespace Projetos {
       'Usaremos métodos de Processamento de Linguagem Natural (PLN), observando a música como se fosse uma linguagem, abstraindo-a. Fazendo isso, a máquina pode reconhecer e processar dados semelhantes.',
       'Na primeira etapa, usaremos técnicas de geração de texto, utilizando Redes Neurais Recorrentes (RNNs) e Memórias de Longo Prazo (LSTMs). Com a eficácia do treinamento, mesmo que seja razoável, faremos a mesma implementação usando modelos específicos como Transformers.',
     ],
-    members:
-      'Eduardo Fantini, José Henrique Lima, Nathan Alonso, Pedro Miola, Thiago Lermen e Vitor Caruso',
+    members: [
+      'Eduardo Fantini',
+      'José Henrique Lima',
+      'Nathan Alonso',
+      'Pedro Miola',
+      'Thiago Lermen',
+      'Vitor Caruso',
+    ],
     tools: 'Python, PyTorch, Music21 e Pandas',
     cta: [
       {
@@ -187,8 +227,16 @@ namespace Projetos {
       'O time que desenvolve o projeto mantém contato com o professor que ministra a disciplina no Instituto de Informática e, com isso, sempre verifica se os objetivos do time e do professor estão alinhados.',
       'O projeto tem como objetivo final entregar uma interface mais amigável, com uma melhor performance, além de trazer funcionalidades que facilitem o desenvolvimento e programação dentro desses simuladores.',
     ],
-    members:
-      'Bruno Zimmermann, Heric Rodrigues, João Pedro Silva, Jordi Pujol, Luccas Lima, Nicolle Favero, Matheus Almeida e Vic Duarte',
+    members: [
+      'Bruno Zimmermann',
+      'Heric Rodrigues',
+      'João Pedro Silva',
+      'Jordi Pujol',
+      'Luccas Lima',
+      'Nicolle Favero',
+      'Matheus Almeida',
+      'Vic Duarte',
+    ],
     tools: 'Javascript, HTML, CSS, WebAssembly e Rust',
     cta: [
       {
@@ -224,9 +272,18 @@ namespace Projetos {
       'Além disso, no setor de interação e ensino, busca-se converter os conhecimentos adquiridos no projeto em cursos, oficinas e palestras tanto para a comunidade interna da UFRGS quanto para a comunidade externa.',
       'Nesse contexto, um dos objetivos centrais do projeto consiste na interação com alunos do ensino fundamental e médio levando a temática da computação e suas possibilidades de maneira lúdica, estimulando o interesse pela área.',
     ],
-    active_members: 'Henrique Carniel e Sofia Maciel',
-    members:
-      'Ian Kersz, Matheus Almeida, Vitor Caruso, Léo Vasconcelos, Luccas Lima, e Vic Duarte',
+    active_members: [
+      'Henrique Carniel',
+      'Sofia Maciel',
+    ],
+    members: [
+      'Ian Kersz',
+      'Matheus Almeida',
+      'Vitor Caruso',
+      'Léo de Vasconcelos',
+      'Luccas Lima',
+      'Vic Duarte',
+    ],
     tools: 'C#, Unity, Aseprite',
     cta: [
       {
@@ -257,7 +314,11 @@ namespace Projetos {
       'Por fim, o projeto foca também na melhoria da qualidade de vida dos estudantes, oferecendo maiores facilidades para o desenvolvimento de código, e no aprendizado, com tutoriais de utilização e/ou criação das ferramentas disponibilizadas.',
       'O projeto tem o objetivo de possibilitar aos alunos usarem diferentes ambientes de desenvolvimento com diferentes linguagens utilizadas nas disciplinas, aumentando a produtividade, reduzindo o tempo gasto com configurações mais avançadas e promovendo o aprendizado de tais ferramentas.',
     ],
-    active_members: 'Ian Kersz, José Henrique Lima e Marcos Reckers',
+    active_members: [
+      'Ian Kersz',
+      'José Henrique Lima',
+      'Marcos Reckers',
+    ],
     tools: 'Makefile, CMake',
     cta: [
       {
@@ -284,8 +345,15 @@ namespace Projetos {
       'Atualmente, o grupo novamente demonstra interesse na criação de materiais e programas que exploram o tópico de Machine Learning.',
       'Como resultado de projetos anteriores o grupo possui um material introdutório sobre o assunto, porém sente que há ainda bastante espaço para evolução deste material para permitir um aprendizado mais autônomo e interessante.',
     ],
-    active_members:
-      'Galeano Domingues, Henrique Carniel, Ian Kersz, João Vítor Schimuneck de Souza, José Henrique Lima, Marcos Reckers e Pedro Poli Miola',
+    active_members: [
+      'Galeano Domingues',
+      'Henrique Carniel',
+      'Ian Kersz',
+      'João Vítor Schimuneck de Souza',
+      'José Henrique Lima',
+      'Marcos Reckers',
+      'Pedro Poli Miola',
+    ],
     tools: 'Python e Jupyter',
   }
 
@@ -306,8 +374,10 @@ namespace Projetos {
       'O projeto Baleia foi criado em 2022 com o objetivo de criar um servidor para o PET Computação.',
       'A ideia é que o servidor seja utilizado para armazenar arquivos e informações do grupo, além de ser um meio de hospedar os serviços e sites necessários pelo grupo.',
     ],
-    active_members:
-      'Ian Kersz e Marcos Reckers',
+    active_members: [
+      'Ian Kersz',
+      'Marcos Reckers',
+    ],
     tools: 'Proxmox e Docker',
   }
 
@@ -326,8 +396,11 @@ namespace Projetos {
       'O projeto do que busca tornar a experiência com Hardware mais amigável para iniciantes.',
       'No Portas Abertas, compartilhamos nossa matriz de LED, onde os participantes puderam mergulhar em jogos como a cobrinha e cabo de guerra!',
     ],
-    active_members:
-      'Galeano Domingues, Pedro Miola e Marcos Reckers',
+    active_members: [
+      'Galeano Domingues',
+      'Pedro Miola',
+      'Marcos Reckers',
+    ],
     tools: 'Arduino',
   }
 
@@ -347,8 +420,13 @@ namespace Projetos {
       'No decorrer do primeiro semestre de 2023, o Bem-Te-Vi já realizou pesquisas colaborativas com estudantes de psicologia da UFCSPA, com o intuito de compreender as demandas específicas dos alunos durante o desenvolvimento de seus projetos. Além disso, levamos os resultados da pesquisa aos setores administrativos, ampliando a voz dos estudantes e abordando esse tópico tão relevante.',
       'Assim, o Bem-Te-Vi se empenha em ampliar o diálogo sobre saúde mental dentro da comunidade, impulsionando o bem-estar de todos. Acreditamos que esse enfoque é fundamental para possibilitar que os alunos possam se dedicar aos estudos de forma proveitosa ao longo do curso.',
     ],
-    active_members:
-      'Beatriz Arend, Duda Tessari, Heloísa de Carvalho, João Vítor Schimuneck de Souza e Pedro Miola',
+    active_members: [
+      'Beatriz Arend',
+      'Duda Tessari',
+      'Heloísa de Carvalho',
+      'João Vítor Schimuneck de Souza',
+      'Pedro Miola',
+    ],
     tools: '',
   }
 
@@ -366,8 +444,11 @@ namespace Projetos {
     text: [
       'Você já teve interesse de adentrar no mundo da pesquisa do INF? Pois “O Café com Pesquisa” vai te apresentar as linhas de pesquisa do PPGC (Programa de Pós-Graduação em Computação)',
     ],
-    active_members:
-      'Galeano Domingues, Pedro Miola e Beatriz Arend',
+    active_members: [
+      'Galeano Domingues',
+      'Pedro Miola',
+      'Beatriz Arend',
+    ],
     tools: 'Canva',
   }
 
@@ -385,8 +466,12 @@ namespace Projetos {
     text: [
       'Tem a missão de separar e catalogar os itens presentes no Acervo do Instituto de Informática, com o intuito de facilitar o acesso a eles.',
     ],
-    active_members:
-      'Heloísa de Carvalho, Vic Duarte, Sofia Maciel e Marcos Reckers',
+    active_members: [
+      'Heloísa de Carvalho',
+      'Vic Duarte',
+      'Sofia Maciel',
+      'Marcos Reckers',
+    ],
     tools: '',
   }
 }

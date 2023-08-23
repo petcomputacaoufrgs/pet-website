@@ -54,6 +54,34 @@ const ProjectTemplateView = () => {
     setContent(content as ProjectType)
   }, [])
 
+  const createMembersList = (members?: string[]) => {
+    if (!members || members.length === 0) {
+      return ''
+    }
+
+    if (members.length === 1) {
+      return members[0]
+    }
+
+    let membersList = ''
+    members = members.sort()
+
+    // 'A, B, C, e D'
+    for (let i = 0; i < members.length; i++) {
+      if (i === members.length - 1) {
+
+        membersList += ` e ${members[i]}`
+      } else if (i === members.length - 2) {
+        membersList += `${members[i]} `
+      }
+      else {
+        membersList += `${members[i]}, `
+      }
+    }
+
+    return membersList
+  }
+
   return (
     <>
       {content && (
@@ -101,7 +129,7 @@ const ProjectTemplateView = () => {
               {content.active_members && content.status === 'ativo' && (
                 <>
                   <Subtitle>Participantes Ativos:</Subtitle>
-                  <p>{content.active_members}</p>
+                  <p>{createMembersList(content.active_members)}</p>
                 </>
               )}
               {content.members && (
@@ -111,7 +139,13 @@ const ProjectTemplateView = () => {
                   ) : (
                     <Subtitle>Participantes:</Subtitle>
                   )}
-                  <p>{content.members}</p>
+
+                  {content.status === 'ativo' ? (
+                    <p>{createMembersList(content.members)}</p>
+                  ) : (
+                    <p>{createMembersList([...content.active_members ?? [], ...content.members])}</p>
+                  )}
+
                 </>
               )}
               <Subtitle>Ferramentas:</Subtitle>
