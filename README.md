@@ -1,6 +1,6 @@
 # Website PET Computação UFRGS
 
-### <a href="https://pet-website-tawny.vercel.app/">Check out the project running →</a>
+### <a href="https://petcompufrgs.com.br/">Check out the project running →</a>
 
 ---
 
