@@ -11,7 +11,7 @@ export type ProjectType = {
   axis: ('interação' | 'ensino' | 'pesquisa' | 'desenvolvimento')[]
   text: string[]
   active_members?: string[]
-  members?: string[]
+  inactive_members?: string[]
   tools: string[]
   cta?: CtaType[]
   customContent?: string

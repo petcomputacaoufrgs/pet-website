@@ -20,7 +20,7 @@ namespace Projetos {
       'Nessa disciplina, os alunos partem de processadores fictícios simples como o Neander e chegam em até o processador Intel. Sendo uma alternativa para diversas dessas máquinas teóricas estudadas pelas disciplinas, o Hidra é um editor de assembly integrado à interface de execução das máquinas.',
       'A última manutenção do PET incluiu algumas funcionalidades novas, como: conversor de bases (entre 2 e 36) e representação de inteiro (positivo, sinal magnitude, complemento de B e complemento de B-1); conversor de ponto (notação humana, ponto fixo e ponto flutuante) de diferentes tamanhos; e menu de localizar e substituir.',
     ],
-    members: [
+    inactive_members: [
       'Alice Carra',
       'Bruno Zimmermann',
       'Galeano Domingues',
@@ -54,7 +54,7 @@ namespace Projetos {
       'O aplicativo possui ferramentas e informações úteis para a organização dos pais e diversos jogos educativos voltados às crianças.',
       'O DinoApp é uma PWA, um aplicativo web que se comporta como um aplicativo nativo quando pode ser instalado e como uma página web quando não pode.',
     ],
-    members: [
+    inactive_members: [
       'Bernardo Borba',
       'Eduarda Waechter',
       'Heric Rodrigues',
@@ -89,7 +89,7 @@ namespace Projetos {
       'O produto desenvolvido implementa um centro de tomada de decisões para os jogos de tabuleiros já presentes no Lobo Games, permitindo que um jogador pudesse jogar mesmo sem outro jogador disponível.',
       'O Lobo utiliza métodos de Inteligência Artificial voltados para a teoria dos jogos, como Reinforcement Learning e o algoritmo Minimax.',
     ],
-    members: ['Eduardo Fantini', 'Thiago Lermen'],
+    inactive_members: ['Eduardo Fantini', 'Thiago Lermen'],
     tools: ['C++', 'Python',],
     cta: [
       {
@@ -115,7 +115,7 @@ namespace Projetos {
       'Originalmente, o Café com PET foi pensado como uma roda de conversa, onde seria possível beber café e debater. No entanto, com a chegada da pandemia, foi necessário adaptá-lo para o meio digital.',
       'Durante o período de ERE (Ensino Remoto Emergencial), foram organizadas lives no YouTube, trazendo convidados que com conhecimento nos assuntos debatidos para, assim, enriquecer as discussões.',
     ],
-    members: [
+    inactive_members: [
       'Bernardo Beneduzi',
       'Eduarda Waechter',
       'Heloísa de Carvalho',
@@ -157,7 +157,7 @@ namespace Projetos {
       'Heloísa de Carvalho',
       'Henrique Carniel',
     ],
-    members: [
+    inactive_members: [
       'Ian Kersz',
       'Matheus Almeida',
       'Heric Rodrigues',
@@ -187,7 +187,7 @@ namespace Projetos {
       'Usaremos métodos de Processamento de Linguagem Natural (PLN), observando a música como se fosse uma linguagem, abstraindo-a. Fazendo isso, a máquina pode reconhecer e processar dados semelhantes.',
       'Na primeira etapa, usaremos técnicas de geração de texto, utilizando Redes Neurais Recorrentes (RNNs) e Memórias de Longo Prazo (LSTMs). Com a eficácia do treinamento, mesmo que seja razoável, faremos a mesma implementação usando modelos específicos como Transformers.',
     ],
-    members: [
+    inactive_members: [
       'Eduardo Fantini',
       'José Henrique Lima',
       'Nathan Alonso',
@@ -226,7 +226,7 @@ namespace Projetos {
       'O time que desenvolve o projeto mantém contato com o professor que ministra a disciplina no Instituto de Informática e, com isso, sempre verifica se os objetivos do time e do professor estão alinhados.',
       'O projeto tem como objetivo final entregar uma interface mais amigável, com uma melhor performance, além de trazer funcionalidades que facilitem o desenvolvimento e programação dentro desses simuladores.',
     ],
-    members: [
+    inactive_members: [
       'Bruno Zimmermann',
       'Heric Rodrigues',
       'João Pedro Silva',
@@ -275,7 +275,7 @@ namespace Projetos {
       'Henrique Carniel',
       'Sofia Maciel',
     ],
-    members: [
+    inactive_members: [
       'Ian Kersz',
       'Matheus Almeida',
       'Vitor Caruso',
@@ -500,7 +500,7 @@ export const NomeDoProjeto: ProjectType = {
     'no',
     'projeto',
   ],
-  members: [
+  inactive_members: [
     'Nome', 
     'dos',
     'petianes',

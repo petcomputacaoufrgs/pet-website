@@ -132,17 +132,17 @@ const ProjectTemplateView = () => {
                 </>
               )}
 
-              {content.members && content.status === 'ativo' && (
+              {content.inactive_members && content.status === 'ativo' && (
                 <>
                   <Subtitle>Outros Participantes:</Subtitle>
-                  <p>{strFromItemList(content.members)}</p>
+                  <p>{strFromItemList(content.inactive_members)}</p>
                 </>
               )}
 
-              {content.status !== 'ativo' && (content.active_members || content.members) && (
+              {content.status !== 'ativo' && (content.active_members || content.inactive_members) && (
                 <>
                   <Subtitle>Participantes:</Subtitle>
-                  <p>{strFromItemList([...content.active_members ?? [], ...content.members ?? []])}</p>
+                  <p>{strFromItemList([...content.active_members ?? [], ...content.inactive_members ?? []])}</p>
                 </>
               )}
 
