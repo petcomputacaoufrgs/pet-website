@@ -29,7 +29,7 @@ namespace Projetos {
       'Pedro Poli Miola',
       'João Vítor Schimuneck de Souza',
     ],
-    tools: 'C++ e Qt',
+    tools: ['C++', 'Qt',],
     cta: [
       {
         label: 'acesse o release mais recente',
@@ -63,8 +63,7 @@ namespace Projetos {
       'Mayra Cademartori',
       'Vic Duarte',
     ],
-    tools:
-      'Figma, Canva, Typescript, HTML, CSS, ReactJS, Java, Spring e PostgreSQL',
+    tools: ['Figma', 'Canva', 'Typescript', 'HTML', 'CSS', 'ReactJS', 'Java', 'Spring', 'PostgreSQL',],
     cta: [
       {
         label: 'veja o github do nosso projeto',
@@ -91,7 +90,7 @@ namespace Projetos {
       'O Lobo utiliza métodos de Inteligência Artificial voltados para a teoria dos jogos, como Reinforcement Learning e o algoritmo Minimax.',
     ],
     members: ['Eduardo Fantini', 'Thiago Lermen'],
-    tools: 'C++ e Python',
+    tools: ['C++', 'Python',],
     cta: [
       {
         label: 'veja o github desse projeto',
@@ -128,7 +127,7 @@ namespace Projetos {
       'Nicolle Favero',
       'Vic Duarte',
     ],
-    tools: 'StreamYard, YouTube',
+    tools: ['StreamYard', 'YouTube',],
     cta: [
       {
         label: 'acesse nossa playlist no YouTube',
@@ -167,7 +166,7 @@ namespace Projetos {
       'Vic Duarte',
       'Pedro Miola',
     ],
-    tools: 'Canva, Photoshop',
+    tools: ['Canva', 'Photoshop',],
   }
 
   export const Papagaio: ProjectType = {
@@ -196,7 +195,7 @@ namespace Projetos {
       'Thiago Lermen',
       'Vitor Caruso',
     ],
-    tools: 'Python, PyTorch, Music21 e Pandas',
+    tools: ['Python', 'PyTorch', 'Music21', 'Pandas'],
     cta: [
       {
         label: 'veja o github desse projeto',
@@ -237,7 +236,7 @@ namespace Projetos {
       'Matheus Almeida',
       'Vic Duarte',
     ],
-    tools: 'Javascript, HTML, CSS, WebAssembly e Rust',
+    tools: ['Javascript', 'HTML', 'CSS', 'WebAssembly', 'Rust',],
     cta: [
       {
         label: 'teste nossa máquina Norma',
@@ -284,7 +283,7 @@ namespace Projetos {
       'Luccas Lima',
       'Vic Duarte',
     ],
-    tools: 'C#, Unity, Aseprite',
+    tools: ['C#', 'Unity', 'Aseprite',],
     cta: [
       {
         label: 'veja o github desse projeto',
@@ -319,7 +318,7 @@ namespace Projetos {
       'José Henrique Lima',
       'Marcos Reckers',
     ],
-    tools: 'Makefile, CMake',
+    tools: ['Makefile', 'CMake',],
     cta: [
       {
         label: 'veja o github desse projeto',
@@ -354,7 +353,7 @@ namespace Projetos {
       'Marcos Reckers',
       'Pedro Poli Miola',
     ],
-    tools: 'Python e Jupyter',
+    tools: ['Python', 'Jupyter',],
   }
 
   //TODO Update the projects above
@@ -378,7 +377,7 @@ namespace Projetos {
       'Ian Kersz',
       'Marcos Reckers',
     ],
-    tools: 'Proxmox e Docker',
+    tools: ['Proxmox', 'Docker',],
   }
 
   export const Hardware: ProjectType = {
@@ -401,7 +400,7 @@ namespace Projetos {
       'Pedro Miola',
       'Marcos Reckers',
     ],
-    tools: 'Arduino',
+    tools: ['Arduino',],
   }
 
   export const BemTeVi: ProjectType = {
@@ -427,7 +426,7 @@ namespace Projetos {
       'João Vítor Schimuneck de Souza',
       'Pedro Miola',
     ],
-    tools: '',
+    tools: [],
   }
 
   export const CafeComPesquisa: ProjectType = {
@@ -449,7 +448,7 @@ namespace Projetos {
       'Pedro Miola',
       'Beatriz Arend',
     ],
-    tools: 'Canva',
+    tools: ['Canva',],
   }
 
   export const Acervo: ProjectType = {
@@ -472,7 +471,7 @@ namespace Projetos {
       'Sofia Maciel',
       'Marcos Reckers',
     ],
-    tools: '',
+    tools: [],
   }
 }
 
@@ -511,7 +510,7 @@ export const NomeDoProjeto: ProjectType = {
     'do',
     'projeto',
   ], 
-  tools: 'Ferramentas utilizadas no projeto',
+  tools: ['Ferramentas', 'utilizadas', 'no', 'projeto',],
   cta: [ // Não obrigatório
     {
       label: 'Texto do botão 1',

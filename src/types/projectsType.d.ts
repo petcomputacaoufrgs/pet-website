@@ -12,7 +12,7 @@ export type ProjectType = {
   text: string[]
   active_members?: string[]
   members?: string[]
-  tools: string
+  tools: string[]
   cta?: CtaType[]
   customContent?: string
 }
