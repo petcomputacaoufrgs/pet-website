@@ -28,6 +28,10 @@ const FilterDropdown = ({
       </DropdownInput>
       {showDropdown && (
         <OptionsContainer>
+
+          <InputContainer>
+            Categorias:
+          </InputContainer>
           <InputContainer>
             <CheckboxInput
               type="checkbox"
