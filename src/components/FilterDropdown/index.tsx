@@ -48,15 +48,9 @@ const FilterDropdown = ({
             />
             <label htmlFor="projects">Projetos</label>
           </InputContainer>
+
           <InputContainer>
-            <CheckboxInput
-              type="checkbox"
-              id="finished"
-              name="finished"
-              checked={optionsSelected.includes('concluído')}
-              onChange={() => handleOptionClick('concluído')}
-            />
-            <label htmlFor="finished">Concluído</label>
+            Estado:
           </InputContainer>
           <InputContainer>
             <CheckboxInput
@@ -67,6 +61,20 @@ const FilterDropdown = ({
               onChange={() => handleOptionClick('ativo')}
             />
             <label htmlFor="active">Ativo</label>
+          </InputContainer>
+          <InputContainer>
+            <CheckboxInput
+              type="checkbox"
+              id="finished"
+              name="finished"
+              checked={optionsSelected.includes('concluído')}
+              onChange={() => handleOptionClick('concluído')}
+            />
+            <label htmlFor="finished">Concluído</label>
+          </InputContainer>
+
+          <InputContainer>
+            Eixos:
           </InputContainer>
           <InputContainer>
             <CheckboxInput
