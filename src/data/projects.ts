@@ -340,7 +340,7 @@ namespace Projetos {
     page_icon: 'https://cdn.discordapp.com/attachments/1108909326271266870/1143706029574602812/3338380.png',
     name: 'Bem-Te-Vi',
     description:
-      'Tentando melhorar a saúde dos estudantes do INF',
+      'Promovendo o bem-estar dos estudantes do Instituto de Informática',
     axis: ['interação', 'pesquisa'],
     text: [
       'O projeto Bem-Te-Vi tem como objetivo fundamental oferecer apoio e espaço para questões relacionadas à saúde mental dos estudantes do INF, buscando não apenas promover a integração entre eles, mas também mapear e trazer à tona discussões importantes sobre o bem-estar psicológico.',
