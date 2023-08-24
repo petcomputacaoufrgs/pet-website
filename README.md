@@ -188,23 +188,11 @@ In this object you can edit the page title too!
 
 To add, remove or update a project, access `src/data/projects.ts`.
 
-At the end of this file there is an array like the following:
+In this file, there are two namespaces: `projects` and `courses`.
 
-```typescript
-export const projects: (ProjectType | CourseType)[] = [
-  hidraProject,
-  dinoProject,
-  //... more projects and courses
-  sdrCourse,
-  castorProject,
-]
-```
+So, to add a new project or course, create an object with the correct type (`ProjectType` or `CourseType`) and add the necessary info. After that, the object will be available to be used on the website.
 
-Each of these items is an object of a project or course, that is defined above this list.
-
-So, to add a new project or course, create an object with the correct type (`ProjectType` or `CourseType`) and add the necessary info. After that, you can add this new object at the end of the array.
-
-To edit a project or course, just find the item you need and update the info. To remove a project or course, find the item, delete it and remove it from the array.
+To edit a project or course, just find the item you need and update the info. To remove a project or course, find the item, delete it.
 
 #### Add custom components to projects
 
