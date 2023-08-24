@@ -28,7 +28,7 @@
 
 PET is a scholarship available in a lot of universities in Brazil. Their main goal is to provide an opportunity for students to develop themselves by studying topics of their interests and share their learnings with the community. The group PET Computação UFRGS is a group composed by graduate students of Computer Science and Engineering.
 
-The group is constantly changing and adapating. This means that web development is not always a topic of interest of the group. So, for this reason, is important to make the website maintenance as easy as possible. However, it is crutial to keep it easily customizable, because, after all, the group is formed by tech students and they must have a space to exercise their knowledge and creativity if they desire.
+The group is constantly changing and adapting. This means that web development is not always a topic of interest of the group. So, for this reason, is important to make the website maintenance as easy as possible. However, it is crucial to keep it easily customizable, because, after all, the group is formed by tech students and they must have a space to exercise their knowledge and creativity if they desire.
 
 With this in mind, this project was made. The intention is to make a website that can be updated only by editing a javascript object but, at the same time, has the possibility to customizations without the need to change all the structure of the project.
 
