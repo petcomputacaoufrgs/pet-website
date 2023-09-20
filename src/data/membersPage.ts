@@ -1,18 +1,19 @@
 import { MemberType } from '@/types/memberType'
 import Erika from '@/images/members/Erika.png'
-import Gale from '@/images/members/Galeano.jpeg'
+//import Gale from '@/images/members/Galeano.jpeg'
 import Helo from '@/images/members/Helo.png'
-import Ian from '@/images/members/Ian.png'
-import Jose from '@/images/members/Jose.jpg'
+//import Ian from '@/images/members/Ian.png'
+//import Jose from '@/images/members/Jose.jpg'
 import JV from '@/images/members/JV.jpg'
 import Laura from '@/images/members/Laura.jpg'
 import Marcos from '@/images/members/Marcos.jpg'
-import Pedro from '@/images/members/Pedro.jpg'
-import Sofia from '@/images/members/Sofia.jpeg'
+//import Pedro from '@/images/members/Pedro.jpg'
+//import Sofia from '@/images/members/Sofia.jpeg'
 import Tomas from '@/images/members/Tomas.png'
 import Duda from '@/images/members/Duda.jpeg'
 import Beatriz from '@/images/members/Beatriz.png'
-
+import Felipe from '@/images/members/Felipe.jpg'
+import Joel from '@/images/members/Joel.jpg'
 
 interface IMemberPage {
   title: string
@@ -31,11 +32,11 @@ const orientador: MemberType = {
 // imgUrl aceita o link de uma imagem, o caminho para a imagem dentro da pasta public, ou o import da imagem com .src
 const petianes: MemberType[] = [
   {
-    name: 'Galeano',
-    imgUrl: Gale.src,
-    course: 'ecp',
-    semester: '2021/2',
-    interest: 'Desenvolvimento de Software',
+    name: 'Felipe',
+    imgUrl: Felipe.src,
+    course: 'cic',
+    semester: '2021/1',
+    interest: '?',
   },
   {
     name: 'Helo',
@@ -45,11 +46,11 @@ const petianes: MemberType[] = [
     interest: 'Sistemas Embarcados e Transmissão de Dados',
   },
   {
-    name: 'Ian',
-    imgUrl: Ian.src,
-    course: 'ecp',
-    semester: '2021/2',
-    interest: 'Otimização de Programas',
+    name: 'Joel',
+    imgUrl: Joel.src,
+    course: 'cic',
+    semester: '2022/2',
+    interest: '?',
   },
   {
     name: 'JV',
@@ -59,32 +60,11 @@ const petianes: MemberType[] = [
     interest: 'Desenvolvimento de Software',
   },
   {
-    name: 'José',
-    imgUrl: Jose.src,
-    course: 'cic',
-    semester: '2020/2',
-    interest: 'Desenvolvimento de Software',
-  },
-  {
     name: 'Marcos',
     imgUrl: Marcos.src,
     course: 'cic',
     semester: '2022/2',
     interest: 'Engenharia de Software e IA',
-  },
-  {
-    name: 'Pedro',
-    imgUrl: Pedro.src,
-    course: 'ecp',
-    semester: '2021/1',
-    interest: 'Machine Learning',
-  },
-  {
-    name: 'Sofia',
-    imgUrl: Sofia.src,
-    course: 'cic',
-    semester: '2020/1',
-    interest: 'Desenvolvimento de Jogos',
   },
   {
     name: 'Tomás',
