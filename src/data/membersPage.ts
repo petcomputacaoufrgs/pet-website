@@ -12,7 +12,7 @@ import Marcos from '@/images/members/Marcos.jpg'
 import Tomas from '@/images/members/Tomas.png'
 import Duda from '@/images/members/Duda.jpeg'
 import Beatriz from '@/images/members/Beatriz.png'
-import Felipe from '@/images/members/Felipe.jpg'
+import Felipe from '@/images/members/Felipe.png'
 import Joel from '@/images/members/Joel.jpg'
 
 interface IMemberPage {
