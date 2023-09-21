@@ -268,7 +268,7 @@ namespace Projetos {
     name: 'Raposa',
     description:
       'Desenvolver conteúdos educacionais de computação direcionados ao ensino médio e fundamental',
-    axis: ['ensino', 'extensão'],
+    axis: ['ensino',],
     text: [
       'O projeto Raposa foi concebido em 2021 com o objetivo de criar um jogo envolvente, com uma estética simples em 2D e arte em PixelArt.',
       'A intenção era aplicar os conhecimentos adquiridos no projeto para desenvolver conteúdo educacional, beneficiando tanto a comunidade interna da UFRGS quanto a comunidade externa. Atualmente, o foco do projeto está mais voltado para a vertente educacional.',

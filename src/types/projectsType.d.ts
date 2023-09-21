@@ -8,7 +8,7 @@ export type ProjectType = {
   page_icon: string
   name: string
   description: string
-  axis: ('interação' | 'ensino' | 'pesquisa' | 'desenvolvimento'| 'extensão')[]
+  axis: ('interação' | 'ensino' | 'pesquisa' | 'desenvolvimento')[]
   text: string[]
   active_members?: string[]
   inactive_members?: string[]
