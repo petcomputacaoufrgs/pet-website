@@ -20,6 +20,9 @@ namespace Projetos {
       'Nessa disciplina, os alunos partem de processadores fictícios simples como o Neander e chegam em até o processador Intel. Sendo uma alternativa para diversas dessas máquinas teóricas estudadas pelas disciplinas, o Hidra é um editor de assembly integrado à interface de execução das máquinas.',
       'A última manutenção do PET incluiu algumas funcionalidades novas, como: conversor de bases (entre 2 e 36) e representação de inteiro (positivo, sinal magnitude, complemento de B e complemento de B-1); conversor de ponto (notação humana, ponto fixo e ponto flutuante) de diferentes tamanhos; e menu de localizar e substituir.',
     ],
+    active_members: [
+      'João Vítor Schimuneck de Souza',
+    ],
     inactive_members: [
       'Alice Carra',
       'Bruno Zimmermann',
@@ -27,7 +30,6 @@ namespace Projetos {
       'José Henrique Lima',
       'Marcos Reckers',
       'Pedro Poli Miola',
-      'João Vítor Schimuneck de Souza',
     ],
     tools: ['C++', 'Qt',],
     cta: [
@@ -118,7 +120,7 @@ namespace Projetos {
     inactive_members: [
       'Bernardo Beneduzi',
       'Eduarda Waechter',
-      'Heloísa de Carvalho',
+      'Heloísa Marques',
       'Heric Rodrigues',
       'Jordi Pujol',
       'Léo de Vasconcelos',
@@ -154,8 +156,9 @@ namespace Projetos {
       'Hoje o projeto mantém-se ativo e seus participantes atuam na manutenção das redes sociais e na criação de novas séries de postagem.',
     ],
     active_members: [
-      'Heloísa de Carvalho',
-      'Henrique Carniel',
+      'Heloísa Marques',
+      'Beatriz Aline Arend',
+      'Eduarda Tessari Pereira',
     ],
     inactive_members: [
       'Ian Kersz',
@@ -165,6 +168,8 @@ namespace Projetos {
       'Bernardo Beneduzi',
       'Vic Duarte',
       'Pedro Miola',
+      'Henrique Carniel',
+      'João Vítor Schimuneck de Souza',
     ],
     tools: ['Canva', 'Photoshop',],
   }
@@ -262,18 +267,18 @@ namespace Projetos {
     page_icon: 'https://cdn-icons-png.flaticon.com/512/2612/2612051.png',
     name: 'Raposa',
     description:
-      'Criação de um jogo para incentivar a entrada de pessoas na área de computação',
-    axis: ['desenvolvimento', 'ensino'],
+      'Desenvolver conteúdos educacionais de computação direcionados ao ensino médio e fundamental',
+    axis: ['ensino', 'extensão'],
     text: [
-      'O projeto Raposa foi idealizado no final de 2021 e desde então está em intenso desenvolvimento, com uma grande e talentosa equipe!',
-      'O projeto visa o desenvolvimento de um jogo divertido com uma estética simples, feito em 2D e em PixelArt. O foco será em mecânicas simples e divertidas de manejamento de uma cafeteria e no desenvolvimento profundo da história da cidade e dos personagens que o jogo apresenta.',
-      'A equipe organiza-se por meio do método SCRUM, dividindo suas tarefas - tanto do setor de arte quanto do setor de programação - em Sprints quinzenais.',
-      'Além disso, no setor de interação e ensino, busca-se converter os conhecimentos adquiridos no projeto em cursos, oficinas e palestras tanto para a comunidade interna da UFRGS quanto para a comunidade externa.',
-      'Nesse contexto, um dos objetivos centrais do projeto consiste na interação com alunos do ensino fundamental e médio levando a temática da computação e suas possibilidades de maneira lúdica, estimulando o interesse pela área.',
+      'O projeto Raposa foi concebido em 2021 com o objetivo de criar um jogo envolvente, com uma estética simples em 2D e arte em PixelArt.',
+      'A intenção era aplicar os conhecimentos adquiridos no projeto para desenvolver conteúdo educacional, beneficiando tanto a comunidade interna da UFRGS quanto a comunidade externa. Atualmente, o foco do projeto está mais voltado para a vertente educacional.',
+      'Buscamos introduzir o mundo da computação e suas vastas possibilidades por meio de cursos, adotando uma abordagem lúdica que estimula o interesse por essa área, especialmente entre os estudantes do ensino fundamental e médio.',
+      'Para alcançar esse objetivo, o Raposa utiliza a demonstração do jogo para ilustrar as capacidades da computação e emprega a gamificação como ferramenta de ensino de programação. Nesse sentido, fazemos uso da plataforma CodeCombat.',
     ],
     active_members: [
-      'Henrique Carniel',
-      'Sofia Maciel',
+      'Eduarda Tessari Pereira',
+      'Laura Reis da Silveira',
+      'Tomás Mitsuo Dias Ueda',
     ],
     inactive_members: [
       'Ian Kersz',
@@ -282,8 +287,10 @@ namespace Projetos {
       'Léo de Vasconcelos',
       'Luccas Lima',
       'Vic Duarte',
+      'Henrique Carniel',
+      'Sofia Maciel',
     ],
-    tools: ['C#', 'Unity', 'Aseprite',],
+    tools: ['C#', 'Unity', 'Aseprite', 'Canva', 'C', 'CodeCombat',],
     cta: [
       {
         label: 'veja o github desse projeto',
@@ -314,9 +321,11 @@ namespace Projetos {
       'O projeto tem o objetivo de possibilitar aos alunos usarem diferentes ambientes de desenvolvimento com diferentes linguagens utilizadas nas disciplinas, aumentando a produtividade, reduzindo o tempo gasto com configurações mais avançadas e promovendo o aprendizado de tais ferramentas.',
     ],
     active_members: [
+      'Marcos Reckers',
+    ],
+    inactive_members: [
       'Ian Kersz',
       'José Henrique Lima',
-      'Marcos Reckers',
     ],
     tools: ['Makefile', 'CMake',],
     cta: [
@@ -345,13 +354,19 @@ namespace Projetos {
       'Como resultado de projetos anteriores o grupo possui um material introdutório sobre o assunto, porém sente que há ainda bastante espaço para evolução deste material para permitir um aprendizado mais autônomo e interessante.',
     ],
     active_members: [
+      'Tomás Mitsuo Dias Ueda',
+      'João Vítor Schimuneck de Souza',
+      'Laura Reis da Silveira',
+      'Felipe Gallois',
+    ],
+    inactive_members: [
       'Galeano Domingues',
       'Henrique Carniel',
       'Ian Kersz',
-      'João Vítor Schimuneck de Souza',
       'José Henrique Lima',
       'Marcos Reckers',
       'Pedro Poli Miola',
+      'Beatriz Aline Arend',
     ],
     tools: ['Python', 'Jupyter',],
   }
@@ -374,8 +389,10 @@ namespace Projetos {
       'A ideia é que o servidor seja utilizado para armazenar arquivos e informações do grupo, além de ser um meio de hospedar os serviços e sites necessários pelo grupo.',
     ],
     active_members: [
-      'Ian Kersz',
       'Marcos Reckers',
+    ],
+    inactive_members: [
+      'Ian Kersz',
     ],
     tools: ['Proxmox', 'Docker',],
   }
@@ -383,7 +400,7 @@ namespace Projetos {
   export const Hardware: ProjectType = {
     type: 'projeto',
     href: '/projects/hardware',
-    status: 'ativo',
+    status: 'concluído',
     card_banner:
       'https://images.pexels.com/photos/163100/circuit-circuit-board-resistor-computer-163100.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     page_icon: 'https://cdn-icons-png.flaticon.com/128/3868/3868033.png',
@@ -395,7 +412,7 @@ namespace Projetos {
       'O projeto do que busca tornar a experiência com Hardware mais amigável para iniciantes.',
       'No Portas Abertas, compartilhamos nossa matriz de LED, onde os participantes puderam mergulhar em jogos como a cobrinha e cabo de guerra!',
     ],
-    active_members: [
+    inactive_members: [
       'Galeano Domingues',
       'Pedro Miola',
       'Marcos Reckers',
@@ -420,10 +437,12 @@ namespace Projetos {
       'Assim, o Bem-Te-Vi se empenha em ampliar o diálogo sobre saúde mental dentro da comunidade, impulsionando o bem-estar de todos. Acreditamos que esse enfoque é fundamental para possibilitar que os alunos possam se dedicar aos estudos de forma proveitosa ao longo do curso.',
     ],
     active_members: [
-      'Beatriz Arend',
-      'Duda Tessari',
-      'Heloísa de Carvalho',
+      'Beatriz Aline Arend',
+      'Eduarda Tessari Pereira',
+      'Heloísa Marques',
       'João Vítor Schimuneck de Souza',
+    ],
+    inactive_members: [
       'Pedro Miola',
     ],
     tools: [],
@@ -444,9 +463,12 @@ namespace Projetos {
       'Você já teve interesse de adentrar no mundo da pesquisa do INF? Pois “O Café com Pesquisa” vai te apresentar as linhas de pesquisa do PPGC (Programa de Pós-Graduação em Computação)',
     ],
     active_members: [
+      'Beatriz Aline Arend',
+      'Tomás Mitsuo Dias Ueda',
+    ],
+    inactive_members: [
       'Galeano Domingues',
       'Pedro Miola',
-      'Beatriz Arend',
     ],
     tools: ['Canva',],
   }
@@ -466,7 +488,9 @@ namespace Projetos {
       'Tem a missão de separar e catalogar os itens presentes no Acervo do Instituto de Informática, com o intuito de facilitar o acesso a eles.',
     ],
     active_members: [
-      'Heloísa de Carvalho',
+      'Heloísa Marques',
+    ],
+    inactive_members: [
       'Vic Duarte',
       'Sofia Maciel',
       'Marcos Reckers',
@@ -524,7 +548,6 @@ export const NomeDoProjeto: ProjectType = {
 }
 
 */
-
 
 namespace Cursos {
   export const Git: CourseType = {
