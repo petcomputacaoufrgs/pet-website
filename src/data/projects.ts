@@ -7,7 +7,7 @@ namespace Projetos {
   export const Hidra: ProjectType = {
     type: 'projeto',
     href: '/projects/hidra',
-    status: 'ativo',
+    status: 'concluído',
     card_banner:
       'https://images.pexels.com/photos/612964/pexels-photo-612964.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1280&dpr=1',
     page_icon: 'https://cdn-icons-png.flaticon.com/512/477/477167.png',
@@ -20,13 +20,11 @@ namespace Projetos {
       'Nessa disciplina, os alunos partem de processadores fictícios simples como o Neander e chegam em até o processador Intel. Sendo uma alternativa para diversas dessas máquinas teóricas estudadas pelas disciplinas, o Hidra é um editor de assembly integrado à interface de execução das máquinas.',
       'A última manutenção do PET incluiu algumas funcionalidades novas, como: conversor de bases (entre 2 e 36) e representação de inteiro (positivo, sinal magnitude, complemento de B e complemento de B-1); conversor de ponto (notação humana, ponto fixo e ponto flutuante) de diferentes tamanhos; e menu de localizar e substituir.',
     ],
-    active_members: [
-      'João Vítor Schimuneck de Souza',
-    ],
     inactive_members: [
       'Alice Carra',
       'Bruno Zimmermann',
       'Galeano Domingues',
+      'João Vítor de Souza',
       'José Henrique Lima',
       'Marcos Reckers',
       'Pedro Poli Miola',
@@ -156,20 +154,22 @@ namespace Projetos {
       'Hoje o projeto mantém-se ativo e seus participantes atuam na manutenção das redes sociais e na criação de novas séries de postagem.',
     ],
     active_members: [
-      'Heloísa Marques',
-      'Beatriz Aline Arend',
-      'Eduarda Tessari Pereira',
+      'Todos os integrantes',
     ],
     inactive_members: [
+      'Beatriz Aline Arend',
+      'Eduarda Tessari Pereira',
       'Ian Kersz',
+      'Isabella Teixeira Chiodelli',
       'Matheus Almeida',
+      'Heloísa Marques',
       'Heric Rodrigues',
       'Léo de Vasconcelos',
       'Bernardo Beneduzi',
       'Vic Duarte',
       'Pedro Miola',
       'Henrique Carniel',
-      'João Vítor Schimuneck de Souza',
+      'João Vítor de Souza',
     ],
     tools: ['Canva', 'Photoshop',],
   }
@@ -216,7 +216,7 @@ namespace Projetos {
   export const Pinguim: ProjectType = {
     type: 'projeto',
     href: '/projects/pinguim',
-    status: 'concluído',
+    status: 'ativo',
     card_banner:
       'https://images.pexels.com/photos/1299391/pexels-photo-1299391.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1280&dpr=1',
     page_icon: 'https://cdn-icons-png.flaticon.com/512/1864/1864694.png',
@@ -231,8 +231,15 @@ namespace Projetos {
       'O time que desenvolve o projeto mantém contato com o professor que ministra a disciplina no Instituto de Informática e, com isso, sempre verifica se os objetivos do time e do professor estão alinhados.',
       'O projeto tem como objetivo final entregar uma interface mais amigável, com uma melhor performance, além de trazer funcionalidades que facilitem o desenvolvimento e programação dentro desses simuladores.',
     ],
+    active_members: [
+      'Beatriz Aline Arend',
+      'Gabriel Kenji Ikuta',
+      'Isabella Teixeira Chiodelli',
+      'Kamille Pimentel',
+    ],
     inactive_members: [
       'Bruno Zimmermann',
+      'Felipe Gallois',
       'Heric Rodrigues',
       'João Pedro Silva',
       'Jordi Pujol',
@@ -277,13 +284,15 @@ namespace Projetos {
     ],
     active_members: [
       'Eduarda Tessari Pereira',
-      'Laura Reis da Silveira',
+      'Isabella Teixeira Chiodelli',
       'Tomás Mitsuo Dias Ueda',
     ],
     inactive_members: [
       'Ian Kersz',
       'Matheus Almeida',
       'Vitor Caruso',
+      'Juan Lucca Costa Homem',
+      'Laura Reis da Silveira',
       'Léo de Vasconcelos',
       'Luccas Lima',
       'Vic Duarte',
@@ -306,7 +315,7 @@ namespace Projetos {
   export const Castor: ProjectType = {
     type: 'projeto',
     href: '/projects/castor',
-    status: 'ativo',
+    status: 'concluído',
     card_banner:
       'https://images.pexels.com/photos/12899887/pexels-photo-12899887.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1280&dpr=1',
     page_icon: 'https://cdn-icons-png.flaticon.com/512/2611/2611984.png',
@@ -320,12 +329,10 @@ namespace Projetos {
       'Por fim, o projeto foca também na melhoria da qualidade de vida dos estudantes, oferecendo maiores facilidades para o desenvolvimento de código, e no aprendizado, com tutoriais de utilização e/ou criação das ferramentas disponibilizadas.',
       'O projeto tem o objetivo de possibilitar aos alunos usarem diferentes ambientes de desenvolvimento com diferentes linguagens utilizadas nas disciplinas, aumentando a produtividade, reduzindo o tempo gasto com configurações mais avançadas e promovendo o aprendizado de tais ferramentas.',
     ],
-    active_members: [
-      'Marcos Reckers',
-    ],
     inactive_members: [
       'Ian Kersz',
       'José Henrique Lima',
+      'Marcos Reckers',
     ],
     tools: ['Makefile', 'CMake',],
     cta: [
@@ -355,23 +362,23 @@ namespace Projetos {
     ],
     active_members: [
       'Tomás Mitsuo Dias Ueda',
-      'João Vítor Schimuneck de Souza',
-      'Laura Reis da Silveira',
       'Felipe Gallois',
+      'Guilherme D\'Avila Pinheiro',
+      'Marcelo Cardoso Oliveira Gulart',
     ],
     inactive_members: [
       'Galeano Domingues',
       'Henrique Carniel',
       'Ian Kersz',
+      'João Vítor de Souza',
       'José Henrique Lima',
+      'Laura Reis da Silveira',
       'Marcos Reckers',
       'Pedro Poli Miola',
       'Beatriz Aline Arend',
     ],
     tools: ['Python', 'Jupyter',],
   }
-
-  //TODO Update the projects above
 
   export const Baleia: ProjectType = {
     type: 'projeto',
@@ -389,10 +396,13 @@ namespace Projetos {
       'A ideia é que o servidor seja utilizado para armazenar arquivos e informações do grupo, além de ser um meio de hospedar os serviços e sites necessários pelo grupo.',
     ],
     active_members: [
-      'Marcos Reckers',
+      'Eric Peracchi Pisoni',
+      'Gabriel Kenji Ikuta',
+      'Felipe Gallois',
     ],
     inactive_members: [
       'Ian Kersz',
+      'Marcos Reckers',
     ],
     tools: ['Proxmox', 'Docker',],
   }
@@ -439,10 +449,14 @@ namespace Projetos {
     active_members: [
       'Beatriz Aline Arend',
       'Eduarda Tessari Pereira',
-      'Heloísa Marques',
-      'João Vítor Schimuneck de Souza',
+      'Isabella Teixeira Chiodelli',
+      'Gabriel Kenji Ikuta',
+      'Maximus Borges da Rosa',
     ],
     inactive_members: [
+      'Heloísa Marques',
+      'João Vítor de Souza',
+      'Juan Lucca Costa Homem',
       'Pedro Miola',
     ],
     tools: [],
@@ -463,6 +477,7 @@ namespace Projetos {
       'Você já teve interesse de adentrar no mundo da pesquisa do INF? Pois “O Café com Pesquisa” vai te apresentar as linhas de pesquisa do PPGC (Programa de Pós-Graduação em Computação)',
     ],
     active_members: [
+      'Eduarda Tessari Pereira',
       'Beatriz Aline Arend',
       'Tomás Mitsuo Dias Ueda',
     ],
@@ -476,7 +491,7 @@ namespace Projetos {
   export const Acervo: ProjectType = {
     type: 'projeto',
     href: '/projects/acervo',
-    status: 'ativo',
+    status: 'concluído',
     card_banner:
       'https://images.pexels.com/photos/7598913/pexels-photo-7598913.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     page_icon: 'https://cdn-icons-png.flaticon.com/128/977/977246.png',
@@ -488,14 +503,122 @@ namespace Projetos {
       'Tem a missão de separar e catalogar os itens presentes no Acervo do Instituto de Informática, com o intuito de facilitar o acesso a eles.',
     ],
     active_members: [
-      'Heloísa Marques',
+      'Isabella Teixeira Chiodelli',
     ],
     inactive_members: [
+      'Heloísa Marques',
       'Vic Duarte',
       'Sofia Maciel',
       'Marcos Reckers',
     ],
     tools: [],
+  }
+
+  export const Manual: ProjectType = {
+    type: 'projeto',
+    href: '/projects/manual-dos-bixos',
+    status: 'ativo',
+    card_banner:
+      'https://images.pexels.com/photos/259554/pexels-photo-259554.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    page_icon: 'https://cdn-icons-png.flaticon.com/128/848/848698.png',
+    name: 'Manual dos Bixos',
+    description:
+      'Manual para os calouros dos cursos de Ciência da Computação e Engenharia da Computação',
+    axis: ['interação'],
+    text: [
+      'O Manual dos Bixos foi feito para sanar desde dúvidas triviais até questões fundamentais para os alunos de graduação na área da computação. Seu objetivo é facilitar o acesso à informação, sendo um guia para matrícula, transporte e localização; com dicas de estudo e sugestões de ferramentas, além de servir como local de consulta de informações gerais sobre a graduação em si.',
+    ],
+    active_members: [
+      'Eduarda Tessari Pereira',
+      'Isabella Teixeira Chiodelli',
+      'Gabriel Kenji Ikuta',
+      'Kamille Pimentel',
+      'Maximus Borges da Rosa',
+    ],
+    tools: ['Notion',],
+    cta: [
+      {
+        label: 'veja o notion do projeto',
+        href: 'https://foggy-antler-b88.notion.site/Boas-vindas-69aee2be56cd46599e43636c19f16433',
+      },
+    ],
+  }
+
+  export const Harpia: ProjectType = {
+    type: 'projeto',
+    href: '/projects/harpia',
+    status: 'ativo',
+    card_banner:
+      'https://images.pexels.com/photos/802115/pexels-photo-802115.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    page_icon: 'https://cdn-icons-png.flaticon.com/128/4413/4413229.png',
+    name: 'Harpia',
+    description:
+      'Projeto de construção de um computador NEANDER físico',
+    axis: ['desenvolvimento'],
+    text: [
+        'O computador NEANDER é um modelo teórico criado pelos ex-professores da UFRGS Raul Fernando Weber e Taisy Silva Weber para servir como objeto de estudo nas disciplinas de arquitetura de computadores.',
+        'Neste projeto, o PET se propôs a implementar esse computador fisicamente utilizando portas lógicas.'
+    ],
+    active_members: [
+      'Eric Peracchi Pisoni',
+      'Joel Soares Gonzalez',
+      'Marcelo Cardoso Oliveira Gulart',
+    ],
+    tools: ['Arduino', 'Osciloscópio', 'Circuitos Integrados', 'Quartus II',],
+    cta: [
+      {
+        label: 'informações sobre o computador NEANDER',
+        href: 'https://www.inf.ufrgs.br/arq/wiki/doku.php?id=neander',
+      },
+    ],
+  }
+
+  export const Rato: ProjectType = {
+    type: 'projeto',
+    href: '/projects/rato',
+    status: 'ativo',
+    card_banner:
+      'https://images.pexels.com/photos/2280794/pexels-photo-2280794.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    page_icon: 'https://cdn-icons-png.flaticon.com/128/616/616453.png',
+    name: 'Rato',
+    description:
+      'Experimentação da nova disciplina de Projeto Integrador',
+    axis: ['interação'],
+    text: [
+      'Neste projeto o PET participou do teste inicial da disciplina de Projeto Integrador, que deverá fazer parte do novo currículo do curso de Ciência da Computação.',
+    ],
+    active_members: [
+        'Beatriz Aline Arend',
+        'Eduarda Tessari Pereira',
+        'Maximus Borges da Rosa',
+        'Gabriel Kenji Ikuta',
+        'Guilherma D\'Ávila Pinheiro', 
+    ],
+    tools: [],
+  }
+
+  export const Morcego: ProjectType = {
+    type: 'projeto',
+    href: '/projects/morcego',
+    status: 'ativo',
+    card_banner:
+      'https://images.pexels.com/photos/15915605/pexels-photo-15915605/free-photo-of-natureza-flor-animais-selvagens-vida-selvagem.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    page_icon: 'https://cdn-icons-png.flaticon.com/128/1841/1841041.png',
+    name: 'Morcego',
+    description:
+      'Projeto de fotogrametria do Instituto de Informática da UFRGS',
+    axis: ['desenvolvimento'],
+    text: [
+      'Neste projeto, o PET utiliza um drone para sobrevoar o Instituto de Informática da UFRGS e realizar um mapeamento 3D dos principais prédios e estruturas.',
+      'O objetivo é facilitar a localização de estudantes e visitantes dentro do Instituto.',
+    ],
+    active_members: [
+      'Beatriz Aline Arend',
+      'Eric Peracchi Pisoni',
+      'Isabella Teixeira Chiodelli',
+      'Marcelo Cardoso Oliveira Gulart',
+    ],
+    tools: ['Drone', 'Mission Planner'],
   }
 }
 

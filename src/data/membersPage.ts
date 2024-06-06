@@ -12,7 +12,7 @@ import Erika from '@/images/members/Erika.png'
 import Tomas from '@/images/members/Tomas.png'
 import Duda from '@/images/members/Duda.jpeg'
 import Beatriz from '@/images/members/Beatriz.png'
-import Felipe from '@/images/members/Felipe.png'
+//import Felipe from '@/images/members/Felipe.png'
 import Joel from '@/images/members/Joel.jpg'
 import Kenji from '@/images/members/Kenji.jpg'
 import Isa from '@/images/members/Isabella.jpg'
@@ -44,13 +44,6 @@ const petianes: MemberType[] = [
     course: 'ecp',
     semester: '2019/2',
     interest: 'Sistemas Embarcados e Sistemas de Tempo Real',
-  },
-  {
-    name: 'Felipe',
-    imgUrl: Felipe.src,
-    course: 'cic',
-    semester: '2021/1',
-    interest: 'Redes de Computadores',
   },
   {
     name: 'Guilherme',
