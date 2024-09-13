@@ -389,7 +389,7 @@ namespace Projetos {
     page_icon: 'https://cdn-icons-png.flaticon.com/128/4971/4971976.png',
     name: 'Baleia',
     description:
-      'Ferramenta para auxiliar no dia-a-dia do PET Computação, através da criação de um Servidor',
+      'Manutenção do Servidor que hospeda serviços e sites do PET',
     axis: ['desenvolvimento'],
     text: [
       'O projeto Baleia foi criado em 2022 com o objetivo de criar um servidor para o PET Computação.',
@@ -398,11 +398,11 @@ namespace Projetos {
     active_members: [
       'Eric Peracchi Pisoni',
       'Gabriel Kenji Ikuta',
-      'Felipe Gallois',
     ],
     inactive_members: [
       'Ian Kersz',
       'Marcos Reckers',
+      'Felipe Gallois',
     ],
     tools: ['Proxmox', 'Docker',],
   }
@@ -557,12 +557,13 @@ namespace Projetos {
     axis: ['desenvolvimento'],
     text: [
         'O computador NEANDER é um modelo teórico criado pelos ex-professores da UFRGS Raul Fernando Weber e Taisy Silva Weber para servir como objeto de estudo nas disciplinas de arquitetura de computadores.',
-        'Neste projeto, o PET se propôs a implementar esse computador fisicamente utilizando portas lógicas.'
+        'Neste projeto, o PET se propôs a implementar esse computador fisicamente utilizando circuitos integrados TTL.'
     ],
     active_members: [
       'Eric Peracchi Pisoni',
       'Joel Soares Gonzalez',
       'Marcelo Cardoso Oliveira Gulart',
+      'João Antônio Barata',
     ],
     tools: ['Arduino', 'Osciloscópio', 'Circuitos Integrados', 'Quartus II',],
     cta: [
@@ -613,10 +614,12 @@ namespace Projetos {
       'O objetivo é facilitar a localização de estudantes e visitantes dentro do Instituto.',
     ],
     active_members: [
-      'Beatriz Aline Arend',
       'Eric Peracchi Pisoni',
-      'Isabella Teixeira Chiodelli',
       'Marcelo Cardoso Oliveira Gulart',
+    ],
+    inactive_members: [
+      'Isabella Teixeira Chiodelli',
+      'Beatriz Aline Arend',
     ],
     tools: ['Drone', 'Mission Planner'],
   }
