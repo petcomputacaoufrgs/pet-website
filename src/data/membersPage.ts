@@ -9,18 +9,21 @@ import Erika from '@/images/members/Erika.png'
 //import Marcos from '@/images/members/Marcos.jpg'
 //import Pedro from '@/images/members/Pedro.jpg'
 //import Sofia from '@/images/members/Sofia.jpeg'
-import Tomas from '@/images/members/Tomas.png'
+//import Tomas from '@/images/members/Tomas.png'
 import Duda from '@/images/members/Duda.jpeg'
-import Beatriz from '@/images/members/Beatriz.png'
+//import Beatriz from '@/images/members/Beatriz.png'
 //import Felipe from '@/images/members/Felipe.png'
 import Joel from '@/images/members/Joel.jpg'
 import Kenji from '@/images/members/Kenji.jpg'
-import Isa from '@/images/members/Isabella.jpg'
+//import Isa from '@/images/members/Isabella.jpg'
 import Max from '@/images/members/Max.jpg'
 import Eric from '@/images/members/Eric.jpg'
 import Marcelo from '@/images/members/Marcelo.jpg'
 import Gui from '@/images/members/Guilherme.jpg'
 import Kami from '@/images/members/Kami.jpg'
+import Barata from '@/images/members/Barata.jpg'
+import Vicente from '@/images/members/Vicente.jpg'
+import Eduardo from '@/images/members/Eduardo.jpg'
 
 interface IMemberPage {
   title: string
@@ -53,11 +56,11 @@ const petianes: MemberType[] = [
     interest: 'Desenvolvimento de Jogos e Inteligência Artificial',
   },
   {
-    name: 'Isabella',
-    imgUrl: Isa.src,
+    name: 'Eduardo',
+    imgUrl: Eduardo.src,
     course: 'cic',
-    semester: '2023/2',
-    interest: 'Biologia Computacional',
+    semester: '2023/1',
+    interest: 'Inteligência Artificial e Computação Teórica',
   },
   {
     name: 'Joel',
@@ -88,10 +91,10 @@ const petianes: MemberType[] = [
     interest: 'Ciência de Dados e Teoria dos Grafos',
   },
   {
-    name: 'Tomás',
-    imgUrl: Tomas.src,
+    name: 'Vicente',
+    imgUrl: Vicente.src,
     course: 'cic',
-    semester: '2022/1',
+    semester: '2022/2',
     interest: 'Inteligência Artificial',
   },
   {
@@ -102,11 +105,11 @@ const petianes: MemberType[] = [
     interest: 'Sistemas Embarcados',
   },
   {
-    name: 'Beatriz',
-    imgUrl: Beatriz.src,
-    course: 'cic',
-    semester: '2022/1',
-    interest: 'Engenharia de Software',
+    name: 'João',
+    imgUrl: Barata.src,
+    course: 'ecp',
+    semester: '2023/1',
+    interest: 'Sistemas Embarcados',
   },
   {
     name: 'Duda',
