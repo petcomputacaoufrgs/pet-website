@@ -17,13 +17,15 @@ import Joel from '@/images/members/Joel.jpg'
 import Kenji from '@/images/members/Kenji.jpg'
 //import Isa from '@/images/members/Isabella.jpg'
 import Max from '@/images/members/Max.jpg'
-import Eric from '@/images/members/Eric.jpg'
+//import Eric from '@/images/members/Eric.jpg'
 import Marcelo from '@/images/members/Marcelo.jpg'
 import Gui from '@/images/members/Guilherme.jpg'
 import Kami from '@/images/members/Kami.jpg'
 import Barata from '@/images/members/Barata.jpg'
 import Vicente from '@/images/members/Vicente.jpg'
 import Eduardo from '@/images/members/Eduardo.jpg'
+import EduardoVeiga from '@/images/members/EduardoVeiga.jpeg'
+import Thayssa from '@/images/members/Thayssa.jpeg'
 
 interface IMemberPage {
   title: string
@@ -42,12 +44,21 @@ const orientador: MemberType = {
 // imgUrl aceita o link de uma imagem, o caminho para a imagem dentro da pasta public, ou o import da imagem com .src
 const petianes: MemberType[] = [
   {
-    name: 'Eric',
-    imgUrl: Eric.src,
-    course: 'ecp',
-    semester: '2019/2',
-    interest: 'Sistemas Embarcados e Sistemas de Tempo Real',
+    name: 'Thayssa',
+    imgUrl: Thayssa.src,
+    course: 'cic',
+    semester: '2023/2',
+    interest: 'Engenharia de Software e Robótica',
   },
+
+  {
+    name: 'Eduardo Veiga',
+    imgUrl: EduardoVeiga.src,
+    course: 'cic',
+    semester: '2023/1',
+    interest: 'Engenharia de Software'
+  },
+
   {
     name: 'Guilherme',
     imgUrl: Gui.src,
@@ -56,11 +67,11 @@ const petianes: MemberType[] = [
     interest: 'Desenvolvimento de Jogos e Inteligência Artificial',
   },
   {
-    name: 'Eduardo',
+    name: 'Eduardo Fonseca',
     imgUrl: Eduardo.src,
     course: 'cic',
     semester: '2023/1',
-    interest: 'Inteligência Artificial e Computação Teórica',
+    interest: 'IA e Computação Teórica',
   },
   {
     name: 'Joel',
