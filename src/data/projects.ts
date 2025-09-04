@@ -4,6 +4,21 @@ import { ProjectType, CourseType } from '@/types/projectsType'
 // Para organização, por favor, mantenha os projetos e cursos em seus respectivos namespaces.
 
 namespace Projetos {
+
+  export const Borboleta: ProjectType = {
+    type: 'projeto',
+    href: '/projects/borboleta',
+    status: 'ativo',
+    card_banner:
+      "https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?_gl=1*nx2vbb*_ga*NjY2NjAxMTc1LjE3NTcwMDg5MDU.*_ga_8JE65Q40S6*czE3NTcwMDg5MDQkbzEkZzEkdDE3NTcwMDg5NTQkajEwJGwwJGgw",
+    page_icon: "https://images.icon-icons.com/339/PNG/128/Morpho_Menelaus_35662.png",
+    name: "Borboleta",
+    description: "Um site para conversão de históricos do currículo antigo para o novo",
+    axis: ['desenvolvimento'],
+    text: ["algo"],
+    tools: ['FastAPI', 'ReactJS', 'Typescript', 'HTML', 'CSS', 'Python', 'Docker']
+    }
+
   export const Hidra: ProjectType = {
     type: 'projeto',
     href: '/projects/hidra',
