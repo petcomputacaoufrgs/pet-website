@@ -16,7 +16,7 @@ import Erika from '@/images/members/Erika.png'
 import Joel from '@/images/members/Joel.jpg'
 //import Kenji from '@/images/members/Kenji.jpg'
 //import Isa from '@/images/members/Isabella.jpg'
-import Max from '@/images/members/Max.jpg'
+//import Max from '@/images/members/Max.jpg'
 //import Eric from '@/images/members/Eric.jpg'
 import Marcelo from '@/images/members/Marcelo.jpg'
 import Gui from '@/images/members/Guilherme.jpg'
@@ -28,6 +28,7 @@ import EduardoVeiga from '@/images/members/EduardoVeiga.jpeg'
 import Thayssa from '@/images/members/Thayssa.jpeg'
 import Leonardo from '@/images/members/Leonardo.png'
 import EduardoAltmann from '@/images/members/EduardoAltmann.jpg'
+import Eduarda from '@/images/members/Eduarda.jpg'
 
 interface IMemberPage {
   title: string
@@ -97,11 +98,11 @@ const petianes: MemberType[] = [
     interest: 'Sistemas Embarcados e IA',
   },
   {
-    name: 'Maximus',
-    imgUrl: Max.src,
-    course: 'cic',
-    semester: '2022/1',
-    interest: 'Ciência de Dados e Teoria dos Grafos',
+    name: 'Eduarda',
+    imgUrl: Eduarda.src,
+    course: 'ecp',
+    semester: '2024/2',
+    interest: 'Sistemas Embarcados e Engenharia de Software',
   },
   {
     name: 'Vicente',
