@@ -13,10 +13,23 @@ namespace Projetos {
       "https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?_gl=1*nx2vbb*_ga*NjY2NjAxMTc1LjE3NTcwMDg5MDU.*_ga_8JE65Q40S6*czE3NTcwMDg5MDQkbzEkZzEkdDE3NTcwMDg5NTQkajEwJGwwJGgw",
     page_icon: "https://images.icon-icons.com/339/PNG/128/Morpho_Menelaus_35662.png",
     name: "Borboleta",
-    description: "Um site para conversão de históricos do currículo antigo para o novo",
+    description: "Um site para conversão de históricos do currículo antigo para o novo (2026/1)",
     axis: ['desenvolvimento'],
-    text: ["algo"],
-    tools: ['FastAPI', 'ReactJS', 'Typescript', 'HTML', 'CSS', 'Python', 'Docker']
+    text: ["Como parte das ações que acompanham a mudança do currículo do curso de Ciência da Computação da UFRGS, o grupo PET Computação está desenvolvendo, em parceria com o professor Henrique Becker, uma ferramenta educacional que auxilia estudantes na visualização das mudanças do currículo antigo para o novo.",
+           "O projeto tem como objetivo facilitar a compreensão das mudanças curriculares e apoiar a tomada de decisão dos estudantes que ingressaram no curso sob o currículo anterior. A ferramenta permitirá que os usuários explorem de forma interativa como a mudança os afetará e quais são as novas exigências.",
+            "A iniciativa integra um esforço mais amplo de fomentar a participação discente nas discussões e decisões relacionadas à reformulação curricular, além de tornar o processo de transição mais transparente e menos oneroso para a comunidade acadêmica. Alinha-se, assim, às diretrizes pedagógicas contemporâneas e contribui para o fortalecimento da experiência estudantil no Instituto de Informática."],
+    tools: ['FastAPI', 'ReactJS', 'Typescript', 'HTML', 'CSS', 'Python', 'Docker'],
+    cta: [
+      {
+        label: 'Acesse o site',
+        href: 'https://borboleta.petcompufrgs.com.br/'
+      },
+      {
+        label: 'Acesse o github do projeto',
+        href: 'https://github.com/petcomputacaoufrgs/novo-curriculo-website'
+      }
+    ],
+
     }
 
   export const Hidra: ProjectType = {
