@@ -18,17 +18,22 @@ import Joel from '@/images/members/Joel.jpg'
 //import Isa from '@/images/members/Isabella.jpg'
 //import Max from '@/images/members/Max.jpg'
 //import Eric from '@/images/members/Eric.jpg'
-import Marcelo from '@/images/members/Marcelo.jpg'
+//import Marcelo from '@/images/members/Marcelo.jpg'
 import Gui from '@/images/members/Guilherme.jpg'
-import Kami from '@/images/members/Kami.jpg'
-import Barata from '@/images/members/Barata.jpg'
-import Vicente from '@/images/members/Vicente.jpg'
+//import Kami from '@/images/members/Kami.jpg'
+//import Barata from '@/images/members/Barata.jpg'
+//import Vicente from '@/images/members/Vicente.jpg'
 import Eduardo from '@/images/members/Eduardo.jpg'
-import EduardoVeiga from '@/images/members/EduardoVeiga.jpeg'
+//import EduardoVeiga from '@/images/members/EduardoVeiga.jpeg'
 import Thayssa from '@/images/members/Thayssa.jpeg'
 import Leonardo from '@/images/members/Leonardo.png'
 import EduardoAltmann from '@/images/members/EduardoAltmann.jpg'
 import Eduarda from '@/images/members/Eduarda.jpg'
+import Luiza from '@/images/members/Luiza.jpg'
+import Isadora from '@/images/members/Isadora.jpg'
+import PedroArthur from '@/images/members/PedroArthur.jpg'
+import JoaoWalter from '@/images/members/JoaoWalter.jpg'
+import Manuela from '@/images/members/Manuela.jpg'
 
 interface IMemberPage {
   title: string
@@ -53,15 +58,6 @@ const petianes: MemberType[] = [
     semester: '2023/2',
     interest: 'Engenharia de Software e Robótica',
   },
-
-  {
-    name: 'Eduardo Veiga',
-    imgUrl: EduardoVeiga.src,
-    course: 'cic',
-    semester: '2023/1',
-    interest: 'Engenharia de Software'
-  },
-
   {
     name: 'Guilherme',
     imgUrl: Gui.src,
@@ -84,13 +80,6 @@ const petianes: MemberType[] = [
     interest: 'Game Design e Programação Embarcada',
   },
   {
-    name: 'Kamille',
-    imgUrl: Kami.src,
-    course: 'cic',
-    semester: '2022/1',
-    interest: 'Engenharia de Software e Ciência de Dados',
-  },
-  {
     name: 'Eduardo Altmann',
     imgUrl: EduardoAltmann.src,
     course: 'cic',
@@ -105,33 +94,48 @@ const petianes: MemberType[] = [
     interest: 'Sistemas Embarcados e Engenharia de Software',
   },
   {
-    name: 'Vicente',
-    imgUrl: Vicente.src,
-    course: 'cic',
-    semester: '2022/2',
-    interest: 'Inteligência Artificial',
-  },
-  {
-    name: 'Marcelo',
-    imgUrl: Marcelo.src,
-    course: 'ecp',
-    semester: '2022/2',
-    interest: 'Sistemas Embarcados',
-  },
-  {
-    name: 'João',
-    imgUrl: Barata.src,
-    course: 'ecp',
-    semester: '2023/1',
-    interest: 'Sistemas Embarcados',
-  },
-  {
     name: 'Leonardo',
     imgUrl: Leonardo.src,
     course: 'cic',
     semester: '2023/1',
     interest: 'Algoritmos e IA',
   },
+  {
+    name: 'Isadora',
+    imgUrl: Isadora.src,
+    course: 'ecp',
+    semester: '2024/1',
+    interest: 'Sistemas Embarcados e Engenharia de Software',
+  },
+  {
+    name: 'Luiza',
+    imgUrl: Luiza.src,
+    course: 'cic',
+    semester: '2025/2',
+    interest: 'Engenharia de Software e Machine Learning',
+  },
+  {
+    name: 'Pedro',
+    imgUrl: PedroArthur.src,
+    course: 'cic',
+    semester: '2025/1',
+    interest: 'Banco de Dados e Inteligência Artificial',
+  },
+  {
+    name: 'João Walter',
+    imgUrl: JoaoWalter.src,
+    course: 'ecp',
+    semester: '2025/2',
+    interest: 'Inteligência Artificial e Automação',
+  },
+  {
+    name: 'Manuela',
+    imgUrl: Manuela.src,
+    course: 'cic',
+    semester: '2025/1',
+    interest: 'Inteligência Artificial e Desenvolvimento de Jogos',
+  },
+
 ]
 
 const petianesSorted: MemberType[] = petianes.sort((a, b) => a.name.localeCompare(b.name))
