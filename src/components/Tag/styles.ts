@@ -12,7 +12,7 @@ export const BaseTag = styled.span.attrs((props: PropTypeTag) => ({
   padding: 0.3rem 0.6rem;
   border-radius: 1rem;
   width: fit-content;
-  margin: 0.3rem 0;
+  margin: 0.3rem 0 0 0;
   color: ${(props) => props.theme.colors.secondary};
   font-size: 0.875rem;
 `

@@ -1,25 +1,24 @@
 import { BaseTag, LargeTag } from './styles'
 import { ITag } from './types'
+import { theme } from '@/styles/theme'
 
 const Tag = ({ label }: ITag) => {
   const getTagColor = () => {
     switch (label) {
-      case 'projeto':
-        return '#62516D'
-      case 'curso':
-        return '#F77A36'
       case 'ativo':
-        return '#5C7A5C'
+        return theme.colors.ativo
       case 'concluído':
-        return '#9897A9'
+        return theme.colors.concluido
       case 'pesquisa':
-        return '#7191E2'
+        return theme.colors.pesquisa
       case 'ensino':
-        return '#95BB72'
+        return theme.colors.ensino
       case 'interação':
-        return '#F79862'
+        return theme.colors.interacao
       case 'desenvolvimento':
-        return '#7C5295'
+        return theme.colors.desenvolvimento
+      case 'extensão':
+        return theme.colors.extensao
     }
   }
   return (

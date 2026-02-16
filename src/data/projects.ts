@@ -116,16 +116,16 @@ namespace Projetos {
   name: 'Pet Adopt',
   description:
     'Site para adoção de animais',
-  axis: ['desenvolvimento', 'ensino'],
+  axis: ['desenvolvimento', 'extensão'],
   text: [
     'O Pet-Adopt foi criado em 2024 a partir de uma parceria com o grupo PET Veterinária da UNIPAMPA. Seu objetivo é a criação de um site para organizar e divulgar a adoção de animais de maneira responsável, além de conectar ONGs envolvidas nesse processo com os usuários.',
   ],
   active_members: [
     'Eduardo Fonseca da Silva',
     'Eduarda Post Michels',
-    'Guilherme D\’Ávila Pinheiro',
   ],
   inactive_members: [
+    'Guilherme D\'Avila Pinheiro',
     'Kamille Pimentel',
     'Eduarda Tessari Pereira',
     'Maximus Borges da Rosa',
@@ -464,7 +464,7 @@ export const Polvo: ProjectType = {
     name: 'Raposa',
     description:
       'Desenvolver conteúdos educacionais de computação direcionados ao ensino médio e fundamental',
-    axis: ['ensino',],
+    axis: ['ensino', 'extensão'],
     text: [
       'O projeto Raposa foi concebido em 2021 com o objetivo de criar um jogo envolvente, com uma estética simples em 2D e arte em PixelArt.',
       'A intenção era aplicar os conhecimentos adquiridos no projeto para desenvolver conteúdo educacional, beneficiando tanto a comunidade interna da UFRGS quanto a comunidade externa. Atualmente, o foco do projeto está mais voltado para a vertente educacional.',
@@ -477,6 +477,7 @@ export const Polvo: ProjectType = {
       'Tomás Mitsuo Dias Ueda',
     ],
     inactive_members: [
+      'Guilherme D\'Avila Pinheiro',
       'Ian Kersz',
       'Matheus Almeida',
       'Vitor Caruso',
@@ -547,7 +548,6 @@ export const Polvo: ProjectType = {
       'O Mico Leão é historicamente o projeto de Inteligência Artificial do PET Computação. Foi iniciado em 2023, e desde então passou por diversas modificações até chegar no modelo atual: uma união entre algoritmos de aprendizado e robótica. Atualmente, os objetivos da iniciativa são montar um robô que deve sair de um labirinto utilizando algoritmos de aprendizado. As peças de hardware utilizadas são Raspberry Pi, sensores ultrassônicos, motores e bateria. Todos esses itens serão controlados por scripts Python, inclusive o código para sair do labirinto, o flood-fill.',
     ],
     active_members: [
-      'Guilherme D\'Avila Pinheiro',
       'Eduardo Fonseca da Silva', 
       'Eduardo Altmann de Bem',
       'Luiza Helwig da Silva',
@@ -647,7 +647,6 @@ export const Polvo: ProjectType = {
     ],
     active_members: [
       'Eduarda Post Michels',
-      'Guilherme D\'Avila Pinheiro',
       'Luiza Helwig da Silva', 
       'Thayssa Leão Francisco', 
       'Joel Soares Gonzalez'
@@ -656,6 +655,7 @@ export const Polvo: ProjectType = {
       'Beatriz Aline Arend', 
       'Eduarda Tessari Pereira', 
       'Gabriel Kenji Ikuta', 
+      'Guilherme D\'Avila Pinheiro', 
       'Isabella Teixeira Chiodelli', 
       'Maximus Borges da Rosa', 
       'Heloísa Marques', 

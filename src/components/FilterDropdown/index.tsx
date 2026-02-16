@@ -120,6 +120,16 @@ const FilterDropdown = ({
             />
             <label htmlFor="interaction">Interação</label>
           </InputContainer>
+          <InputContainer>
+            <CheckboxInput
+              type="checkbox"
+              id="extention"
+              name="extention"
+              checked={optionsSelected.includes('extensão')}
+              onChange={() => handleOptionClick('extensão')}
+            />
+            <label htmlFor="extention">Extensão</label>
+          </InputContainer>
         </OptionsContainer>
       )}
     </Container>
