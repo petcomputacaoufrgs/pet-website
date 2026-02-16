@@ -2,27 +2,187 @@ import { ProjectType, CourseType } from '@/types/projectsType'
 // Ao final de cada namespace é providenciado um modelo para a criação de novos projetos e cursos.
 // Para criar um novo projeto ou curso, basta copiar o modelo e preencher os campos com as informações necessárias.
 // Para organização, por favor, mantenha os projetos e cursos em seus respectivos namespaces.
+// Axis é case sensitive: 'Ensino' não funcionará. Deve ser 'ensino'.
+//Caso não seja possível pegar uma imagem pelo link do flaticon, é possível através do link da imagem no discord.
+
+/* Modelo de Projeto
+
+export const NomeDoProjeto: ProjectType = {
+  type: 'projeto',
+  href: '/projects/nome-do-projeto',
+  status: 'ativo',
+  card_banner:
+    '', // Link retirado do site https://www.pexels.com/pt-br/ clicando com o botão direito na imagem e copiando o link da imagem
+  page_icon: '', // Link retirado do site https://www.flaticon.com/ clicando com o botão direito na imagem pequena na lista de imagens e copiando o link da imagem
+  name: 'Nome do Projeto',
+  description:
+    'Descrição do projeto',
+  axis: ['desenvolvimento', 'ensino', 'pesquisa', 'interação'],
+  text: [
+    'Texto do projeto',
+    'Segundo parágrafo',
+  ],
+  active_members: [
+    'Nome',
+    'dos',
+    'petianes',
+    'ativos',
+    'no',
+    'projeto',
+  ],
+  inactive_members: [
+    'Nome',
+    'dos',
+    'petianes',
+    'que',
+    'já',
+    'participaram',
+    'do',
+    'projeto',
+  ],
+  tools: ['Ferramentas', 'utilizadas', 'no', 'projeto',],
+  cta: [ // Não obrigatório
+    {
+      label: 'Texto do botão 1',
+      href: 'Link do botão 1',
+    },
+    {
+      label: 'Texto do botão 2',
+      href: 'Link do botão 2',
+    },
+  ],
+}
+
+*/
 
 namespace Projetos {
+  export const Andorinha: ProjectType = {
+    type: 'projeto',
+    href: '/projects/andorinha',
+    status: 'ativo',
+    card_banner:
+      'https://images.pexels.com/photos/34091048/pexels-photo-34091048.jpeg',
+    page_icon: 'https://cdn.discordapp.com/attachments/1449146302335029492/1472346068535480380/swallow.png?ex=69923ca1&is=6990eb21&hm=a78987467b8df0bc41fdca9152eaaf650c45d799a7379200b1bdbb60922bd39c&',
+    name: 'Andorinha',
+    description:
+      'Rodas de conversa em inglês e oportunidades de intercâmbio',
+    axis: ['interação','ensino'],
+    text: ['O projeto Andorinha surgiu em 2025/01 em parceria com o professor Nicolas Maillard a fim de estimular nos estudantes o interesse pelo intercâmbio e pelas línguas estrangeiras, por meio de rodas de conversa e palestras sobre oportunidades de mobilidade acadêmica.',
+        'O projeto conta com professores convidados e propõe um espaço para troca de ideias e descontração misturado com aprendizado e prática da língua inglesa para discentes de todas as etapas dos cursos de computação.',
+    ],
+    active_members: [
+      'Eduardo Fonseca da Silva', 
+      'Eduarda Post Michels', 
+      'Isadora Santiago Müller',
+      'João Walter Backes Nunes',
+    ],
+    inactive_members: [
+      'Vicente Tolentino Isatto', 
+      'Eduardo Veiga Ferreira',
+    ],
+    tools: ['-'],
+  }
+
+  export const Cerberus: ProjectType = {
+  type: 'projeto',
+  href: '/projects/cerberus',
+  status: 'ativo',
+  card_banner: 'https://images.pexels.com/photos/17802177/pexels-photo-17802177.jpeg',
+  page_icon: 'https://cdn.discordapp.com/attachments/1449146302335029492/1472716891494682655/cerberus.png?ex=699395fc&is=6992447c&hm=d0aa4f4461a0fb5bbea616f809d110a5fefa027dacd9482a17ba38422f7f16ce&',
+  name: 'Cerberus',
+  description:
+    'Simulador de RISC-V',
+  axis: ['desenvolvimento', 'ensino'],
+  text: [
+    'O projeto Cerberus foi criado no final de 2025 com o objetivo de desenvolver ferramentas de apoio ao ensino da arquitetura RISC-V. Visto que o RISC-V tem se tornado um padrão importante tanto na indústria quanto na academia - inclusive com a arquitetura sendo incluída no novo currículo - o projeto busca criar simuladores visuais e interativos para auxiliar os estudantes na disciplina de Arquitetura de Computadores.',
+    'A ideia central é facilitar a compreensão de conceitos centrais da disciplina, como a execução em tempo real de instruções, memória de dados e programação em linguagem assembly, permitindo uma visualização prática do fluxo de dados no processador.',
+  ],
+  active_members: [
+    'Eduardo Altmann de Bem',
+    'Isadora Santiago Müller',
+    'Joel Soares Gonzalez',
+    'Leonardo Leal Linhares Dias',
+    'Luiza Helwig da Silva',
+  ],
+  tools: ['-'],
+}
+
+  export const PetAdopt: ProjectType = {
+  type: 'projeto',
+  href: '/projects/petadopt',
+  status: 'ativo',
+  card_banner: 'https://images.pexels.com/photos/16652376/pexels-photo-16652376.jpeg',
+  page_icon: 'https://cdn.discordapp.com/attachments/1449146302335029492/1472746727021871145/pet-care.png?ex=6993b1c6&is=69926046&hm=1e17691a39fd43ed84b0651dbf63acedc383bb8297eca899eec6e85cbbeb09e4&',
+  name: 'Pet Adopt',
+  description:
+    'Site para adoção de animais',
+  axis: ['desenvolvimento', 'ensino'],
+  text: [
+    'O Pet-Adopt foi criado em 2024 a partir de uma parceria com o grupo PET Veterinária da UNIPAMPA. Seu objetivo é a criação de um site para organizar e divulgar a adoção de animais de maneira responsável, além de conectar ONGs envolvidas nesse processo com os usuários.',
+  ],
+  active_members: [
+    'Eduardo Fonseca da Silva',
+    'Eduarda Post Michels',
+    'Guilherme D\’Ávila Pinheiro',
+  ],
+  inactive_members: [
+    'Kamille Pimentel',
+    'Eduarda Tessari Pereira',
+    'Maximus Borges da Rosa',
+    'Vicente Tolentino Isatto',
+    'João Luis Scheffel Koller',
+    'Vic Duarte',
+    'Andrew Borges',
+    'Carolina Silva',
+  ],
+  tools: ['Docker','Cloudflare','ReactJS','Nest'],
+}
+
+export const Polvo: ProjectType = {
+  type: 'projeto',
+  href: '/projects/polvo',
+  status: 'ativo',
+  card_banner: 'https://images.pexels.com/photos/31329010/pexels-photo-31329010.jpeg',
+  page_icon: 'https://cdn.discordapp.com/attachments/1449146302335029492/1472745192183435417/polvo2.png?ex=6993b058&is=69925ed8&hm=0087bf5f2d38fd9ae9cd90c1916f5256557caa12e55ae616eb2f4b12ffae0ac9&',
+  name: 'Polvo',
+  description:
+    'Trocas de conhecimento entre petianes',
+  axis: ['pesquisa', 'ensino'],
+  text: [
+    'O projeto Polvo surge no final de 2025 como uma proposta de compartilhar e discutir temas na área da computação de interesse dos petianos. Para isso, uma vez por mês são realizadas apresentações internas, conduzidas pelos próprios bolsistas, onde os ministrantes da vez mostram o que andaram estudando durante o mês, promovendo um momento de descontração e troca de ideias.',
+  ],
+  active_members: [
+    'Todos os Integrantes'
+  ],
+  tools: ['-'],
+}
 
   export const Borboleta: ProjectType = {
     type: 'projeto',
     href: '/projects/borboleta',
-    status: 'ativo',
+    status: 'concluído',
     card_banner:
       "https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?_gl=1*nx2vbb*_ga*NjY2NjAxMTc1LjE3NTcwMDg5MDU.*_ga_8JE65Q40S6*czE3NTcwMDg5MDQkbzEkZzEkdDE3NTcwMDg5NTQkajEwJGwwJGgw",
-    page_icon: "https://images.icon-icons.com/339/PNG/128/Morpho_Menelaus_35662.png",
+    //page_icon: "https://images.icon-icons.com/339/PNG/128/Morpho_Menelaus_35662.png",
+    page_icon: 'https://cdn.discordapp.com/attachments/1449146302335029492/1472327098159988907/butterfly.png?ex=69922af6&is=6990d976&hm=8e49699525d03f4e1535544394a421852aee0dd376a5dfc3b0ad61214c0ed0de&',
     name: "Borboleta",
     description: "Um site para conversão de históricos do currículo antigo para o novo (2026/1)",
     axis: ['desenvolvimento'],
-    text: ["Como parte das ações que acompanham a mudança do currículo do curso de Ciência da Computação da UFRGS, o grupo PET Computação está desenvolvendo, em parceria com o professor Henrique Becker, uma ferramenta educacional que auxilia estudantes na visualização das mudanças do currículo antigo para o novo.",
-           "O projeto tem como objetivo facilitar a compreensão das mudanças curriculares e apoiar a tomada de decisão dos estudantes que ingressaram no curso sob o currículo anterior. A ferramenta permitirá que os usuários explorem de forma interativa como a mudança os afetará e quais são as novas exigências.",
-            "A iniciativa integra um esforço mais amplo de fomentar a participação discente nas discussões e decisões relacionadas à reformulação curricular, além de tornar o processo de transição mais transparente e menos oneroso para a comunidade acadêmica. Alinha-se, assim, às diretrizes pedagógicas contemporâneas e contribui para o fortalecimento da experiência estudantil no Instituto de Informática."],
+    text: ["Como parte das ações que acompanham a mudança do currículo do curso de Ciência da Computação da UFRGS, o grupo PET Computação desenvolveu, em parceria com o professor Henrique Becker, uma ferramenta educacional para auxiliar estudantes na visualização das mudanças do currículo antigo para o novo.",
+           "O projeto teve como objetivo facilitar a compreensão das mudanças curriculares e apoiar a tomada de decisão dos estudantes que ingressaram no curso sob o currículo anterior.",
+            "A iniciativa integrou um esforço mais amplo de fomentar a participação discente nas discussões e decisões relacionadas à reformulação curricular."],
     tools: ['FastAPI', 'ReactJS', 'Typescript', 'HTML', 'CSS', 'Python', 'Docker'],
+    active_members: [
+      'Eduardo Fonseca da Silva', 
+      'Eduarda Post Michels', 
+      'Gabriel Kenji Kuta',
+      'Guilherme D\'Avila Pinheiro',
+      'João Luis Scheffel Koller'
+    ],
     cta: [
       {
         label: 'Acesse o site',
-        href: 'https://borboleta.petcompufrgs.com.br/'
+        href: 'https://borboleta.inf.ufrgs.br/'
       },
       {
         label: 'Acesse o github do projeto',
@@ -215,10 +375,10 @@ namespace Projetos {
     text: [
       'A música reconstitui a linguagem como uma sequência temporal de sons articulados. Elas dizem algo, geralmente algo humano.',
       'Embora, existam diferenças cruciais entre linguagem e música. Ainda podemos descrevê-la como uma sequência de símbolos na forma mais simples de compreensão. Traduzindo algo complexo em algo mais simples, mas utilizável por modelos computacionais.',
-      'Assim, o objetivo deste projeto é estabelecer uma comunicação entre o humano, que entende a música da forma mais intensa que o cérebro pode interpretar através da informação, e a máquina.',
-      'Vamos criar um modelo que pode gerar música com base nas informações de entrada, ou seja, gerar uma sequência de sons que estão relacionados de alguma forma com os sons passados ​​como entrada.',
-      'Usaremos métodos de Processamento de Linguagem Natural (PLN), observando a música como se fosse uma linguagem, abstraindo-a. Fazendo isso, a máquina pode reconhecer e processar dados semelhantes.',
-      'Na primeira etapa, usaremos técnicas de geração de texto, utilizando Redes Neurais Recorrentes (RNNs) e Memórias de Longo Prazo (LSTMs). Com a eficácia do treinamento, mesmo que seja razoável, faremos a mesma implementação usando modelos específicos como Transformers.',
+      'Assim, o objetivo deste projeto era estabelecer uma comunicação entre o humano, que entende a música da forma mais intensa que o cérebro pode interpretar através da informação, e a máquina.',
+      'Buscamos criar um modelo que pode gerar música com base nas informações de entrada, ou seja, gerar uma sequência de sons que estão relacionados de alguma forma com os sons passados ​​como entrada.',
+      'Usamos métodos de Processamento de Linguagem Natural (PLN), observando a música como se fosse uma linguagem, abstraindo-a. Fazendo isso, a máquina pode reconhecer e processar dados semelhantes.',
+      'Na primeira etapa, usamos técnicas de geração de texto, utilizando Redes Neurais Recorrentes (RNNs) e Memórias de Longo Prazo (LSTMs). Com a eficácia do treinamento, mesmo que seja razoável, a implementação seria feita usando modelos específicos como Transformers.',
     ],
     inactive_members: [
       'Eduardo Fantini',
@@ -234,20 +394,21 @@ namespace Projetos {
         label: 'veja o github desse projeto',
         href: 'https://github.com/petcomputacaoufrgs/papagaio',
       },
-      {
+      /*{
         label: 'confira o nosso site',
         href: 'https://papagaio.petcompufrgs.com.br/',
-      }
+      }*/
     ],
   }
 
   export const Pinguim: ProjectType = {
     type: 'projeto',
     href: '/projects/pinguim',
-    status: 'ativo',
+    status: 'concluído',
     card_banner:
       'https://images.pexels.com/photos/1299391/pexels-photo-1299391.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1280&dpr=1',
-    page_icon: 'https://cdn-icons-png.flaticon.com/512/1864/1864694.png',
+    //page_icon: 'https://cdn-icons-png.flaticon.com/512/1864/1864694.png',
+    page_icon: 'https://cdn.discordapp.com/attachments/1449146302335029492/1472343704093327360/penguin.png?ex=69923a6d&is=6990e8ed&hm=8c17c50c2bb5bc1f439ba98d90447179283f8c4c6b959468ed3d99d312efa353&',    
     name: 'Pinguim',
     description:
       'Uma reformulação das máquinas teóricas utilizadas na cadeira de Teoria da Computação',
@@ -383,18 +544,21 @@ namespace Projetos {
       'Materiais de introdução ao tema de IA, tópico muito em alta nos últimos anos',
     axis: ['pesquisa'],
     text: [
-      'Os tópicos de Inteligência Artificial e, em especial, Machine Learning (ML), têm atualmente crescido em popularidade tanto no ambiente acadêmico quanto do mercado, com uma gama de novas tecnologias surgindo nos últimos anos.',
-      'O PET Computação tem tido interesse nessas áreas e criado projetos relacionados nos últimos anos, com o mais recente tendo sido o projeto Papagaio.',
-      'Atualmente, o grupo novamente demonstra interesse na criação de materiais e programas que exploram o tópico de Machine Learning.',
-      'Como resultado de projetos anteriores o grupo possui um material introdutório sobre o assunto, porém sente que há ainda bastante espaço para evolução deste material para permitir um aprendizado mais autônomo e interessante.',
+      'O Mico Leão é historicamente o projeto de Inteligência Artificial do PET Computação. Foi iniciado em 2023, e desde então passou por diversas modificações até chegar no modelo atual: uma união entre algoritmos de aprendizado e robótica. Atualmente, os objetivos da iniciativa são montar um robô que deve sair de um labirinto utilizando algoritmos de aprendizado. As peças de hardware utilizadas são Raspberry Pi, sensores ultrassônicos, motores e bateria. Todos esses itens serão controlados por scripts Python, inclusive o código para sair do labirinto, o flood-fill.',
     ],
     active_members: [
+      'Guilherme D\'Avila Pinheiro',
+      'Eduardo Fonseca da Silva', 
+      'Eduardo Altmann de Bem',
+      'Luiza Helwig da Silva',
+      'Leonardo Leal Linhares Dias',
+    ],
+    inactive_members: [
+      'João Antônio Barata',
       'Tomás Mitsuo Dias Ueda',
       'Felipe Gallois',
       'Guilherme D\'Avila Pinheiro',
       'Marcelo Cardoso Oliveira Gulart',
-    ],
-    inactive_members: [
       'Galeano Domingues',
       'Henrique Carniel',
       'Ian Kersz',
@@ -424,13 +588,20 @@ namespace Projetos {
       'A ideia é que o servidor seja utilizado para armazenar arquivos e informações do grupo, além de ser um meio de hospedar os serviços e sites necessários pelo grupo.',
     ],
     active_members: [
-      'Eric Peracchi Pisoni',
-      'Gabriel Kenji Ikuta',
+      'Eduardo Fonseca da Silva', 
+      'Eduardo Altmann de Bem', 
+      'Eduarda Post Michels', 
+      'Isadora Santiago Muller', 
+      'Luiza Helwig da Silva', 
+      'Thayssa Leão Francisco' 
     ],
     inactive_members: [
-      'Ian Kersz',
-      'Marcos Reckers',
-      'Felipe Gallois',
+     'Felipe Gallois', 
+     'Ian Kersz e Marcos Recker', 
+     'Eric Peracchi Pisoni', 
+     'Gabriel Kenji Ikuta', 
+     'João Luis Scheffel Koller', 
+     'Eduardo Veiga Ferreira'
     ],
     tools: ['Proxmox', 'Docker',],
   }
@@ -464,30 +635,35 @@ namespace Projetos {
     status: 'ativo',
     card_banner:
       'https://images.pexels.com/photos/6135762/pexels-photo-6135762.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    page_icon: 'https://cdn.discordapp.com/attachments/1108909326271266870/1143706029574602812/3338380.png',
+    // page_icon: 'https://cdn.discordapp.com/attachments/1108909326271266870/1143706029574602812/3338380.png',
+    page_icon: 'https://cdn.discordapp.com/attachments/1449146302335029492/1472055162242863337/bemtevi2.png?ex=6991d674&is=699084f4&hm=c5ca098db4db7072cbbdd36694a799d339ae9814de3fd53f6405221fe994a357&',
     name: 'Bem-Te-Vi',
     description:
       'Promovendo o bem-estar dos estudantes do Instituto de Informática',
     axis: ['interação', 'pesquisa'],
     text: [
-      'O projeto Bem-Te-Vi tem como objetivo fundamental oferecer apoio e espaço para questões relacionadas à saúde mental dos estudantes do INF, buscando não apenas promover a integração entre eles, mas também mapear e trazer à tona discussões importantes sobre o bem-estar psicológico.',
-      'No decorrer do primeiro semestre de 2023, o Bem-Te-Vi já realizou pesquisas colaborativas com estudantes de psicologia da UFCSPA, com o intuito de compreender as demandas específicas dos alunos durante o desenvolvimento de seus projetos. Além disso, levamos os resultados da pesquisa aos setores administrativos, ampliando a voz dos estudantes e abordando esse tópico tão relevante.',
-      'Assim, o Bem-Te-Vi se empenha em ampliar o diálogo sobre saúde mental dentro da comunidade, impulsionando o bem-estar de todos. Acreditamos que esse enfoque é fundamental para possibilitar que os alunos possam se dedicar aos estudos de forma proveitosa ao longo do curso.',
+      'O projeto Bem-Te-Vi tem como objetivo fundamental melhorar aspectos relacionados ao bem-estar psicológico dos alunos. Através de pesquisas entre o corpo estudantil identificamos a falta de oportunidades de interação como um dos maiores problemas no Instituto de Informática, por isso, ao longo de 3 anos organizamos diversos eventos e palestras para motivar os alunos, criando um senso de pertencimento e comunidade no espaço estudantil.',
+      'Promovemos uma dúzia de palestras relacionadas a oportunidades de carreira, intercâmbio, pesquisa científica e muito mais, buscando também propiciar a troca de conhecimentos entre estudantes. Organizamos também diversos eventos, competições de desenvolvimento de jogos, sessões de cinema, oficinas de arte, entre outros. Pretendemos continuar fortalecendo e unindo os estudantes para que tenham uma vivência mais saudável e proveitosa na Universidade.',
     ],
     active_members: [
-      'Beatriz Aline Arend',
-      'Eduarda Tessari Pereira',
-      'Isabella Teixeira Chiodelli',
-      'Gabriel Kenji Ikuta',
-      'Maximus Borges da Rosa',
+      'Eduarda Post Michels',
+      'Guilherme D\'Avila Pinheiro',
+      'Luiza Helwig da Silva', 
+      'Thayssa Leão Francisco', 
+      'Joel Soares Gonzalez'
     ],
     inactive_members: [
-      'Heloísa Marques',
-      'João Vítor de Souza',
+      'Beatriz Aline Arend', 
+      'Eduarda Tessari Pereira', 
+      'Gabriel Kenji Ikuta', 
+      'Isabella Teixeira Chiodelli', 
+      'Maximus Borges da Rosa', 
+      'Heloísa Marques', 
+      'João Vítor de Souza', 
       'Juan Lucca Costa Homem',
-      'Pedro Miola',
+      'Pedro Miola'
     ],
-    tools: [],
+    tools: ['-'],
   }
 
   export const CafeComPesquisa: ProjectType = {
@@ -502,14 +678,19 @@ namespace Projetos {
       'Apresentação das linhas de pesquisa do PPGC para a comunidade',
     axis: ['interação'],
     text: [
-      'Você já teve interesse de adentrar no mundo da pesquisa do INF? Pois “O Café com Pesquisa” vai te apresentar as linhas de pesquisa do PPGC (Programa de Pós-Graduação em Computação)',
+      'Você já teve interesse em adentrar no mundo da pesquisa do INF? Pois o Café com Pesquisa vai te apresentar as linhas de pesquisa do PPGC (Programa de Pós-Graduação em Computação)! Os encontros costumam ocorrer no ZSpace (prédio do CEI - 43424), durante o intervalo de almoço. A divulgação das datas e linhas de pesquisa a serem apresentadas em cada evento é feita pelas redes sociais do PET e do INF, então fique ligado nesses canais para vir tomar um cafézinho e aprender mais sobre as linhas de pesquisa dos nossos professores!',
     ],
     active_members: [
+      'Joel Soares Gonzalez',
+      'Leonardo Leal Linhares Dias',
+      'Pedro Arthur Pereira Rocha',
+    ],
+    inactive_members: [
+      'João Luis Scheffel Koller',
+      'João Antônio Barata',
       'Eduarda Tessari Pereira',
       'Beatriz Aline Arend',
       'Tomás Mitsuo Dias Ueda',
-    ],
-    inactive_members: [
       'Galeano Domingues',
       'Pedro Miola',
     ],
@@ -539,7 +720,7 @@ namespace Projetos {
       'Sofia Maciel',
       'Marcos Reckers',
     ],
-    tools: [],
+    tools: ['-'],
   }
 
   export const Manual: ProjectType = {
@@ -549,14 +730,19 @@ namespace Projetos {
     card_banner:
       'https://images.pexels.com/photos/259554/pexels-photo-259554.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     page_icon: 'https://cdn-icons-png.flaticon.com/128/848/848698.png',
-    name: 'Manual dos Bixos',
+    name: 'Girafa',
     description:
       'Manual para os calouros dos cursos de Ciência da Computação e Engenharia da Computação',
     axis: ['interação'],
     text: [
-      'O Manual dos Bixos foi feito para sanar desde dúvidas triviais até questões fundamentais para os alunos de graduação na área da computação. Seu objetivo é facilitar o acesso à informação, sendo um guia para matrícula, transporte e localização; com dicas de estudo e sugestões de ferramentas, além de servir como local de consulta de informações gerais sobre a graduação em si.',
+      'O Girafa é o projeto do PET Computação criado para abranger todas as atividades referentes aos calouros da área da computação. O projeto atualmente se divide em duas frentes: a primeira é o Manual dos Bixos, que foi feito para sanar desde dúvidas triviais até questões fundamentais para os alunos de graduação. Seu objetivo é facilitar o acesso à informação, sendo um guia para matrícula, transporte e localização com dicas de estudo e sugestões de ferramentas, além de servir como local de consulta de informações gerais sobre a graduação em si. Já a segunda é a frente da interação, em que, em conjunto com o bem-te-vi, promovemos atividades de integração e apresentamos a universidade aos novos alunos.',
     ],
     active_members: [
+      'Luiza Helwig da Silva',
+      'Leonardo Leal Linhares Dias',
+      'João Walter Backes Nunes'
+    ],
+    inactive_members: [
       'Eduarda Tessari Pereira',
       'Isabella Teixeira Chiodelli',
       'Gabriel Kenji Ikuta',
@@ -566,7 +752,7 @@ namespace Projetos {
     tools: ['Notion',],
     cta: [
       {
-        label: 'veja o notion do projeto',
+        label: 'confira o manual dos bixos',
         href: 'https://foggy-antler-b88.notion.site/Boas-vindas-69aee2be56cd46599e43636c19f16433',
       },
     ],
@@ -578,22 +764,29 @@ namespace Projetos {
     status: 'ativo',
     card_banner:
       'https://images.pexels.com/photos/802115/pexels-photo-802115.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    page_icon: 'https://cdn-icons-png.flaticon.com/128/4413/4413229.png',
+    //page_icon: 'https://cdn-icons-png.flaticon.com/128/4413/4413229.png',
+    page_icon: 'https://cdn.discordapp.com/attachments/1449146302335029492/1472330236220932096/harpy-eagle.png?ex=69922de2&is=6990dc62&hm=f0551389ba25686fde653a1917d411028ed6dc675ea63f17af35368ac83cb094&',    
     name: 'Harpia',
     description:
       'Projeto de construção de um computador NEANDER físico',
     axis: ['desenvolvimento'],
     text: [
         'O computador NEANDER é um modelo teórico criado pelos ex-professores da UFRGS Raul Fernando Weber e Taisy Silva Weber para servir como objeto de estudo nas disciplinas de arquitetura de computadores.',
-        'Neste projeto, o PET se propôs a implementar esse computador fisicamente utilizando circuitos integrados TTL.'
+        'Neste sentido, o PET se propôs a implementar esse computador fisicamente utilizando circuitos integrados TTL. Atualmente estamos na fase de montagem dos protótipos baseados em esquemáticos feitos em softwares de simulação em circuitos eletrônicos como o Proteus.'
     ],
     active_members: [
-      'Eric Peracchi Pisoni',
+      'Eduarda Post Michels',
+      'Isadora Santiago Müller',
+      'Eduardo Altmann de Bem',
+      'Leonardo Leal Linhares Dias',
       'Joel Soares Gonzalez',
+    ],
+    inactive_members: [
+      'Eric Peracchi Pisoni',
       'Marcelo Cardoso Oliveira Gulart',
       'João Antônio Barata',
     ],
-    tools: ['Arduino', 'Osciloscópio', 'Circuitos Integrados', 'Quartus II',],
+    tools: ['Arduino', 'Osciloscópio', 'Circuitos Integrados', 'Quartus II', 'Proteus'],
     cta: [
       {
         label: 'informações sobre o computador NEANDER',
@@ -605,7 +798,7 @@ namespace Projetos {
   export const Rato: ProjectType = {
     type: 'projeto',
     href: '/projects/rato',
-    status: 'ativo',
+    status: 'concluído',
     card_banner:
       'https://images.pexels.com/photos/2280794/pexels-photo-2280794.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     page_icon: 'https://cdn-icons-png.flaticon.com/128/616/616453.png',
@@ -614,7 +807,8 @@ namespace Projetos {
       'Experimentação da nova disciplina de Projeto Integrador',
     axis: ['interação'],
     text: [
-      'Neste projeto o PET participou do teste inicial da disciplina de Projeto Integrador, que deverá fazer parte do novo currículo do curso de Ciência da Computação.',
+     'A participação dos membros do PET, em colaboração com outros estudantes, resultou na produção de dois artigos científicos distintos: um focado na classificação de emoções por meio de eletroencefalogramas (EEG) via Random Forest, e outro dedicado à análise da evasão estudantil sob a influência do Prouni. Ambos os trabalhos cumpriram os requisitos acadêmicos, gerando feedbacks para a cadeira.',
+    'Com a conclusão desta experiência piloto, destacamos a necessidade de delimitar o escopo de metodologias e bases de dados disponíveis. A liberdade total de temas apresentou obstáculos práticos, como a escassez de dados ou complexidades técnicas que dificultaram o apoio dos docentes e o progresso consistente dos projetos ao longo do semestre. Entre outras mudanças, sugerimos que futuras edições forneçam uma fundamentação prévia mais completa, com preparação de dados, referências e temas de pesquisa.',
     ],
     active_members: [
         'Beatriz Aline Arend',
@@ -623,13 +817,13 @@ namespace Projetos {
         'Gabriel Kenji Ikuta',
         'Guilherma D\'Ávila Pinheiro', 
     ],
-    tools: [],
+    tools: ['-'],
   }
 
   export const Morcego: ProjectType = {
     type: 'projeto',
     href: '/projects/morcego',
-    status: 'ativo',
+    status: 'concluído',
     card_banner:
       'https://images.pexels.com/photos/15915605/pexels-photo-15915605/free-photo-of-natureza-flor-animais-selvagens-vida-selvagem.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     page_icon: 'https://cdn-icons-png.flaticon.com/128/1841/1841041.png',
@@ -638,8 +832,8 @@ namespace Projetos {
       'Projeto de fotogrametria do Instituto de Informática da UFRGS',
     axis: ['desenvolvimento'],
     text: [
-      'Neste projeto, o PET utiliza um drone para sobrevoar o Instituto de Informática da UFRGS e realizar um mapeamento 3D dos principais prédios e estruturas.',
-      'O objetivo é facilitar a localização de estudantes e visitantes dentro do Instituto.',
+      'Neste projeto, o PET utilizava um drone para sobrevoar o Instituto de Informática da UFRGS e realizar um mapeamento 3D dos principais prédios e estruturas.',
+      'O objetivo era facilitar a localização de estudantes e visitantes dentro do Instituto.',
     ],
     active_members: [
       'Eric Peracchi Pisoni',
@@ -653,52 +847,15 @@ namespace Projetos {
   }
 }
 
-/* Modelo de Projeto 
+/*Modelo de Curso
 
-export const NomeDoProjeto: ProjectType = {
-  type: 'projeto',
-  href: '/projects/nome-do-projeto',
-  status: 'ativo',
+export const NomeDoCurso: CourseType = {
+  type: 'curso',
   card_banner:
     '', // Link retirado do site https://www.pexels.com/pt-br/ clicando com o botão direito na imagem e copiando o link da imagem
-  page_icon: '', // Link retirado do site https://www.flaticon.com/ clicando com o botão direito na imagem pequena na lista de imagens e copiando o link da imagem
-  name: 'Nome do Projeto',
-  description:
-    'Descrição do projeto',
-  axis: ['desenvolvimento', 'ensino', 'pesquisa', 'interação'],
-  text: [
-    'Texto do projeto',
-    'Segundo parágrafo',
-  ],
-  active_members: [
-    'Nome', 
-    'dos',
-    'petianes',
-    'ativos',
-    'no',
-    'projeto',
-  ],
-  inactive_members: [
-    'Nome', 
-    'dos',
-    'petianes',
-    'que',
-    'já',
-    'participaram',
-    'do',
-    'projeto',
-  ], 
-  tools: ['Ferramentas', 'utilizadas', 'no', 'projeto',],
-  cta: [ // Não obrigatório
-    {
-      label: 'Texto do botão 1',
-      href: 'Link do botão 1',
-    },
-    {
-      label: 'Texto do botão 2',
-      href: 'Link do botão 2',
-    },
-  ],
+  name: 'Nome do Curso',
+  description: 'Descrição do Curso',
+  href: 'Link para o curso',
 }
 
 */
@@ -785,19 +942,6 @@ namespace Cursos {
     href: 'https://drive.google.com/file/d/1tXDUKwYaJeOA9flx2ob1LWsBtafwIFLH/view',
   }
 }
-
-/*Modelo de Curso
-
-export const NomeDoCurso: CourseType = {
-  type: 'curso',
-  card_banner:
-    '', // Link retirado do site https://www.pexels.com/pt-br/ clicando com o botão direito na imagem e copiando o link da imagem
-  name: 'Nome do Curso',
-  description: 'Descrição do Curso',
-  href: 'Link para o curso',
-}
-
-*/
 
 
 // Se um erro aparecer aqui, voce provavelmente esqueceu de adicionar chaves em algum lugar na criação de um novo item.
