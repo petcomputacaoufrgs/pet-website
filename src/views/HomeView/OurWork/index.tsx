@@ -111,7 +111,7 @@ const OurWork = ({ id, title }: ISection) => {
     
     setProjectsDisplayed(newProjectsList)
   }, [optionsSelected, viewMode])
-
+  
   return (
     <Container id={id}>
       <Title type={'section'} text={title} />

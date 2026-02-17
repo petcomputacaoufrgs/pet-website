@@ -10,7 +10,7 @@ interface IHomePage {
 
 export const homePageData: IHomePage = {
   navBar: [
-    { label: 'Quem Somos', href: '#who-we-are' },
+    { label: 'Quem Somos', href: '/about' },
     { label: 'Nosso Trabalho', href: '#our-work' },
     { label: 'Contato', href: '#contact-us' },
     { label: 'Petianes', href: '/petianes' },
