@@ -61,7 +61,8 @@ namespace Projetos {
     status: 'ativo',
     card_banner:
       'https://images.pexels.com/photos/34091048/pexels-photo-34091048.jpeg',
-    page_icon: 'https://cdn-icons-png.flaticon.com/512/9920/9920187.png',
+    //page_icon: 'https://cdn-icons-png.flaticon.com/512/9920/9920187.png',
+    page_icon: '/images/andorinha.png',
     name: 'Andorinha',
     description:
       'Rodas de conversa em inglês e oportunidades de intercâmbio',
@@ -110,7 +111,7 @@ export const Minicursos: ProjectType = {
     tools: ['-'],
   }
 
-export const Raposa_Dois: ProjectType = {
+/*export const Raposa_Dois: ProjectType = {
     type: 'projeto',
     href: '/projects/raposa2.0',
     status: 'ativo',
@@ -119,10 +120,9 @@ export const Raposa_Dois: ProjectType = {
     page_icon: 'https://cdn-icons-png.flaticon.com/512/9920/9920187.png',
     name: 'Raposa 2.0',
     description:
-      'Raposa de cara nova, agora em escolas',
+      'Raposa de cara nova, agora com aulas em escolas',
     axis: ['interação','ensino'],
-    text: ['O projeto Andorinha surgiu em 2025/01 em parceria com o professor Nicolas Maillard a fim de estimular nos estudantes o interesse pelo intercâmbio e pelas línguas estrangeiras, por meio de rodas de conversa e palestras sobre oportunidades de mobilidade acadêmica.',
-        'O projeto conta com professores convidados e propõe um espaço para troca de ideias e descontração misturado com aprendizado e prática da língua inglesa para discentes de todas as etapas dos cursos de computação.',
+    text: ['']
     ],
     active_members: [
       'Eduardo Altmann de Bem',
@@ -137,14 +137,14 @@ export const Raposa_Dois: ProjectType = {
       'Thayssa Leão Francisco',
     ],
     tools: ['-'],
-  }
+  }*/
 
   export const Cerberus: ProjectType = {
   type: 'projeto',
   href: '/projects/cerberus',
   status: 'ativo',
   card_banner: 'https://images.pexels.com/photos/17802177/pexels-photo-17802177.jpeg',
-  page_icon: 'https://cdn-icons-png.flaticon.com/512/477/477177.png',
+  page_icon: '/images/cerberus.png',
   name: 'Cerberus',
   description:
     'Simulador de RISC-V',
@@ -199,7 +199,7 @@ export const Polvo: ProjectType = {
   href: '/projects/polvo',
   status: 'ativo',
   card_banner: 'https://images.pexels.com/photos/31329010/pexels-photo-31329010.jpeg',
-  page_icon: 'https://cdn-icons-png.flaticon.com/512/11470/11470939.png',
+  page_icon: '/images/polvo.png',
   name: 'Polvo',
   description:
     'Trocas de conhecimento entre petianes',
@@ -219,7 +219,7 @@ export const Polvo: ProjectType = {
     status: 'concluído',
     card_banner:
       "https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?_gl=1*nx2vbb*_ga*NjY2NjAxMTc1LjE3NTcwMDg5MDU.*_ga_8JE65Q40S6*czE3NTcwMDg5MDQkbzEkZzEkdDE3NTcwMDg5NTQkajEwJGwwJGgw",
-    page_icon: 'https://cdn-icons-png.flaticon.com/512/338/338337.png',
+    page_icon: '/images/borboleta.png',
     name: "Borboleta",
     description: "Um site para conversão de históricos do currículo antigo para o novo (2026/1)",
     axis: ['desenvolvimento'],
@@ -253,7 +253,7 @@ export const Polvo: ProjectType = {
     status: 'concluído',
     card_banner:
       'https://images.pexels.com/photos/612964/pexels-photo-612964.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1280&dpr=1',
-    page_icon: 'https://cdn-icons-png.flaticon.com/512/477/477167.png',
+    page_icon: '/images/hidra.png',
     name: 'Hidra',
     description:
       'Simulador para as máquinas teóricas utilizadas nas cadeiras de Arquitetura de Computadores',
@@ -287,7 +287,7 @@ export const Polvo: ProjectType = {
     status: 'concluído',
     card_banner:
       'https://images.pexels.com/photos/1319591/pexels-photo-1319591.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1280&dpr=1',
-    page_icon: 'https://cdn-icons-png.flaticon.com/512/2206/2206593.png',
+    page_icon: '/images/dino.png',
     name: 'Dino',
     description:
       'Uma PWA para auxiliar no acompanhamento tratamento de pacientes com câncer',
@@ -322,7 +322,7 @@ export const Polvo: ProjectType = {
     status: 'concluído',
     card_banner:
       'https://images.pexels.com/photos/1573134/pexels-photo-1573134.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1280&dpr=1',
-    page_icon: 'https://cdn-icons-png.flaticon.com/512/616/616457.png',
+    page_icon: '/images/lobo.png',
     name: 'LoBo Brain',
     description:
       'Uma IA que utiliza Reinforcement Learning para jogar jogos de tabuleiro',
@@ -348,7 +348,7 @@ export const Polvo: ProjectType = {
     status: 'concluído',
     card_banner:
       'https://images.pexels.com/photos/9968610/pexels-photo-9968610.jpeg?auto=compress&cs=tinysrgb&w=1280&h=1920&dpr=1',
-    page_icon: 'https://cdn-icons-png.flaticon.com/512/763/763695.png',
+    page_icon: '/images/cafecompet.png',
     name: 'Café com PET',
     description:
       'Foco em aproximar o PET da comunidade, trazendo assuntos de relevância',
@@ -385,7 +385,7 @@ export const Polvo: ProjectType = {
     status: 'ativo',
     card_banner:
       'https://images.pexels.com/photos/7715003/pexels-photo-7715003.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1280&dpr=1',
-    page_icon: 'https://cdn-icons-png.flaticon.com/512/477/477161.png',
+    page_icon: '/images/dragao.png',
     name: 'Dragão',
     description:
       'Gerência das redes sociais, promovendo interação e divulgação das atividades do PET',
@@ -423,7 +423,7 @@ export const Polvo: ProjectType = {
     status: 'concluído',
     card_banner:
       'https://images.pexels.com/photos/11932512/pexels-photo-11932512.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1280&dpr=1',
-    page_icon: 'https://cdn-icons-png.flaticon.com/512/8277/8277577.png',
+    page_icon: '/images/papagaio.png',
     name: 'Papagaio',
     description: 'Uma IA que utiliza PLN para explorar o universo da música',
     axis: ['pesquisa'],
@@ -462,7 +462,7 @@ export const Polvo: ProjectType = {
     status: 'concluído',
     card_banner:
       'https://images.pexels.com/photos/1299391/pexels-photo-1299391.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1280&dpr=1',
-    page_icon: 'https://cdn-icons-png.flaticon.com/512/13373/13373941.png',    
+    page_icon: '/images/pinguim.png',    
     name: 'Pinguim',
     description:
       'Uma reformulação das máquinas teóricas utilizadas na cadeira de Teoria da Computação',
@@ -514,7 +514,7 @@ export const Polvo: ProjectType = {
     status: 'ativo',
     card_banner:
       'https://images.pexels.com/photos/271905/pexels-photo-271905.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1280&dpr=1',
-    page_icon: 'https://cdn-icons-png.flaticon.com/512/2612/2612051.png',
+    page_icon: '/images/raposa.png',
     name: 'Raposa',
     description:
       'Desenvolver conteúdos educacionais de computação direcionados ao ensino médio e fundamental',
@@ -562,7 +562,7 @@ export const Polvo: ProjectType = {
     status: 'concluído',
     card_banner:
       'https://images.pexels.com/photos/12899887/pexels-photo-12899887.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1280&dpr=1',
-    page_icon: 'https://cdn-icons-png.flaticon.com/512/2611/2611984.png',
+    page_icon: '/images/castor.png',
     name: 'Castor',
     description:
       'Ferramentas que possam auxiliar alunos com tarefas de desenvolvimento ao longo do curso',
@@ -593,7 +593,7 @@ export const Polvo: ProjectType = {
     status: 'ativo',
     card_banner:
       'https://images.pexels.com/photos/3973557/pexels-photo-3973557.jpeg?auto=compress&cs=tinysrgb&w=3053&h=4733&dpr=1',
-    page_icon: 'https://cdn-icons-png.flaticon.com/512/2417/2417577.png',
+    page_icon: '/images/micoleao.png',
     name: 'Mico Leão',
     description:
       'Materiais de introdução ao tema de IA, tópico muito em alta nos últimos anos',
@@ -632,7 +632,7 @@ export const Polvo: ProjectType = {
     status: 'ativo',
     card_banner:
       'https://images.pexels.com/photos/4666750/pexels-photo-4666750.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    page_icon: 'https://cdn-icons-png.flaticon.com/512/1867/1867563.png',
+    page_icon: '/images/baleia.png',
     name: 'Baleia',
     description:
       'Manutenção do Servidor que hospeda serviços e sites do PET',
@@ -666,7 +666,7 @@ export const Polvo: ProjectType = {
     status: 'concluído',
     card_banner:
       'https://images.pexels.com/photos/163100/circuit-circuit-board-resistor-computer-163100.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    page_icon: 'https://cdn-icons-png.flaticon.com/512/3868/3868033.png',
+    page_icon: '/images/hardware.png',
     name: 'Hardware',
     description:
       'Desbravando o mundo do Hardware de forma interativa',
@@ -725,7 +725,7 @@ export const Polvo: ProjectType = {
     status: 'ativo',
     card_banner:
       'https://images.pexels.com/photos/3184317/pexels-photo-3184317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    page_icon: 'https://cdn-icons-png.flaticon.com/512/9303/9303661.png',
+    page_icon: '/images/cafecompesquisa.png',
     name: 'Café com Pesquisa',
     description:
       'Apresentação das linhas de pesquisa do PPGC para a comunidade',
@@ -756,7 +756,7 @@ export const Polvo: ProjectType = {
     status: 'concluído',
     card_banner:
       'https://images.pexels.com/photos/7598913/pexels-photo-7598913.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    page_icon: 'https://cdn-icons-png.flaticon.com/512/1750/1750866.png',
+    page_icon: '/images/acervo.png',
     name: 'Acervo',
     description:
       'Acervo histórico do Instituto de Informática',
@@ -782,7 +782,7 @@ export const Polvo: ProjectType = {
     status: 'ativo',
     card_banner:
       'https://images.pexels.com/photos/259554/pexels-photo-259554.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    page_icon: 'https://cdn-icons-png.flaticon.com/128/848/848698.png',
+    page_icon: '/images/girafa.png',
     name: 'Girafa',
     description:
       'Manual para os calouros dos cursos de Ciência da Computação e Engenharia da Computação',
@@ -817,7 +817,7 @@ export const Polvo: ProjectType = {
     status: 'ativo',
     card_banner:
       'https://images.pexels.com/photos/802115/pexels-photo-802115.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    page_icon: 'https://cdn-icons-png.flaticon.com/512/2417/2417563.png',    
+    page_icon: '/images/harpia.png',    
     name: 'Harpia',
     description:
       'Projeto de construção de um computador NEANDER físico',
@@ -853,7 +853,7 @@ export const Polvo: ProjectType = {
     status: 'concluído',
     card_banner:
       'https://images.pexels.com/photos/2280794/pexels-photo-2280794.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    page_icon: 'https://cdn-icons-png.flaticon.com/512/616/616569.png',
+    page_icon: '/images/rato.png',
     name: 'Rato',
     description:
       'Experimentação da nova disciplina de Projeto Integrador',
@@ -878,7 +878,7 @@ export const Polvo: ProjectType = {
     status: 'concluído',
     card_banner:
       'https://images.pexels.com/photos/15915605/pexels-photo-15915605/free-photo-of-natureza-flor-animais-selvagens-vida-selvagem.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    page_icon: 'https://cdn-icons-png.flaticon.com/512/8493/8493828.png',
+    page_icon: '/images/morcego.png',
     name: 'Morcego',
     description:
       'Projeto de fotogrametria do Instituto de Informática da UFRGS',
