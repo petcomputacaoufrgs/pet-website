@@ -101,8 +101,8 @@ const AboutView = () => {
 
           <p style={{fontWeight: "bold"}}>Quer se candidatar?</p>
           
-          <p>Acompanhe nosso perfil no <a href='https://www.instagram.com/petcompufrgs/' target='_blank'>Instagram</a> para ver as notícias do grupo, se as inscrições estiverem abertas vamos anunciar lá, nas comunidades do whatsapp e no grupo de webmails do INF da gradução. 
-            O edital e formulário de inscrição de um processo seletivo aberto ficam no nosso <a href='https://lnk.bio/lEJP?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGntSJd12H4KfTWuoJCVTPLDyZXdtYRNmWaF-eJBFmbmEWYfY0OQajaHb-_tRM_aem_toRqy943KtFBmBNxnTiPGw' target='_blank'>Linktree</a>.</p>
+          <p>Acompanhe nosso perfil no <a href='https://www.instagram.com/petcompufrgs/' target='_blank' rel="noreferrer">Instagram</a> para ver as notícias do grupo, se as inscrições estiverem abertas vamos anunciar lá, nas comunidades do whatsapp e no grupo de webmails do INF da gradução. 
+            O edital e formulário de inscrição de um processo seletivo aberto ficam no nosso <a href='https://lnk.bio/lEJP?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGntSJd12H4KfTWuoJCVTPLDyZXdtYRNmWaF-eJBFmbmEWYfY0OQajaHb-_tRM_aem_toRqy943KtFBmBNxnTiPGw' target='_blank' rel="noreferrer">Linktree</a>.</p>
         
         </ContentText>
       </Section>
