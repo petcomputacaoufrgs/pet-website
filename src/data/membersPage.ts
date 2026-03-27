@@ -19,11 +19,11 @@ import Joel from '@/images/members/Joel.jpg'
 //import Max from '@/images/members/Max.jpg'
 //import Eric from '@/images/members/Eric.jpg'
 //import Marcelo from '@/images/members/Marcelo.jpg'
-import Gui from '@/images/members/Guilherme.jpg'
+//import Gui from '@/images/members/Guilherme.jpg'
 //import Kami from '@/images/members/Kami.jpg'
 //import Barata from '@/images/members/Barata.jpg'
 //import Vicente from '@/images/members/Vicente.jpg'
-import Eduardo from '@/images/members/Eduardo.jpg'
+//import Eduardo from '@/images/members/Eduardo.jpg'
 //import EduardoVeiga from '@/images/members/EduardoVeiga.jpeg'
 import Thayssa from '@/images/members/Thayssa.jpeg'
 import Leonardo from '@/images/members/Leonardo.png'
@@ -34,6 +34,8 @@ import Isadora from '@/images/members/Isadora.jpg'
 import PedroArthur from '@/images/members/PedroArthur.jpg'
 import JoaoWalter from '@/images/members/JoaoWalter.jpg'
 import Manuela from '@/images/members/Manuela.jpg'
+import PedroBonjardim from '@/images/members/PedroBonjardim.jpg'
+import Gustavo from '@/images/members/Gustavo.jpg'
 
 interface IMemberPage {
   title: string
@@ -59,18 +61,18 @@ const petianes: MemberType[] = [
     interest: 'Engenharia de Software e Robótica',
   },
   {
-    name: 'Guilherme',
-    imgUrl: Gui.src,
+    name: 'Pedro Bonjardim',
+    imgUrl: PedroBonjardim.src,
     course: 'cic',
-    semester: '2022/1',
-    interest: 'Desenvolvimento de Jogos e Inteligência Artificial',
+    semester: '2025/1',
+    interest: 'Banco de Dados e Machine Learning',
   },
   {
-    name: 'Eduardo Fonseca',
-    imgUrl: Eduardo.src,
+    name: 'Gustavo',
+    imgUrl: Gustavo.src,
     course: 'cic',
-    semester: '2023/1',
-    interest: 'IA e Computação Teórica',
+    semester: '2025/1',
+    interest: 'Algoritmos e IA',
   },
   {
     name: 'Joel',
