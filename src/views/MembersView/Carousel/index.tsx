@@ -4,8 +4,6 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 
 // Import Swiper styles
 import 'swiper/css'
-import 'swiper/css/navigation'
-import 'swiper/css/pagination'
 
 // import required modules
 import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper'
@@ -22,14 +20,17 @@ const Carousel = ({ title, members }: ICarousel) => {
 
   return (
     <Container>
-      <NavigationButton onClick={() => swiperRef.current?.slidePrev()}>
-        <Icon type={'chevron-left'} />
-      </NavigationButton>
+      
       {!mobile && (
         <FillAvailable>
           <Title text={title} />
         </FillAvailable>
       )}
+
+      <NavigationButton onClick={() => swiperRef.current?.slidePrev()}>
+        <Icon type={'chevron-left'} />
+      </NavigationButton>
+      
       <Swiper
         breakpoints={{
           0: { slidesPerView: 1 },
@@ -40,7 +41,6 @@ const Carousel = ({ title, members }: ICarousel) => {
         }}
         loop={true}
         spaceBetween={30}
-        cssMode={true}
         onBeforeInit={(swiper) => {
           swiperRef.current = swiper
         }}

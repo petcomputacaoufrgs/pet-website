@@ -32,8 +32,8 @@ export const homePageData: IHomePage = {
       href: '/petianes',
     },
     video: {
-      label: 'Projeto Raposa',
-      href: 'https://www.youtube.com/embed/CDoDrSizhCg',
+      label: 'Vídeo Institucional',
+      href: 'https://www.youtube.com/embed/mbK682vVP7c',
     },
   },
   ourWork: {
