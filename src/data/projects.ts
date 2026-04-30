@@ -55,52 +55,84 @@ export const NomeDoProjeto: ProjectType = {
 */
 
 namespace Projetos {
-  export const Andorinha: ProjectType = {
+  export const Raposa_2: ProjectType = {
     type: 'projeto',
-    href: '/projects/andorinha',
+    href: '/projects/raposa_2',
     status: 'ativo',
+    //--------PRECISO DEFINIR AINDA--------
     card_banner:
-      'https://images.pexels.com/photos/34091048/pexels-photo-34091048.jpeg',
-    //page_icon: 'https://cdn-icons-png.flaticon.com/512/9920/9920187.png',
-    page_icon: '/images/andorinha.png',
-    name: 'Andorinha',
+      '/images/banners/Raposa_dois.jpg',
+    page_icon: '/images/raposa2-0.png',
+    name: 'Raposa 2.0',
     description:
-      'Rodas de conversa em inglês e oportunidades de intercâmbio',
-    axis: ['interação','ensino'],
-    text: ['O projeto Andorinha surgiu em 2025/01 em parceria com o professor Nicolas Maillard a fim de estimular nos estudantes o interesse pelo intercâmbio e pelas línguas estrangeiras, por meio de rodas de conversa e palestras sobre oportunidades de mobilidade acadêmica.',
-        'O projeto conta com professores convidados e propõe um espaço para troca de ideias e descontração misturado com aprendizado e prática da língua inglesa para discentes de todas as etapas dos cursos de computação.',
+      'Desenvolver conteúdos educacionais de computação direcionados à comunidade externa',
+    axis: ['ensino', 'extensão'],
+    text: [
+      'O Projeto Raposa é uma iniciativa do PET Computação da UFRGS que tem como objetivo promover o ensino de computação na educação básica de forma acessível e prática. Utilizando estratégias pedagógicas baseadas em gamificação, ensino de programação e atividades práticas mediadas pelo Projeto Raposa.',
+      'Criado inicialmente com foco no desenvolvimento de jogos educativos, o projeto evoluiu para atuar diretamente em escolas públicas, buscando introduzir conhecimento tecnológico, assim se tornando o Raposa 2.0. Por meio de oficinas, aulas e atividades, o projeto introduz conceitos fundamentais como programação, lógica e pensamento computacional para estudantes do ensino fundamental. As atividades utilizam ferramentas como Scratch, CodeCombat, Arduino (placas microcontroladoras), entre outros.',
+      'Além de ensinar conteúdos técnicos, o Projeto incentiva o desenvolvimento de habilidades de pensamento computacional nos estudantes, o raciocínio lógico e capacidade de resolução de problemas. Com o objetivo de motivar e incentivar o interesse pela tecnologia.'
     ],
+    //--------PRECISO DEFINIR AINDA--------
     active_members: [
-      'Eduardo Fonseca da Silva', 
-      'Eduarda Post Michels', 
-      'Isadora Santiago Müller',
-      'João Walter Backes Nunes',
+      'Thayssa Leão Francisco',
+      'Eduarda Post Michels',
+      'Luiza Helwig da Silva',
+      'Eduardo Altmann de Bem',
+      'Manuela Cristina Zen Dalmonte'
     ],
     inactive_members: [
-      'Vicente Tolentino Isatto', 
+      'Vicente Tolentino Isatto',
       'Eduardo Veiga Ferreira',
     ],
     tools: ['-'],
   }
 
-export const Minicursos: ProjectType = {
+  export const Andorinha: ProjectType = {
+    type: 'projeto',
+    href: '/projects/andorinha',
+    status: 'ativo',
+    card_banner:
+      '/images/banners/Andorinha.jpeg',
+    //page_icon: 'https://cdn-icons-png.flaticon.com/512/9920/9920187.png',
+    page_icon: '/images/andorinha.png',
+    name: 'Andorinha',
+    description:
+      'Rodas de conversa em inglês e oportunidades de intercâmbio',
+    axis: ['interação', 'ensino'],
+    text: ['O projeto Andorinha surgiu em 2025/01 em parceria com o professor Nicolas Maillard a fim de estimular nos estudantes o interesse pelo intercâmbio e pelas línguas estrangeiras, por meio de rodas de conversa e palestras sobre oportunidades de mobilidade acadêmica.',
+      'O projeto conta com professores convidados e propõe um espaço para troca de ideias e descontração misturado com aprendizado e prática da língua inglesa para discentes de todas as etapas dos cursos de computação.',
+    ],
+    active_members: [
+      'Eduarda Post Michels',
+      'Isadora Santiago Müller',
+      'João Walter Backes Nunes',
+      'Manuela Cristina Zen Dalmonte'
+    ],
+    inactive_members: [
+      'Eduardo Fonseca da Silva'
+    ],
+    tools: ['-'],
+  }
+
+  export const Minicursos: ProjectType = {
     type: 'projeto',
     href: '/projects/minicursos',
     status: 'ativo',
     card_banner:
-      'https://images.pexels.com/photos/3722628/pexels-photo-3722628.jpeg',
+      '/images/banners/MiniCursos.jpeg',
     page_icon: 'https://cdn-icons-png.flaticon.com/512/1068/1068042.png',
     name: 'Minicursos',
     description:
       'Rodas de conversa em inglês e oportunidades de intercâmbio',
     axis: ['ensino'],
-    text: ['O projeto Minicursos do PET promove o compartilhamento de aprendizados do grupo, além da pesquisa, estudo e criação de cursos sobre conteúdos essenciais da computação, para complementar o curso com o ensino de ferramentas e tecnologias modernas e relevantes para o crescimento acadêmico e profissional dos estudantes. ',
+    text: [
+      'O projeto Minicursos do PET promove o compartilhamento de aprendizados do grupo, além da pesquisa, estudo e criação de cursos sobre conteúdos essenciais da computação, para complementar o curso com o ensino de ferramentas e tecnologias modernas e relevantes para o crescimento acadêmico e profissional dos estudantes. ',
     ],
     active_members: [
-      'Eduarda Post Michels', 
+      'Eduarda Post Michels',
       'Isadora Santiago Müller',
       'João Walter Backes Nunes',
-      'Luiza Helwig da Silva', 
+      'Luiza Helwig da Silva',
       'Thayssa Leão Francisco',
       'Leonardo Leal Linhares Dias',
       'Pedro Arthur Pereira Rocha'
@@ -111,125 +143,101 @@ export const Minicursos: ProjectType = {
     tools: ['-'],
   }
 
-/*export const Raposa_Dois: ProjectType = {
+  export const Cerberus: ProjectType = {
     type: 'projeto',
-    href: '/projects/raposa2.0',
+    href: '/projects/cerberus',
     status: 'ativo',
     card_banner:
-      'https://images.pexels.com/photos/34091048/pexels-photo-34091048.jpeg',
-    page_icon: 'https://cdn-icons-png.flaticon.com/512/9920/9920187.png',
-    name: 'Raposa 2.0',
+      '/images/banners/Cerberus.jpeg',
+    page_icon: '/images/cerberus.png',
+    name: 'Cerberus',
     description:
-      'Raposa de cara nova, agora com aulas em escolas',
-    axis: ['interação','ensino'],
-    text: ['']
+      'Simulador de RISC-V',
+    axis: ['desenvolvimento', 'ensino'],
+    text: [
+      'O projeto Cerberus foi criado no final de 2025 com o objetivo de desenvolver ferramentas de apoio ao ensino da arquitetura RISC-V. Visto que o RISC-V tem se tornado um padrão importante tanto na indústria quanto na academia - inclusive com a arquitetura sendo incluída no novo currículo - o projeto busca criar simuladores visuais e interativos para auxiliar os estudantes na disciplina de Arquitetura de Computadores.',
+      'A ideia central é facilitar a compreensão de conceitos centrais da disciplina, como a execução em tempo real de instruções, memória de dados e programação em linguagem assembly, permitindo uma visualização prática do fluxo de dados no processador.',
     ],
     active_members: [
       'Eduardo Altmann de Bem',
-      'João Walter Backes Nunes',
+      'Isadora Santiago Müller',
+      'Joel Soares Gonzalez',
+      'Leonardo Leal Linhares Dias',
       'Luiza Helwig da Silva',
+    ],
+    tools: ['-'],
+  }
+
+  export const PetAdopt: ProjectType = {
+    type: 'projeto',
+    href: '/projects/petadopt',
+    status: 'ativo',
+    card_banner:
+      '/images/banners/PetAdopt.jpeg',
+    page_icon: "/images/petcirculo2.png",
+    name: 'Pet Adopt',
+    description:
+      'Site para adoção de animais',
+    axis: ['desenvolvimento', 'extensão'],
+    text: [
+      'O Pet-Adopt foi criado em 2024 a partir de uma parceria com o grupo PET Veterinária da UNIPAMPA. Seu objetivo é a criação de um site para organizar e divulgar a adoção de animais de maneira responsável, além de conectar ONGs envolvidas nesse processo com os usuários.',
+    ],
+    active_members: [
+      'Eduarda Post Michels',
     ],
     inactive_members: [
       'Eduardo Fonseca da Silva',
-      'Eduardo Veiga Ferreira',
-      'Eduarda Post Michels',
       'Guilherme D\'Avila Pinheiro',
-      'Thayssa Leão Francisco',
+      'Kamille Pimentel',
+      'Eduarda Tessari Pereira',
+      'Maximus Borges da Rosa',
+      'Vicente Tolentino Isatto',
+      'João Luis Scheffel Koller',
+      'Vic Duarte',
+      'Andrew Borges',
+      'Carolina Silva',
+    ],
+    tools: ['Docker', 'Cloudflare', 'ReactJS', 'Nest'],
+  }
+
+  export const Polvo: ProjectType = {
+    type: 'projeto',
+    href: '/projects/polvo',
+    status: 'ativo',
+    card_banner:
+      '/images/banners/Polvo.jpeg',
+    page_icon: '/images/polvo.png',
+    name: 'Polvo',
+    description:
+      'Trocas de conhecimento entre petianes',
+    axis: ['pesquisa', 'ensino'],
+    text: [
+      'O projeto Polvo surge no final de 2025 como uma proposta de compartilhar e discutir temas na área da computação de interesse dos petianos. Para isso, uma vez por mês são realizadas apresentações internas, conduzidas pelos próprios bolsistas, onde os ministrantes da vez mostram o que andaram estudando durante o mês, promovendo um momento de descontração e troca de ideias.',
+    ],
+    active_members: [
+      'Todos os Integrantes'
     ],
     tools: ['-'],
-  }*/
-
-  export const Cerberus: ProjectType = {
-  type: 'projeto',
-  href: '/projects/cerberus',
-  status: 'ativo',
-  card_banner: 'https://images.pexels.com/photos/17802177/pexels-photo-17802177.jpeg',
-  page_icon: '/images/cerberus.png',
-  name: 'Cerberus',
-  description:
-    'Simulador de RISC-V',
-  axis: ['desenvolvimento', 'ensino'],
-  text: [
-    'O projeto Cerberus foi criado no final de 2025 com o objetivo de desenvolver ferramentas de apoio ao ensino da arquitetura RISC-V. Visto que o RISC-V tem se tornado um padrão importante tanto na indústria quanto na academia - inclusive com a arquitetura sendo incluída no novo currículo - o projeto busca criar simuladores visuais e interativos para auxiliar os estudantes na disciplina de Arquitetura de Computadores.',
-    'A ideia central é facilitar a compreensão de conceitos centrais da disciplina, como a execução em tempo real de instruções, memória de dados e programação em linguagem assembly, permitindo uma visualização prática do fluxo de dados no processador.',
-  ],
-  active_members: [
-    'Eduardo Altmann de Bem',
-    'Isadora Santiago Müller',
-    'Joel Soares Gonzalez',
-    'Leonardo Leal Linhares Dias',
-    'Luiza Helwig da Silva',
-  ],
-  tools: ['-'],
-}
-
-  export const PetAdopt: ProjectType = {
-  type: 'projeto',
-  href: '/projects/petadopt',
-  status: 'ativo',
-  card_banner: 'https://images.pexels.com/photos/16652376/pexels-photo-16652376.jpeg',
-  page_icon: "/images/petcirculo2.png",
-  name: 'Pet Adopt',
-  description:
-    'Site para adoção de animais',
-  axis: ['desenvolvimento', 'extensão'],
-  text: [
-    'O Pet-Adopt foi criado em 2024 a partir de uma parceria com o grupo PET Veterinária da UNIPAMPA. Seu objetivo é a criação de um site para organizar e divulgar a adoção de animais de maneira responsável, além de conectar ONGs envolvidas nesse processo com os usuários.',
-  ],
-  active_members: [
-    'Eduardo Fonseca da Silva',
-    'Eduarda Post Michels',
-  ],
-  inactive_members: [
-    'Guilherme D\'Avila Pinheiro',
-    'Kamille Pimentel',
-    'Eduarda Tessari Pereira',
-    'Maximus Borges da Rosa',
-    'Vicente Tolentino Isatto',
-    'João Luis Scheffel Koller',
-    'Vic Duarte',
-    'Andrew Borges',
-    'Carolina Silva',
-  ],
-  tools: ['Docker','Cloudflare','ReactJS','Nest'],
-}
-
-export const Polvo: ProjectType = {
-  type: 'projeto',
-  href: '/projects/polvo',
-  status: 'ativo',
-  card_banner: 'https://images.pexels.com/photos/31329010/pexels-photo-31329010.jpeg',
-  page_icon: '/images/polvo.png',
-  name: 'Polvo',
-  description:
-    'Trocas de conhecimento entre petianes',
-  axis: ['pesquisa', 'ensino'],
-  text: [
-    'O projeto Polvo surge no final de 2025 como uma proposta de compartilhar e discutir temas na área da computação de interesse dos petianos. Para isso, uma vez por mês são realizadas apresentações internas, conduzidas pelos próprios bolsistas, onde os ministrantes da vez mostram o que andaram estudando durante o mês, promovendo um momento de descontração e troca de ideias.',
-  ],
-  active_members: [
-    'Todos os Integrantes'
-  ],
-  tools: ['-'],
-}
+  }
 
   export const Borboleta: ProjectType = {
     type: 'projeto',
     href: '/projects/borboleta',
     status: 'concluído',
     card_banner:
-      "https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?_gl=1*nx2vbb*_ga*NjY2NjAxMTc1LjE3NTcwMDg5MDU.*_ga_8JE65Q40S6*czE3NTcwMDg5MDQkbzEkZzEkdDE3NTcwMDg5NTQkajEwJGwwJGgw",
+      '/images/banners/Borboleta.jpeg',
     page_icon: '/images/borboleta.png',
     name: "Borboleta",
-    description: "Um site para conversão de históricos do currículo antigo para o novo (2026/1)",
+    description:
+      "Um site para conversão de históricos do currículo antigo para o novo (2026/1)",
     axis: ['desenvolvimento'],
     text: ["Como parte das ações que acompanham a mudança do currículo do curso de Ciência da Computação da UFRGS, o grupo PET Computação desenvolveu, em parceria com o professor Henrique Becker, uma ferramenta educacional para auxiliar estudantes na visualização das mudanças do currículo antigo para o novo.",
-           "O projeto teve como objetivo facilitar a compreensão das mudanças curriculares e apoiar a tomada de decisão dos estudantes que ingressaram no curso sob o currículo anterior.",
-            "A iniciativa integrou um esforço mais amplo de fomentar a participação discente nas discussões e decisões relacionadas à reformulação curricular."],
+      "O projeto teve como objetivo facilitar a compreensão das mudanças curriculares e apoiar a tomada de decisão dos estudantes que ingressaram no curso sob o currículo anterior.",
+      "A iniciativa integrou um esforço mais amplo de fomentar a participação discente nas discussões e decisões relacionadas à reformulação curricular."],
     tools: ['FastAPI', 'ReactJS', 'Typescript', 'HTML', 'CSS', 'Python', 'Docker'],
     active_members: [
-      'Eduardo Fonseca da Silva', 
-      'Eduarda Post Michels', 
+      'Eduardo Fonseca da Silva',
+      'Eduarda Post Michels',
       'Gabriel Kenji Kuta',
       'Guilherme D\'Avila Pinheiro',
       'João Luis Scheffel Koller'
@@ -245,14 +253,14 @@ export const Polvo: ProjectType = {
       }
     ],
 
-    }
+  }
 
   export const Hidra: ProjectType = {
     type: 'projeto',
     href: '/projects/hidra',
     status: 'concluído',
     card_banner:
-      'https://images.pexels.com/photos/612964/pexels-photo-612964.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1280&dpr=1',
+      '/images/banners/Hydra.jpeg',
     page_icon: '/images/hidra.png',
     name: 'Hidra',
     description:
@@ -286,7 +294,7 @@ export const Polvo: ProjectType = {
     href: '/projects/dino',
     status: 'concluído',
     card_banner:
-      'https://images.pexels.com/photos/1319591/pexels-photo-1319591.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1280&dpr=1',
+      '/images/banners/Dino.jpeg',
     page_icon: '/images/dino.png',
     name: 'Dino',
     description:
@@ -321,7 +329,7 @@ export const Polvo: ProjectType = {
     href: '/projects/lobo',
     status: 'concluído',
     card_banner:
-      'https://images.pexels.com/photos/1573134/pexels-photo-1573134.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1280&dpr=1',
+      '/images/banners/Lobo.jpeg',
     page_icon: '/images/lobo.png',
     name: 'LoBo Brain',
     description:
@@ -347,7 +355,7 @@ export const Polvo: ProjectType = {
     href: '/projects/cafe-com-pet',
     status: 'concluído',
     card_banner:
-      'https://images.pexels.com/photos/9968610/pexels-photo-9968610.jpeg?auto=compress&cs=tinysrgb&w=1280&h=1920&dpr=1',
+      '/images/banners/CafécomPet.jpeg',
     page_icon: '/images/cafecompet.png',
     name: 'Café com PET',
     description:
@@ -384,7 +392,7 @@ export const Polvo: ProjectType = {
     href: '/projects/dragao',
     status: 'ativo',
     card_banner:
-      'https://images.pexels.com/photos/7715003/pexels-photo-7715003.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1280&dpr=1',
+      '/images/banners/Dragao.jpeg',
     page_icon: '/images/dragao.png',
     name: 'Dragão',
     description:
@@ -422,10 +430,11 @@ export const Polvo: ProjectType = {
     href: '/projects/papagaio',
     status: 'concluído',
     card_banner:
-      'https://images.pexels.com/photos/11932512/pexels-photo-11932512.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1280&dpr=1',
+      '/images/banners/Papagaio.jpeg',
     page_icon: '/images/papagaio.png',
     name: 'Papagaio',
-    description: 'Uma IA que utiliza PLN para explorar o universo da música',
+    description:
+      'Uma IA que utiliza PLN para explorar o universo da música',
     axis: ['pesquisa'],
     text: [
       'A música reconstitui a linguagem como uma sequência temporal de sons articulados. Elas dizem algo, geralmente algo humano.',
@@ -461,8 +470,8 @@ export const Polvo: ProjectType = {
     href: '/projects/pinguim',
     status: 'concluído',
     card_banner:
-      'https://images.pexels.com/photos/1299391/pexels-photo-1299391.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1280&dpr=1',
-    page_icon: '/images/pinguim.png',    
+      '/images/banners/Pinguim.jpeg',
+    page_icon: '/images/pinguim.png',
     name: 'Pinguim',
     description:
       'Uma reformulação das máquinas teóricas utilizadas na cadeira de Teoria da Computação',
@@ -511,9 +520,9 @@ export const Polvo: ProjectType = {
   export const Raposa: ProjectType = {
     type: 'projeto',
     href: '/projects/raposa',
-    status: 'ativo',
+    status: 'concluído',
     card_banner:
-      'https://images.pexels.com/photos/271905/pexels-photo-271905.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1280&dpr=1',
+      '/images/banners/Raposa.jpeg',
     page_icon: '/images/raposa.png',
     name: 'Raposa',
     description:
@@ -561,7 +570,7 @@ export const Polvo: ProjectType = {
     href: '/projects/castor',
     status: 'concluído',
     card_banner:
-      'https://images.pexels.com/photos/12899887/pexels-photo-12899887.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1280&dpr=1',
+      '/images/banners/Castor.jpeg',
     page_icon: '/images/castor.png',
     name: 'Castor',
     description:
@@ -592,7 +601,7 @@ export const Polvo: ProjectType = {
     href: '/projects/mico-leao',
     status: 'ativo',
     card_banner:
-      'https://images.pexels.com/photos/3973557/pexels-photo-3973557.jpeg?auto=compress&cs=tinysrgb&w=3053&h=4733&dpr=1',
+      '/images/banners/MicoLeao.jpeg',
     page_icon: '/images/micoleao.png',
     name: 'Mico Leão',
     description:
@@ -602,12 +611,12 @@ export const Polvo: ProjectType = {
       'O Mico Leão é historicamente o projeto de Inteligência Artificial do PET Computação. Foi iniciado em 2023, e desde então passou por diversas modificações até chegar no modelo atual: uma união entre algoritmos de aprendizado e robótica. Atualmente, os objetivos da iniciativa são montar um robô que deve sair de um labirinto utilizando algoritmos de aprendizado. As peças de hardware utilizadas são Raspberry Pi, sensores ultrassônicos, motores e bateria. Todos esses itens serão controlados por scripts Python, inclusive o código para sair do labirinto, o flood-fill.',
     ],
     active_members: [
-      'Eduardo Fonseca da Silva', 
       'Eduardo Altmann de Bem',
       'Luiza Helwig da Silva',
       'Leonardo Leal Linhares Dias',
     ],
     inactive_members: [
+      'Eduardo Fonseca da Silva',
       'João Antônio Barata',
       'Tomás Mitsuo Dias Ueda',
       'Felipe Gallois',
@@ -631,7 +640,7 @@ export const Polvo: ProjectType = {
     href: '/projects/baleia',
     status: 'ativo',
     card_banner:
-      'https://images.pexels.com/photos/4666750/pexels-photo-4666750.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      '/images/banners/Baleia.jpeg',
     page_icon: '/images/baleia.png',
     name: 'Baleia',
     description:
@@ -642,20 +651,20 @@ export const Polvo: ProjectType = {
       'A ideia é que o servidor seja utilizado para armazenar arquivos e informações do grupo, além de ser um meio de hospedar os serviços e sites necessários pelo grupo.',
     ],
     active_members: [
-      'Eduardo Fonseca da Silva', 
-      'Eduardo Altmann de Bem', 
-      'Eduarda Post Michels', 
-      'Isadora Santiago Muller', 
-      'Luiza Helwig da Silva', 
-      'Thayssa Leão Francisco' 
+      'Eduardo Altmann de Bem',
+      'Eduarda Post Michels',
+      'Isadora Santiago Muller',
+      'Luiza Helwig da Silva',
+      'Thayssa Leão Francisco'
     ],
     inactive_members: [
-     'Felipe Gallois', 
-     'Ian Kersz e Marcos Recker', 
-     'Eric Peracchi Pisoni', 
-     'Gabriel Kenji Ikuta', 
-     'João Luis Scheffel Koller', 
-     'Eduardo Veiga Ferreira'
+      'Eduardo Fonseca da Silva',
+      'Felipe Gallois',
+      'Ian Kersz e Marcos Recker',
+      'Eric Peracchi Pisoni',
+      'Gabriel Kenji Ikuta',
+      'João Luis Scheffel Koller',
+      'Eduardo Veiga Ferreira'
     ],
     tools: ['Proxmox', 'Docker',],
   }
@@ -665,7 +674,7 @@ export const Polvo: ProjectType = {
     href: '/projects/hardware',
     status: 'concluído',
     card_banner:
-      'https://images.pexels.com/photos/163100/circuit-circuit-board-resistor-computer-163100.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      '/images/banners/Hardware.jpeg',
     page_icon: '/images/hardware.png',
     name: 'Hardware',
     description:
@@ -688,7 +697,7 @@ export const Polvo: ProjectType = {
     href: '/projects/bem-te-vi',
     status: 'ativo',
     card_banner:
-      'https://images.pexels.com/photos/6135762/pexels-photo-6135762.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      '/images/banners/BemTeVi.jpeg',
     page_icon: "/images/bemtevi.png",
     name: 'Bem-Te-Vi',
     description:
@@ -700,19 +709,19 @@ export const Polvo: ProjectType = {
     ],
     active_members: [
       'Eduarda Post Michels',
-      'Luiza Helwig da Silva', 
-      'Thayssa Leão Francisco', 
+      'Luiza Helwig da Silva',
+      'Thayssa Leão Francisco',
       'Joel Soares Gonzalez'
     ],
     inactive_members: [
-      'Beatriz Aline Arend', 
-      'Eduarda Tessari Pereira', 
-      'Gabriel Kenji Ikuta', 
-      'Guilherme D\'Avila Pinheiro', 
-      'Isabella Teixeira Chiodelli', 
-      'Maximus Borges da Rosa', 
-      'Heloísa Marques', 
-      'João Vítor de Souza', 
+      'Beatriz Aline Arend',
+      'Eduarda Tessari Pereira',
+      'Gabriel Kenji Ikuta',
+      'Guilherme D\'Avila Pinheiro',
+      'Isabella Teixeira Chiodelli',
+      'Maximus Borges da Rosa',
+      'Heloísa Marques',
+      'João Vítor de Souza',
       'Juan Lucca Costa Homem',
       'Pedro Miola'
     ],
@@ -724,7 +733,7 @@ export const Polvo: ProjectType = {
     href: '/projects/cafe-com-pesquisa',
     status: 'ativo',
     card_banner:
-      'https://images.pexels.com/photos/3184317/pexels-photo-3184317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      '/images/banners/CaféComPesquisa.jpeg',
     page_icon: '/images/cafecompesquisa.png',
     name: 'Café com Pesquisa',
     description:
@@ -755,7 +764,7 @@ export const Polvo: ProjectType = {
     href: '/projects/acervo',
     status: 'concluído',
     card_banner:
-      'https://images.pexels.com/photos/7598913/pexels-photo-7598913.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      '/images/banners/Acervo.jpeg',
     page_icon: '/images/acervo.png',
     name: 'Acervo',
     description:
@@ -781,7 +790,7 @@ export const Polvo: ProjectType = {
     href: '/projects/manual-dos-bixos',
     status: 'ativo',
     card_banner:
-      'https://images.pexels.com/photos/259554/pexels-photo-259554.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      '/images/banners/Manual.jpeg',
     page_icon: '/images/girafa.png',
     name: 'Girafa',
     description:
@@ -793,7 +802,8 @@ export const Polvo: ProjectType = {
     active_members: [
       'Luiza Helwig da Silva',
       'Leonardo Leal Linhares Dias',
-      'João Walter Backes Nunes'
+      'João Walter Backes Nunes',
+      'Manuela Cristina Zen Dalmonte'
     ],
     inactive_members: [
       'Eduarda Tessari Pereira',
@@ -816,15 +826,15 @@ export const Polvo: ProjectType = {
     href: '/projects/harpia',
     status: 'ativo',
     card_banner:
-      'https://images.pexels.com/photos/802115/pexels-photo-802115.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    page_icon: '/images/harpia.png',    
+      '/images/banners/Harpia.jpeg',
+    page_icon: '/images/harpia.png',
     name: 'Harpia',
     description:
       'Projeto de construção de um computador NEANDER físico',
     axis: ['desenvolvimento'],
     text: [
-        'O computador NEANDER é um modelo teórico criado pelos ex-professores da UFRGS Raul Fernando Weber e Taisy Silva Weber para servir como objeto de estudo nas disciplinas de arquitetura de computadores.',
-        'Neste sentido, o PET se propôs a implementar esse computador fisicamente utilizando circuitos integrados TTL. Atualmente estamos na fase de montagem dos protótipos baseados em esquemáticos feitos em softwares de simulação em circuitos eletrônicos como o Proteus.'
+      'O computador NEANDER é um modelo teórico criado pelos ex-professores da UFRGS Raul Fernando Weber e Taisy Silva Weber para servir como objeto de estudo nas disciplinas de arquitetura de computadores.',
+      'Neste sentido, o PET se propôs a implementar esse computador fisicamente utilizando circuitos integrados TTL. Atualmente estamos na fase de montagem dos protótipos baseados em esquemáticos feitos em softwares de simulação em circuitos eletrônicos como o Proteus.'
     ],
     active_members: [
       'Eduarda Post Michels',
@@ -852,22 +862,22 @@ export const Polvo: ProjectType = {
     href: '/projects/rato',
     status: 'concluído',
     card_banner:
-      'https://images.pexels.com/photos/2280794/pexels-photo-2280794.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      '/images/banners/Rato.jpeg',
     page_icon: '/images/rato.png',
     name: 'Rato',
     description:
       'Experimentação da nova disciplina de Projeto Integrador',
     axis: ['interação'],
     text: [
-     'A participação dos membros do PET, em colaboração com outros estudantes, resultou na produção de dois artigos científicos distintos: um focado na classificação de emoções por meio de eletroencefalogramas (EEG) via Random Forest, e outro dedicado à análise da evasão estudantil sob a influência do Prouni. Ambos os trabalhos cumpriram os requisitos acadêmicos, gerando feedbacks para a cadeira.',
-    'Com a conclusão desta experiência piloto, destacamos a necessidade de delimitar o escopo de metodologias e bases de dados disponíveis. A liberdade total de temas apresentou obstáculos práticos, como a escassez de dados ou complexidades técnicas que dificultaram o apoio dos docentes e o progresso consistente dos projetos ao longo do semestre. Entre outras mudanças, sugerimos que futuras edições forneçam uma fundamentação prévia mais completa, com preparação de dados, referências e temas de pesquisa.',
+      'A participação dos membros do PET, em colaboração com outros estudantes, resultou na produção de dois artigos científicos distintos: um focado na classificação de emoções por meio de eletroencefalogramas (EEG) via Random Forest, e outro dedicado à análise da evasão estudantil sob a influência do Prouni. Ambos os trabalhos cumpriram os requisitos acadêmicos, gerando feedbacks para a cadeira.',
+      'Com a conclusão desta experiência piloto, destacamos a necessidade de delimitar o escopo de metodologias e bases de dados disponíveis. A liberdade total de temas apresentou obstáculos práticos, como a escassez de dados ou complexidades técnicas que dificultaram o apoio dos docentes e o progresso consistente dos projetos ao longo do semestre. Entre outras mudanças, sugerimos que futuras edições forneçam uma fundamentação prévia mais completa, com preparação de dados, referências e temas de pesquisa.',
     ],
     active_members: [
-        'Beatriz Aline Arend',
-        'Eduarda Tessari Pereira',
-        'Maximus Borges da Rosa',
-        'Gabriel Kenji Ikuta',
-        'Guilherma D\'Ávila Pinheiro', 
+      'Beatriz Aline Arend',
+      'Eduarda Tessari Pereira',
+      'Maximus Borges da Rosa',
+      'Gabriel Kenji Ikuta',
+      'Guilherma D\'Ávila Pinheiro',
     ],
     tools: ['-'],
   }
@@ -877,7 +887,7 @@ export const Polvo: ProjectType = {
     href: '/projects/morcego',
     status: 'concluído',
     card_banner:
-      'https://images.pexels.com/photos/15915605/pexels-photo-15915605/free-photo-of-natureza-flor-animais-selvagens-vida-selvagem.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      '/images/banners/Morcego.jpeg',
     page_icon: '/images/morcego.png',
     name: 'Morcego',
     description:
@@ -916,81 +926,90 @@ namespace Cursos {
   export const Git: CourseType = {
     type: 'curso',
     card_banner:
-      'https://images.pexels.com/photos/11035539/pexels-photo-11035539.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      '/images/banners/Git.jpeg',
     name: 'Git',
-    description: 'Uma introdução ao Git',
+    description:
+      'Uma introdução ao Git',
     href: 'https://petcomputacaoufrgs.github.io/intro-ao-git',
   }
 
   export const Latex: CourseType = {
     type: 'curso',
     card_banner:
-      'https://images.pexels.com/photos/8085937/pexels-photo-8085937.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      '/images/banners/Latex.jpeg',
     name: 'LaTEX',
-    description: 'Uma introdução ao Latex',
+    description:
+      'Uma introdução ao Latex',
     href: 'https://petcomputacaoufrgs.github.io/intro-ao-latex',
   }
 
   export const CV: CourseType = {
     type: 'curso',
     card_banner:
-      'https://images.pexels.com/photos/5989926/pexels-photo-5989926.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      '/images/banners/CV.jpeg',
     name: 'Currículo',
-    description: 'Um passo a passo para export construir seu primeiro currículo',
+    description:
+      'Um passo a passo para export construir seu primeiro currículo',
     href: 'https://petcomputacaoufrgs.github.io/cv-guide',
   }
 
   export const Arduino: CourseType = {
     type: 'curso',
     card_banner:
-      'https://images.pexels.com/photos/2588757/pexels-photo-2588757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      '/images/banners/Arduino.jpeg',
     name: 'Arduino',
-    description: 'Uma introdução ao arduíno',
+    description:
+      'Uma introdução ao arduíno',
     href: 'https://petcomputacaoufrgs.github.io/intro-ao-arduino',
   }
 
   export const WebDev: CourseType = {
     type: 'curso',
     card_banner:
-      'https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      '/images/banners/WebDev.jpeg',
     name: 'Desenvolvimento Web',
-    description: 'Uma introdução ao desenvolvimento Web',
+    description:
+      'Uma introdução ao desenvolvimento Web',
     href: 'https://breezy-moonflower-d72.notion.site/O-mini-guia-de-web-para-iniciantes-668009c833624c0c83a782ac9d13216d',
   }
 
   export const ML: CourseType = {
     type: 'curso',
     card_banner:
-      'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      '/images/banners/ML.jpeg',
     name: 'Machine Learning',
-    description: 'Uma introdução ao aprendizado de máquina',
+    description:
+      'Uma introdução ao aprendizado de máquina',
     href: 'https://petcomputacaoufrgs.github.io/ml-course',
   }
 
   export const PyTorch: CourseType = {
     type: 'curso',
     card_banner:
-      'https://images.pexels.com/photos/1181359/pexels-photo-1181359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      '/images/banners/PyTorch.jpeg',
     name: 'PyTorch',
-    description: 'Uma introdução ao PyTorch',
+    description:
+      'Uma introdução ao PyTorch',
     href: 'https://petcomputacaoufrgs.github.io/ml-guide',
   }
 
   export const SDR: CourseType = {
     type: 'curso',
     card_banner:
-      'https://images.pexels.com/photos/7388500/pexels-photo-7388500.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      '/images/banners/SDR.jpeg',
     name: 'SDR',
-    description: 'Uma introdução a Software Defined Radio',
+    description:
+      'Uma introdução a Software Defined Radio',
     href: 'https://petcomputacaoufrgs.github.io/minic_sdr',
   }
 
   export const SelfHosting: CourseType = {
     type: 'curso',
     card_banner:
-      'https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      '/images/banners/SelfHosting.jpeg',
     name: 'Self-Hosting',
-    description: 'Uma introdução ao Self Hosting',
+    description:
+      'Uma introdução ao Self Hosting',
     href: 'https://drive.google.com/file/d/1tXDUKwYaJeOA9flx2ob1LWsBtafwIFLH/view',
   }
 }

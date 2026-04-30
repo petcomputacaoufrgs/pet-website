@@ -14,6 +14,7 @@ export const homePageData: IHomePage = {
     { label: 'Nosso Trabalho', href: '#our-work' },
     { label: 'Contato', href: '#contact-us' },
     { label: 'Petianes', href: '/petianes' },
+    { label: 'Manual', href: 'https://foggy-antler-b88.notion.site/Manual-do-Bixos-69aee2be56cd46599e43636c19f16433?fbclid=PAT01DUAQw5UtleHRuA2FlbQIxMABzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAafz5WJfgKRUhbd6_mk-mkgR1al4xmhWWmxgJ_nCtPe-NtchMc8bQ9ziJ7qe7w_aem_Ye4uxyv4MfPvku8Ivz9lpA', external: true },
   ],
   banner: {
     id: 'banner',
@@ -30,6 +31,10 @@ export const homePageData: IHomePage = {
     cta: {
       label: 'Conheça nossos membros',
       href: '/petianes',
+    },
+    cta1: {
+      label: 'Manual dos Bixos',
+      href: 'https://foggy-antler-b88.notion.site/Manual-do-Bixos-69aee2be56cd46599e43636c19f16433?fbclid=PAT01DUAQw5UtleHRuA2FlbQIxMABzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAafz5WJfgKRUhbd6_mk-mkgR1al4xmhWWmxgJ_nCtPe-NtchMc8bQ9ziJ7qe7w_aem_Ye4uxyv4MfPvku8Ivz9lpA',
     },
     video: {
       label: 'Vídeo Institucional',

@@ -34,6 +34,8 @@ export const Text = styled.p`
 
 export const ButtonWrapper = styled.div`
   margin: 2rem 0 1rem;
+  display: flex;
+  gap: .75rem;
 `
 
 export const VideoContainer = styled.div`

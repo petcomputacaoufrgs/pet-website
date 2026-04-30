@@ -4,4 +4,5 @@ export interface ISection {
   description?: string[]
   cta?: CtaType
   video?: CtaType
+  cta1?: CtaType
 }
