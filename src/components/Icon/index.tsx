@@ -8,6 +8,7 @@ import GithubIcon from './Github'
 import InstagramIcon from './Instagram'
 import LinkedinIcon from './Linkedin'
 import MailIcon from './Mail'
+import MenuIcon from './Menu'
 import { IIcon } from './types'
 import YoutubeIcon from './Youtube'
 
@@ -36,6 +37,8 @@ const Icon = ({ type, size }: IIcon) => {
         return <ArrowLeftIcon />
       case 'arrow-right':
         return <ArrowRightIcon />
+      case 'menu':
+        return <MenuIcon />
       default:
         return null
     }

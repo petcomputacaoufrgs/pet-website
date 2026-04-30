@@ -11,6 +11,13 @@ export const Link = styled.a`
   text-align: center;
   font-size: 1rem;
   transition: all 0.2s cubic-bezier(0.47, 0, 0.75, 0.72);
+  white-space: normal;
+  word-break: break-word;
+  line-height: 1.2;
+  display: inline-block;
+  min-width: 0;
+  max-width: 90%;
+  box-sizing: border-box;
 
   &:hover {
     background-color: ${(props) => props.theme.colors.details};
@@ -18,6 +25,12 @@ export const Link = styled.a`
 
   @media ${devices.mobileM} {
     padding: 0.75rem 2.5rem;
+    font-size: 0.95rem;
+  }
+
+  @media (max-width: 375px) {
+    font-size: 0.9rem;
+    padding: 0.7rem 1rem;
   }
 
   @media ${devices.desktopS} {

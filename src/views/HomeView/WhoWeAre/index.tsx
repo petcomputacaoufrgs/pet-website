@@ -10,7 +10,7 @@ import {
   VideoContainer,
 } from './styles'
 
-const WhoWeAre = ({ id, title, description, cta, video }: ISection) => {
+const WhoWeAre = ({ id, title, description, cta, video, cta1 }: ISection) => {
   const mobile = useIsMobile()
 
   return (
@@ -23,7 +23,9 @@ const WhoWeAre = ({ id, title, description, cta, video }: ISection) => {
           ))}
         <ButtonWrapper>
           <ButtonLink label={cta.label} href={cta.href} />
+          <ButtonLink label={cta1.label} href={cta1.href} target='blank' />
         </ButtonWrapper>
+
       </div>
       <VideoContainer>
         <VideoFrame
