@@ -37,6 +37,7 @@ import Manuela from '@/images/members/Manuela.jpg'
 import PedroBonjardim from '@/images/members/PedroBonjardim.jpg'
 import Gustavo from '@/images/members/Gustavo.jpg'
 import EduardoPires from '@/images/members/EduardoPires.jpg'
+import EduardoBarbosa from '@/images/members/Barbosa.jpg'
 
 interface IMemberPage {
   title: string
@@ -90,27 +91,6 @@ const petianes: MemberType[] = [
     interest: 'Game Design e Programação Embarcada',
   },
   {
-    name: 'Eduardo Altmann',
-    imgUrl: EduardoAltmann.src,
-    course: 'cic',
-    semester: '2024/2',
-    interest: 'Sistemas Embarcados e IA',
-  },
-  {
-    name: 'Eduarda',
-    imgUrl: Eduarda.src,
-    course: 'ecp',
-    semester: '2024/2',
-    interest: 'Sistemas Embarcados e Engenharia de Software',
-  },
-  {
-    name: 'Leonardo',
-    imgUrl: Leonardo.src,
-    course: 'cic',
-    semester: '2023/1',
-    interest: 'Algoritmos e IA',
-  },
-  {
     name: 'Isadora',
     imgUrl: Isadora.src,
     course: 'ecp',
@@ -139,13 +119,12 @@ const petianes: MemberType[] = [
     interest: 'Inteligência Artificial e Automação',
   },
   {
-    name: 'Manuela',
-    imgUrl: Manuela.src,
+    name: 'Edu Barbosa',
+    imgUrl: EduardoBarbosa.src,
     course: 'cic',
-    semester: '2025/1',
-    interest: 'Inteligência Artificial e Desenvolvimento de Jogos',
-  },
-
+    semester: '2025/2',
+    interest: 'Inteligencia Artificial'
+  }
 ]
 
 const petianesSorted: MemberType[] = petianes.sort((a, b) => a.name.localeCompare(b.name))
