@@ -38,6 +38,7 @@ import PedroBonjardim from '@/images/members/PedroBonjardim.jpg'
 import Gustavo from '@/images/members/Gustavo.jpg'
 import EduardoPires from '@/images/members/EduardoPires.jpg'
 import EduardoBarbosa from '@/images/members/Barbosa.jpg'
+import PedroSchuck from '@/images/members/Schuck.jpg'
 
 interface IMemberPage {
   title: string
@@ -124,6 +125,13 @@ const petianes: MemberType[] = [
     course: 'cic',
     semester: '2025/2',
     interest: 'Inteligencia Artificial'
+  },
+  {
+    name: 'Pedro Schuck',
+    imgUrl: PedroSchuck.src,
+    course: 'cic',
+    semester: '2024/1',
+    interest: 'Inteligência Artificial e Ciência de Dados'
   }
 ]
 
