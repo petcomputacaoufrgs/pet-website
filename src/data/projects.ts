@@ -65,7 +65,7 @@ namespace Projetos {
     page_icon: '/images/raposa2-0.png',
     name: 'Raposa 2.0',
     description:
-      'Desenvolver conteúdos educacionais de computação direcionados à comunidade externa',
+      'Desenvolver conteúdos educacionais de lógica de computação e de matemática direcionados à comunidade externa',
     axis: ['ensino', 'extensão'],
     text: [
       'O Projeto Raposa é uma iniciativa do PET Computação da UFRGS que tem como objetivo promover o ensino de computação na educação básica de forma acessível e prática. Utilizando estratégias pedagógicas baseadas em gamificação, ensino de programação e atividades práticas mediadas pelo Projeto Raposa.',
@@ -75,14 +75,9 @@ namespace Projetos {
     //--------PRECISO DEFINIR AINDA--------
     active_members: [
       'Thayssa Leão Francisco',
-      'Eduarda Post Michels',
-      'Luiza Helwig da Silva',
-      'Eduardo Altmann de Bem',
-      'Manuela Cristina Zen Dalmonte'
-    ],
-    inactive_members: [
-      'Vicente Tolentino Isatto',
-      'Eduardo Veiga Ferreira',
+      'Eduardo Barbosa',
+      'Pedro Arthur Pereira Rocha',
+      'Pedro Bonjardim'
     ],
     tools: ['-'],
   }
@@ -103,13 +98,13 @@ namespace Projetos {
       'O projeto conta com professores convidados e propõe um espaço para troca de ideias e descontração misturado com aprendizado e prática da língua inglesa para discentes de todas as etapas dos cursos de computação.',
     ],
     active_members: [
-      'Eduarda Post Michels',
-      'Isadora Santiago Müller',
       'João Walter Backes Nunes',
-      'Manuela Cristina Zen Dalmonte'
+      'Pedro Schuck',
+      'Joel Soares Gonzalez',
+      'Eduardo Barbosa'
     ],
     inactive_members: [
-      'Eduardo Fonseca da Silva'
+      'Eduardo Pires'
     ],
     tools: ['-'],
   }
@@ -129,16 +124,10 @@ namespace Projetos {
       'O projeto Minicursos do PET promove o compartilhamento de aprendizados do grupo, além da pesquisa, estudo e criação de cursos sobre conteúdos essenciais da computação, para complementar o curso com o ensino de ferramentas e tecnologias modernas e relevantes para o crescimento acadêmico e profissional dos estudantes. ',
     ],
     active_members: [
-      'Eduarda Post Michels',
-      'Isadora Santiago Müller',
       'João Walter Backes Nunes',
-      'Luiza Helwig da Silva',
       'Thayssa Leão Francisco',
-      'Leonardo Leal Linhares Dias',
-      'Pedro Arthur Pereira Rocha'
-    ],
-    inactive_members: [
-      'Guilherme D\'Avila Pinheiro',
+      'Pedro Arthur Pereira Rocha',
+      'Pedro Bonjardim',
     ],
     tools: ['-'],
   }
@@ -146,7 +135,7 @@ namespace Projetos {
   export const Cerberus: ProjectType = {
     type: 'projeto',
     href: '/projects/cerberus',
-    status: 'ativo',
+    status: 'concluído',
     card_banner:
       '/images/banners/Cerberus.jpeg',
     page_icon: '/images/cerberus.png',
@@ -163,7 +152,7 @@ namespace Projetos {
       'Isadora Santiago Müller',
       'Joel Soares Gonzalez',
       'Leonardo Leal Linhares Dias',
-      'Luiza Helwig da Silva',
+      'Gustavo Santos Cardoso'
     ],
     tools: ['-'],
   }
@@ -181,9 +170,12 @@ namespace Projetos {
     axis: ['desenvolvimento', 'extensão'],
     text: [
       'O Pet-Adopt foi criado em 2024 a partir de uma parceria com o grupo PET Veterinária da UNIPAMPA. Seu objetivo é a criação de um site para organizar e divulgar a adoção de animais de maneira responsável, além de conectar ONGs envolvidas nesse processo com os usuários.',
+      'O site permite que ONGs e usuários interessados em adotar animais se cadastrem, disponibilizando informações sobre os animais disponíveis para adoção, como fotos, idade, raça e histórico de saúde. Além disso, o site oferece recursos para facilitar a comunicação entre as partes envolvidas, promovendo um processo de adoção mais eficiente e seguro.',
+      'O projeto também busca conscientizar a comunidade sobre a importância da adoção responsável, incentivando a posse responsável de animais de estimação e promovendo o bem-estar animal.',
     ],
-    active_members: [
-      'Eduarda Post Michels',
+    active_members: [      
+      'João Walter Backes Nunes',
+      'Eduardo Pires'
     ],
     inactive_members: [
       'Eduardo Fonseca da Silva',
@@ -196,8 +188,10 @@ namespace Projetos {
       'Vic Duarte',
       'Andrew Borges',
       'Carolina Silva',
+      'Eduarda Post Michels',
+
     ],
-    tools: ['Docker', 'Cloudflare', 'ReactJS', 'Nest'],
+    tools: ['Docker', 'Cloudflare', 'ReactJS', 'Nest', 'TypeScript'],
   }
 
   export const Polvo: ProjectType = {
@@ -422,7 +416,7 @@ namespace Projetos {
       'Henrique Carniel',
       'João Vítor de Souza',
     ],
-    tools: ['Canva', 'Photoshop',],
+    tools: ['Canva', 'Photoshop', 'Figma'],
   }
 
   export const Papagaio: ProjectType = {
@@ -606,33 +600,17 @@ namespace Projetos {
     name: 'Mico Leão',
     description:
       'Materiais de introdução ao tema de IA, tópico muito em alta nos últimos anos',
-    axis: ['pesquisa'],
+    axis: ['pesquisa', 'desenvolvimento'],
     text: [
-      'O Mico Leão é historicamente o projeto de Inteligência Artificial do PET Computação. Foi iniciado em 2023, e desde então passou por diversas modificações até chegar no modelo atual: uma união entre algoritmos de aprendizado e robótica. Atualmente, os objetivos da iniciativa são montar um robô que deve sair de um labirinto utilizando algoritmos de aprendizado. As peças de hardware utilizadas são Raspberry Pi, sensores ultrassônicos, motores e bateria. Todos esses itens serão controlados por scripts Python, inclusive o código para sair do labirinto, o flood-fill.',
+      'O Mico Leão é historicamente o projeto de Inteligência Artificial do PET Computação. Foi iniciado em 2023, e desde então passou por diversas modificações até chegar no modelo atual: uma união entre algoritmos de aprendizado e robótica.',
+      'Atualmente, está focado em desenvolver uma simulação de aprendizado de máquina por reforço na engine de jogos Unity usando C#. Assim, demonstrar esse projeto no Portas Abertas e incentivar estudantes a vir para a computação.',
     ],
     active_members: [
-      'Eduardo Altmann de Bem',
-      'Luiza Helwig da Silva',
-      'Leonardo Leal Linhares Dias',
+      'Eduardo Pires',
+      'Gustavo Santos Cardoso',
+      'Pedro Bonjardim',
     ],
-    inactive_members: [
-      'Eduardo Fonseca da Silva',
-      'João Antônio Barata',
-      'Tomás Mitsuo Dias Ueda',
-      'Felipe Gallois',
-      'Guilherme D\'Avila Pinheiro',
-      'Marcelo Cardoso Oliveira Gulart',
-      'Galeano Domingues',
-      'Henrique Carniel',
-      'Ian Kersz',
-      'João Vítor de Souza',
-      'José Henrique Lima',
-      'Laura Reis da Silveira',
-      'Marcos Reckers',
-      'Pedro Poli Miola',
-      'Beatriz Aline Arend',
-    ],
-    tools: ['Python', 'Jupyter',],
+    tools: ['C#', 'Unity',],
   }
 
   export const Baleia: ProjectType = {
@@ -651,11 +629,7 @@ namespace Projetos {
       'A ideia é que o servidor seja utilizado para armazenar arquivos e informações do grupo, além de ser um meio de hospedar os serviços e sites necessários pelo grupo.',
     ],
     active_members: [
-      'Eduardo Altmann de Bem',
-      'Eduarda Post Michels',
-      'Isadora Santiago Muller',
-      'Luiza Helwig da Silva',
-      'Thayssa Leão Francisco'
+      'João Walter Backes Nunes',
     ],
     inactive_members: [
       'Eduardo Fonseca da Silva',
@@ -824,7 +798,7 @@ namespace Projetos {
   export const Harpia: ProjectType = {
     type: 'projeto',
     href: '/projects/harpia',
-    status: 'ativo',
+    status: 'concluído',
     card_banner:
       '/images/banners/Harpia.jpeg',
     page_icon: '/images/harpia.png',
