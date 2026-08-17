@@ -92,20 +92,6 @@ const petianes: MemberType[] = [
     interest: 'Game Design e Programação Embarcada',
   },
   {
-    name: 'Isadora',
-    imgUrl: Isadora.src,
-    course: 'ecp',
-    semester: '2024/1',
-    interest: 'Sistemas Embarcados e Engenharia de Software',
-  },
-  {
-    name: 'Luiza',
-    imgUrl: Luiza.src,
-    course: 'cic',
-    semester: '2025/2',
-    interest: 'Engenharia de Software e Machine Learning',
-  },
-  {
     name: 'Pedro',
     imgUrl: PedroArthur.src,
     course: 'cic',
