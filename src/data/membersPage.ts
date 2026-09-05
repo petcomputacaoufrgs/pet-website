@@ -1,44 +1,12 @@
 import { MemberType } from '@/types/memberType'
 import Erika from '@/images/members/Erika.png'
-//import Gale from '@/images/members/Galeano.jpeg'
-//import Helo from '@/images/members/Helo.png'
-//import Ian from '@/images/members/Ian.png'
-//import Jose from '@/images/members/Jose.jpg'
-//import JV from '@/images/members/JV.jpg'
-//import Laura from '@/images/members/Laura.jpg'
-//import Marcos from '@/images/members/Marcos.jpg'
-//import Pedro from '@/images/members/Pedro.jpg'
-//import Sofia from '@/images/members/Sofia.jpeg'
-//import Tomas from '@/images/members/Tomas.png'
-//import Duda from '@/images/members/Duda.jpeg'
-//import Beatriz from '@/images/members/Beatriz.png'
-//import Felipe from '@/images/members/Felipe.png'
-import Joel from '@/images/members/Joel.jpg'
-//import Kenji from '@/images/members/Kenji.jpg'
-//import Isa from '@/images/members/Isabella.jpg'
-//import Max from '@/images/members/Max.jpg'
-//import Eric from '@/images/members/Eric.jpg'
-//import Marcelo from '@/images/members/Marcelo.jpg'
-//import Gui from '@/images/members/Guilherme.jpg'
-//import Kami from '@/images/members/Kami.jpg'
-//import Barata from '@/images/members/Barata.jpg'
-//import Vicente from '@/images/members/Vicente.jpg'
-//import Eduardo from '@/images/members/Eduardo.jpg'
-//import EduardoVeiga from '@/images/members/EduardoVeiga.jpeg'
-import Thayssa from '@/images/members/Thayssa.jpeg'
-import Leonardo from '@/images/members/Leonardo.png'
-import EduardoAltmann from '@/images/members/EduardoAltmann.jpg'
-import Eduarda from '@/images/members/Eduarda.jpg'
-import Luiza from '@/images/members/Luiza.jpg'
-import Isadora from '@/images/members/Isadora.jpg'
 import PedroArthur from '@/images/members/PedroArthur.jpg'
 import JoaoWalter from '@/images/members/JoaoWalter.jpg'
-import Manuela from '@/images/members/Manuela.jpg'
-import PedroBonjardim from '@/images/members/PedroBonjardim.jpg'
 import Gustavo from '@/images/members/Gustavo.jpg'
 import EduardoPires from '@/images/members/EduardoPires.jpg'
 import EduardoBarbosa from '@/images/members/Barbosa.jpg'
 import PedroSchuck from '@/images/members/Schuck.jpg'
+import Harry from '@/images/members/Harry.jpg'
 
 interface IMemberPage {
   title: string
@@ -64,39 +32,11 @@ const petianes: MemberType[] = [
     interest: 'Engenharia de Software e Desenvolvimento de Jogos',
   },
   {
-    name: 'Thayssa',
-    imgUrl: Thayssa.src,
-    course: 'cic',
-    semester: '2023/2',
-    interest: 'Engenharia de Software e Robótica',
-  },
-  {
-    name: 'Pedro Bonjardim',
-    imgUrl: PedroBonjardim.src,
-    course: 'cic',
-    semester: '2025/1',
-    interest: 'Banco de Dados e Machine Learning',
-  },
-  {
     name: 'Gustavo',
     imgUrl: Gustavo.src,
     course: 'cic',
     semester: '2025/1',
     interest: 'Algoritmos e IA',
-  },
-  {
-    name: 'Joel',
-    imgUrl: Joel.src,
-    course: 'cic',
-    semester: '2022/2',
-    interest: 'Game Design e Programação Embarcada',
-  },
-  {
-    name: 'Pedro',
-    imgUrl: PedroArthur.src,
-    course: 'cic',
-    semester: '2025/1',
-    interest: 'Banco de Dados e Inteligência Artificial',
   },
   {
     name: 'João Walter',
@@ -118,7 +58,14 @@ const petianes: MemberType[] = [
     course: 'cic',
     semester: '2024/1',
     interest: 'Inteligência Artificial e Ciência de Dados'
-  }
+  },
+  {
+    name: 'Harry',
+    imgUrl: Harry.src,
+    course: 'cic',
+    semester: '2025/2',
+    interest: 'Ciência de Dados e Robótica'
+  },
 ]
 
 const petianesSorted: MemberType[] = petianes.sort((a, b) => a.name.localeCompare(b.name))

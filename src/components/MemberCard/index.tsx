@@ -37,7 +37,7 @@ const MemberCard = ({ member, index }: IMemberCard) => {
         <Details>{semester}</Details>
       </MainInfoContainer>
       <InterestsContainer>
-        <InterestTitle>Area(s) de interesse:</InterestTitle>
+        <InterestTitle>Área(s) de interesse:</InterestTitle>
         <p>{interest}</p>
       </InterestsContainer>
     </Container>
