@@ -5,7 +5,7 @@ import Gustavo from '@/images/members/Gustavo.jpg'
 import EduardoPires from '@/images/members/EduardoPires.jpg'
 import EduardoBarbosa from '@/images/members/Barbosa.jpg'
 import PedroSchuck from '@/images/members/Schuck.jpg'
-import Harry from '@/images/members/Harry.jpg'
+import Harry from '@/images/members/harry.jpg'
 import Muranaka from '@/images/members/Muranaka.jpg'
 import Kewyn from '@/images/members/Kewyn.jpg'
 
