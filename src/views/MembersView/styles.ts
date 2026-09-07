@@ -18,4 +18,6 @@ export const TitleContainer = styled.div`
 
 export const CarouselContainer = styled.div`
   margin: auto 0;
+  width: 100%;
+  min-width: 0;
 `

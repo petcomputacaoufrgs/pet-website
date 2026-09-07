@@ -118,7 +118,7 @@ namespace Projetos {
     page_icon: 'https://cdn-icons-png.flaticon.com/512/1068/1068042.png',
     name: 'Minicursos',
     description:
-      'Rodas de conversa em inglês e oportunidades de intercâmbio',
+      'Compartilhamento de aprendizados sobre conteúdos essenciais da computação no Instituto de Informática da UFRGS',
     axis: ['ensino'],
     text: [
       'O projeto Minicursos do PET promove o compartilhamento de aprendizados do grupo, além da pesquisa, estudo e criação de cursos sobre conteúdos essenciais da computação, para complementar o curso com o ensino de ferramentas e tecnologias modernas e relevantes para o crescimento acadêmico e profissional dos estudantes. ',

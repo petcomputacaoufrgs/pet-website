@@ -27,7 +27,11 @@ const Carousel = ({ title, members }: ICarousel) => {
         </FillAvailable>
       )}
 
-      <NavigationButton onClick={() => swiperRef.current?.slidePrev()}>
+      <NavigationButton
+        type="button"
+        aria-label="Membro anterior"
+        onClick={() => swiperRef.current?.slidePrev()}
+      >
         <Icon type={'chevron-left'} />
       </NavigationButton>
       
@@ -48,7 +52,7 @@ const Carousel = ({ title, members }: ICarousel) => {
         keyboard={true}
         modules={[Navigation, Pagination, Mousewheel, Keyboard]}
         className="mySwiper"
-        style={{ width: '-webkit-fill-available', marginLeft: 'auto' }}
+        style={{ width: '100%', minWidth: 0, margin: '0 auto' }}
       >
         {members.map((member, index) => (
           <SwiperSlide key={`member-card-${index}`}>
@@ -56,7 +60,11 @@ const Carousel = ({ title, members }: ICarousel) => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <NavigationButton onClick={() => swiperRef.current?.slideNext()}>
+      <NavigationButton
+        type="button"
+        aria-label="Próximo membro"
+        onClick={() => swiperRef.current?.slideNext()}
+      >
         <Icon type={'chevron-right'} />
       </NavigationButton>
     </Container>

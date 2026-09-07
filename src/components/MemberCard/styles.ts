@@ -10,6 +10,14 @@ export const Container = styled.div`
   margin-left: auto;
   border-radius: 0.7rem;
   position: relative;
+  box-sizing: border-box;
+
+  @media (max-width: 767px) {
+    max-width: 20rem;
+    height: auto;
+    min-height: 25rem;
+    margin: 0 auto;
+  }
 `
 
 export const CardHeader = styled.div`
@@ -33,6 +41,11 @@ export const MemberImg = styled.img`
   width: 10.313rem;
   object-fit: cover;
   z-index: 3;
+
+  @media (max-width: 374px) {
+    height: 8.5rem;
+    width: 8.5rem;
+  }
 `
 
 export const MainInfoContainer = styled.div`
@@ -43,6 +56,16 @@ export const MainInfoContainer = styled.div`
 export const Name = styled.h3`
   font-size: 3rem;
   font-weight: 500;
+
+  @media (max-width: 767px) {
+    font-size: 2.25rem;
+    line-height: 1.1;
+    overflow-wrap: anywhere;
+  }
+
+  @media (max-width: 374px) {
+    font-size: 2rem;
+  }
 `
 
 export const Details = styled.p`
