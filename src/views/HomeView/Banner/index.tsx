@@ -17,7 +17,7 @@ const Banner = ({ title, description, navbar }: IBanner) => {
       <InfoContainer>
         <TopBanner>
           <Image src={logoPet.src} alt="PET logo" height={90} width={90} />
-          {!mobile && <NavBar navData={navbar} />}
+          <NavBar navData={navbar} />
         </TopBanner>
         <div>
           <Title type={'page'} text={title} />
