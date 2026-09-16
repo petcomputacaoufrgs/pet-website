@@ -11,6 +11,7 @@ import Kewyn from '@/images/members/Kewyn.jpg'
 import Bianca from '@/images/members/Bianca.jpg'
 import Nicolas from '@/images/members/nicolasOtero.jpg'
 import Giovanna from '@/images/members/Giovanna.jpg'
+import Mariana from '@/images/members/Mariana.jpg'
 
 interface IMemberPage {
   title: string
@@ -28,6 +29,13 @@ const orientador: MemberType = {
 // Os petianes podem ser adicionados em qualquer ordem, pois serão ordenados alfabeticamente
 // imgUrl aceita o link de uma imagem, o caminho para a imagem dentro da pasta public, ou o import da imagem com .src
 const petianes: MemberType[] = [
+    {
+    name: 'Mariana',
+    imgUrl: Mariana.src,
+    course: 'ecp',
+    semester: '2026/2',
+    interest: 'Robótica e Eletrônica',
+  },
   {
     name: 'Giovanna',
     imgUrl: Giovanna.src,
