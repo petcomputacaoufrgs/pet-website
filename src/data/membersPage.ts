@@ -11,7 +11,7 @@ import Kewyn from '@/images/members/Kewyn.jpg'
 import Bianca from '@/images/members/Bianca.jpg'
 import Nicolas from '@/images/members/nicolasOtero.jpg'
 import Giovanna from '@/images/members/Giovanna.jpg'
-import Mariana from '@/images/members/Mariana.jpg'
+import Mariana from '@/images/members/mariana.jpg'
 
 interface IMemberPage {
   title: string
