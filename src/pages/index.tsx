@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>PET Computação - Homepage</title>
+        <title>PET Computação - UFRGS</title>
       </Head>
       <HomeView />
     </>
